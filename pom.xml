@@ -17,6 +17,14 @@
   <name>eHealthExperts' FOOS gematik specifications</name>
   <description>This project provides the eHealthExperts-related, commonly used gematik specifications (AFOs, Specs, PTStBs, etc.).</description>
 
+  <licenses>
+    <license>
+      <name>MIT License</name>
+      <url>http://www.opensource.org/licenses/mit-license.php</url>
+      <distribution>repo</distribution>
+    </license>
+  </licenses>
+
   <properties>
     <!-- General Build Stuff Versions -->
     <version.java>1.8</version.java>
