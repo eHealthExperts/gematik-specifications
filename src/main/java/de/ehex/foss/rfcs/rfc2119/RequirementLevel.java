@@ -107,7 +107,7 @@ public enum RequirementLevel {
      * @return the phrase of {@code this} requirement level
      */
     @Override
-    public String toString() {
+    public final String toString() {
         assert nonNull(this.phrase) : "Class invariant violation!";
         return this.phrase;
     }
@@ -119,7 +119,7 @@ public enum RequirementLevel {
      *
      * @return the definition text of this requirement level
      */
-    public String getDefinition() {
+    public final String getDefinition() {
         final RequirementLevel proper = this.getProperRequirementLevel();
         assert nonNull(proper) : "Class invariant violation!";
         assert nonNull(proper.definition) : "Class invariant violation!";
