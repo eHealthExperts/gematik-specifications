@@ -2,8 +2,6 @@ package de.ehex.foss.rfcs.rfc2119;
 
 import static java.util.Objects.nonNull;
 
-import java.util.Optional;
-
 /**
  * Enumeration of all requirement levels‚ according to
  * <a href="https://www.ietf.org/rfc/rfc2119.txt">RFC&thinsp;2119</a>.
@@ -87,7 +85,7 @@ public enum RequirementLevel {
 
         this.phrase = phrase;
         this.definition = definition;
-        this.aliasOf = Optional.empty();
+        this.aliasOf = null;
     }
 
     private RequirementLevel(final String phrase, final RequirementLevel aliasOf) {
@@ -98,7 +96,7 @@ public enum RequirementLevel {
 
         this.phrase = phrase;
         this.definition = null;
-        this.aliasOf = Optional.of(aliasOf);
+        this.aliasOf = aliasOf;
     }
 
     private final String phrase;
@@ -128,7 +126,7 @@ public enum RequirementLevel {
         return proper.definition;
     }
 
-    private final Optional<RequirementLevel> aliasOf;
+    private final RequirementLevel aliasOf;
 
     /**
      * Returns {@code true} if and only if {@code this} requirement level is an alias of another proper requirement
@@ -137,8 +135,7 @@ public enum RequirementLevel {
      * @return {@code true} iff {@code this} requirement level is an alias of another proper requirement level
      */
     public final boolean isAlias() {
-        assert nonNull(this.aliasOf) : "Class invariant violation!";
-        return this.aliasOf.isPresent();
+        return nonNull(this.aliasOf);
     }
 
     /**
@@ -148,8 +145,7 @@ public enum RequirementLevel {
      * @return the proper requirement level of {@code this} requirement level
      */
     public final RequirementLevel getProperRequirementLevel() {
-        assert nonNull(this.aliasOf) : "Class invariant violation!";
-        return this.aliasOf.orElse(this);
+        return nonNull(this.aliasOf) ? this.aliasOf : this;
     }
 
 }
