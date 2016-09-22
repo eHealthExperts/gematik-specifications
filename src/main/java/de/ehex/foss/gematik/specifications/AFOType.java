@@ -81,6 +81,7 @@ public enum AFOType {
      * @return the RFC&thinsp;2119 requirement level according to {@code this} gematik AFO type
      */
     public final RequirementLevel getLevel() {
+        assert nonNull(this.level) : "Class invariant violation!";
         return this.level;
     }
 
