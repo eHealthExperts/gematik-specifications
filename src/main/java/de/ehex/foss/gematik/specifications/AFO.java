@@ -5,8 +5,7 @@ import java.util.Comparator;
 /**
  * API definition of a gematik AFO (AFO = Anforderung, engl. Requirement).
  *
- * <em>Any AFO implementation ensure immutable
- * instances.</em>
+ * <em>Any AFO implementation must ensure immutable instances.</em>
  *
  * @apiNote Although AFOs can be ordered by its {@link #getAfoId()}, this interface does not extend {@link Comparable}.
  *          Otherwise, the specific AFO enumerations (e.g. {@link de.ehex.foss.gematik.specifications.gemSpec_PKI.AFOs})
