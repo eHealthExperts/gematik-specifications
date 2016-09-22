@@ -20,14 +20,34 @@ import de.ehex.foss.rfcs.rfc2119.RequirementLevel;
  */
 public enum AFOType {
 
+    /**
+     * A <em>MUSS</em> (engl. must) {@link AFO} specifies a requirement that must be supported by any specification
+     * compliant products.
+     */
     MUST("MUSS", RequirementLevel.MUST),
 
+    /**
+     * A <em>DARF NICHT</em> (engl. must not) {@link AFO} specifies a prohibition that must be complied by any
+     * specification compliant products.
+     */
     MUST_NOT("DARF NICHT", RequirementLevel.MUST_NOT),
 
+    /**
+     * A <em>SOLL</em> (engl. should) {@link AFO} specifies a requirement that should be supported by any specification
+     * compliant products. If not supported, there must be an acceptable reason.
+     */
     SHOULD("SOLL", RequirementLevel.SHOULD),
 
+    /**
+     * A <em>SOLL NICHT</em> (engl. should not) {@link AFO} specifies a prohibition that should be complied by any
+     * specification compliant products. If not complied, there must be an acceptable reason.
+     */
     SHOULD_NOT("SOLL NICHT", RequirementLevel.SHOULD_NOT),
 
+    /**
+     * A <em>KANN</em> (engl. may) {@link AFO} specifies a requirement that may or may not be supported by any
+     * specification compliant products.
+     */
     MAY("KANN", RequirementLevel.MAY);
 
     private AFOType(final String phrase, final RequirementLevel level) {
