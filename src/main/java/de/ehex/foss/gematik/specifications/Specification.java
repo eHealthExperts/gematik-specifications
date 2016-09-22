@@ -33,7 +33,7 @@ public abstract interface Specification {
     /**
      * Returns a {@linkplain Set set} of all {@link AFO}s specified (resp. referenced) by {@code this} specification.
      *
-     * @return a set of all {@link AFO}s specified (resp. referenced) by {@code this} specification
+     * @return a set of all AFOs specified (resp. referenced) by {@code this} specification
      */
     public abstract Set<AFO> getAFOs();
 
