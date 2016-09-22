@@ -8,9 +8,11 @@ import de.ehex.foss.rfcs.rfc2119.RequirementLevel;
  * Enumerates all types of AFOs as specified by the gematik (each including a reference to the according
  * {@linkplain RequirementLevel RFC&thinsp;2119 requirement level}).
  *
- * Beside, <strong>the phrase</strong> of each level (as returned by {@link #toString()}) <strong>is a german
- * keyword</strong> according to the chapter <em>"1.5 Methodik"</em> within most of the gematik's specifications. In
- * detail, these five phrases are: <em>{@link #MUST MUSS}</em>, <em>{@link #MUST_NOT DARF NICHT}</em>,
+ * Note, <strong>the {@link #phrase}</strong> of each level (as returned by {@link #toString()}) <strong>is a german
+ * keyword</strong> according to the chapter <em>&quot;1.5 Methodik&quot;</em> within most of the gematik's
+ * specifications.
+ *
+ * In detail, these five phrases are: <em>{@link #MUST MUSS}</em>, <em>{@link #MUST_NOT DARF NICHT}</em>,
  * <em>{@link #SHOULD SOLL}</em>, <em>{@link #SHOULD_NOT SOLL NICHT}</em>, <em>{@link #MAY KANN}</em>.
  *
  * @author Stefan Gasterst&auml;dt
