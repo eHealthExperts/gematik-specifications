@@ -109,6 +109,8 @@ public enum RequirementLevel {
     @Override
     public final String toString() {
         assert nonNull(this.phrase) : "Class invariant violation!";
+        assert !this.phrase.isEmpty() : "Class invariant violation!";
+
         return this.phrase;
     }
 
