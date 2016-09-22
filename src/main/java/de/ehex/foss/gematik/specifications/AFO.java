@@ -1,14 +1,23 @@
 package de.ehex.foss.gematik.specifications;
 
-import static java.util.Objects.requireNonNull;
+import java.util.Comparator;
 
 /**
- * API definition of a gematik requirement (ger. Anforderung = AFO).
+ * API definition of a gematik AFO (AFO = Anforderung, engl. Requirement).
+ *
+ * <em>Any AFO implementation ensure immutable
+ * instances.</em>
+ *
+ * @apiNote Although AFOs can be ordered by its {@link #getAfoId()}, this interface does not extend {@link Comparable}.
+ *          Otherwise, the specific AFO enumerations (e.g. {@link de.ehex.foss.gematik.specifications.gemSpec_PKI.AFOs})
+ *          cannot be defined as {@code enum} types (because {@link Enum} already extends {@link Comparable}). In
+ *          result, this interface provides an according separate {@link Comparator} to be used when sorting/comparing
+ *          AFOs: {@link #AFO_COMPARATOR}.
  *
  * @author Stefan Gasterst&auml;dt
  * @since September 9th, 2016
  */
-public abstract interface AFO extends Comparable<AFO> {
+public abstract interface AFO {
 
     /**
      * Returns the ID of {@code this} AFO.
@@ -18,20 +27,10 @@ public abstract interface AFO extends Comparable<AFO> {
     public abstract String getAfoId();
 
     /**
-     * {@inheritDoc}
-     *
-     * <p>
-     * The {@code default} implementation compares any AFOs by its {@link #getAfoId() ID}.
-     *
-     * In result, equal IDs implies equal AFOs. Thus, these AFOs must provide an equal {@linkplain #getLabel() label}
-     * and an equal {@linkplain #getType() AFO type}, all based on the according specification of the gematik.
-     * </p>
+     * This {@link Comparator} compares two given AFO instances by its {@linkplain #getAfoId() id}
+     * {@linkplain String#compareTo(String) lexicographically}.
      */
-    @Override
-    public default int compareTo(final AFO afo) {
-        requireNonNull(afo);
-        return this.getAfoId().compareTo(afo.getAfoId());
-    }
+    public static final Comparator<? super AFO> AFO_COMPARATOR = (x, y) -> x.getAfoId().compareTo(y.getAfoId());
 
     /**
      * Returns the label of {@code this} AFO.
