@@ -1,6 +1,8 @@
 package de.ehex.foss.gematik.specifications.gemSpec_Net;
 
+import static de.ehex.foss.gematik.specifications.AFOType.MAY;
 import static de.ehex.foss.gematik.specifications.AFOType.MUST;
+import static de.ehex.foss.gematik.specifications.AFOType.SHOULD;
 import static java.util.Objects.nonNull;
 
 import de.ehex.foss.gematik.specifications.AFO;
@@ -72,11 +74,11 @@ public enum AFOs implements AFO {
     // TODO: AFO-Typ klären derzeit implizit MUSS-AFO
     GS_A_4027("GS-A_4027", "Reporting IP-Adressbereiche"),
 
-    GS_A_4033("GS-A_4033", "Statisches Routing TI-Übergabepunkte", AFOType.SHOULD),
+    GS_A_4033("GS-A_4033", "Statisches Routing TI-Übergabepunkte", SHOULD),
 
-    GS_A_4035("GS-A_4035", "Dynamisches Routing Anschluss an das Zentrale Netz TI", AFOType.MAY),
+    GS_A_4035("GS-A_4035", "Dynamisches Routing Anschluss an das Zentrale Netz TI", MAY),
 
-    GS_A_4036("GS-A_4036", "Möglichkeit des Einsatzes von Hochverfügbarkeitsprotokollen", AFOType.MAY),
+    GS_A_4036("GS-A_4036", "Möglichkeit des Einsatzes von Hochverfügbarkeitsprotokollen", MAY),
 
     // TODO: AFO-Typ klären derzeit implizit MUSS-AFO
     GS_A_4759("GS-A_4759", "IPv4-Adressen Produkttyp zum SZZP"),
@@ -97,7 +99,7 @@ public enum AFOs implements AFO {
 
     GS_A_4817("GS-A_4817", "Produkttypen der Fachanwendungen sowie der zentralen TIPlattform, Einbringung des DNSSEC Trust Anchor für den Namensraum TI"),
 
-    GS_A_4819("GS-A_4819", "Schnittstelle I_NTP_Time_Information, Nutzung durch fachanwendungsspezifische Dienste", AFOType.SHOULD),
+    GS_A_4819("GS-A_4819", "Schnittstelle I_NTP_Time_Information, Nutzung durch fachanwendungsspezifische Dienste", SHOULD),
 
     // TODO: AFO-Typ klären derzeit implizit MUSS-AFO
     GS_A_4820("GS-A_4820", "Schnittstelle I_NTP_Time_Information, Nutzung durch Zentrale Dienste der TI-Plattform"),
