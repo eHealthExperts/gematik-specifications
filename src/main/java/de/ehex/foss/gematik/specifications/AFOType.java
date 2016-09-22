@@ -63,7 +63,7 @@ public enum AFOType {
     private final String phrase;
 
     /**
-     * Returns the {@linkplain #phrase} of {@code this} requirement level.
+     * Returns the {@link #phrase} of {@code this} requirement level.
      *
      * @return the phrase of {@code this} requirement level
      */
