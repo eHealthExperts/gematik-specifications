@@ -998,8 +998,6 @@ public enum PTStBs implements PTStB {
      */
     gemProdT_Kon_PTV260_V100_LDAPProxy("gemProdT_Kon_PTV2.6.0 (LDAP-Proxy)", asList(GS_A_3695, GS_A_3804, GS_A_3856, GS_A_3931, GS_A_4386, TIP1_A_4514, TIP1_A_4515, TIP1_A_4518, TIP1_A_4689, TIP1_A_4693, TIP1_A_4696, TIP1_A_4812, TIP1_A_5401, TIP1_A_5516, TIP1_A_5517, TIP1_A_5518, TIP1_A_5519, TIP1_A_5520, TIP1_A_5521, TIP1_A_5568, TIP1_A_5570), asList(GS_A_3695, GS_A_3931, GS_A_4386, TIP1_A_4515, TIP1_A_4693, TIP1_A_4696, TIP1_A_4812));
 
-    private final Set<AFO> afos;
-    private final Set<AFO> testAFOs;
 
     private PTStBs(final String reference, final List<AFO> testAFOs, final List<AFO> nonTestAFOs) {
         assert nonNull(reference) : "There must be a non-null gematik reference identifier!";
@@ -1023,10 +1021,14 @@ public enum PTStBs implements PTStB {
         return this.reference;
     }
 
+    private final Set<AFO> afos;
+
     @Override
     public Set<AFO> getAFOs() {
         return this.afos;
     }
+
+    private final Set<AFO> testAFOs;
 
     @Override
     public Set<AFO> getTestableAFOs() {
