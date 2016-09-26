@@ -821,6 +821,12 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
+/**
+ * Enumeration of all &ndash;&nbsp;currently considered&nbsp;&ndash; gematik {@link PTStB}s.
+ *
+ * @author Stefan Gasterst&auml;dt
+ * @since September 21st, 2016
+ */
 public enum PTStBs implements PTStB {
 
     gemProdT_CM_KOMLE_PTV1_2_0("gemProdT_CM_KOMLE_PTV1.2.0",
