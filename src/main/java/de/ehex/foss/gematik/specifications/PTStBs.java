@@ -1008,7 +1008,7 @@ public enum PTStBs implements PTStB {
         this.reference = reference;
         this.testAFOs = unmodifiableSet(new HashSet<>(testAFOs));
         // assert disjoint(testAFOs, nonTestAFOs);
-        nonTestAFOs.stream().filter(testAFOs::contains).forEach(x -> System.err.format("Hey dude; Please ask yourself (or the gematik) why %1$s contains AFO %2$s that is both testable and non-testable!", this.name(), x));
+        nonTestAFOs.stream().filter(testAFOs::contains).forEach(afo -> System.err.format("Hey dude; Please ask yourself (or the gematik) why %1$s contains AFO %2$s that is both testable and non-testable!", this.name(), afo));
         this.afos = unmodifiableSet(concat(testAFOs.stream(), nonTestAFOs.stream()).collect(toSet()));
     }
 
