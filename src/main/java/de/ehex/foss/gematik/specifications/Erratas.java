@@ -1,7 +1,15 @@
 package de.ehex.foss.gematik.specifications;
 
-import java.util.Arrays;
-import java.util.EnumSet;
+import static de.ehex.foss.gematik.specifications.gemErrata_R1_4_6.AFOs.ARV_706_3_SPEC_SST_STAMPEL_AFO_0010;
+import static java.util.Arrays.asList;
+import static java.util.Collections.emptyList;
+import static java.util.Collections.unmodifiableSet;
+import static java.util.Objects.nonNull;
+import static java.util.stream.Collectors.toSet;
+import static java.util.stream.Stream.concat;
+
+import java.util.HashSet;
+import java.util.List;
 import java.util.Set;
 
 /**
@@ -12,58 +20,21 @@ import java.util.Set;
  */
 public enum Erratas implements Errata {
 
-    gemErrata_R1_4_6("gemErrata_R1.4.6", de.ehex.foss.gematik.specifications.gemErrata_R1_4_6.AFOs.class);
+    gemErrata_R1_4_6("gemErrata_R1.4.6", asList(ARV_706_3_SPEC_SST_STAMPEL_AFO_0010), emptyList()),
 
-    /**
-     * Returns the {@linkplain Errata Errata} according to the specified {@code base} {@link AFO} {@link Enum enum}
-     * {@link Class class}.
-     *
-     * @param base
-     *            the query {@code AFO} {@code enum} {@code class}
-     * @param <A>
-     *            the effectively wildcard {@link AFO} {@link Enum enum} type
-     * @return the Errata according to the specified {@code base} {@code AFO} {@code enum} {@code class}
-     * @throws NullPointerException
-     *             if {@code base} is {@code null}
-     * @throws IllegalArgumentException
-     *             if {@code base} is neither assignable to {@link Enum} nor to {@link AFO}; or if there is no according
-     *             Errata available
-     */
-    public static <A extends Enum<A> & AFO> Erratas valueOf(final Class<? extends A> base) throws NullPointerException, IllegalArgumentException {
-        if (Enum.class.isAssignableFrom(base)) {
-            throw new IllegalArgumentException("The given base class is not assignable to " + Enum.class);
-        }
-        if (AFO.class.isAssignableFrom(base)) {
-            throw new IllegalArgumentException("The given base class is not assignable to " + AFO.class);
-        }
-        return Arrays.stream(Erratas.values()) //
-                .filter(s -> s.base.equals(base)) //
-                .findFirst() //
-                .orElseThrow(() -> new IllegalArgumentException("No enum constant for base class " + base));
-    }
+    ;
 
-    /**
-     * Returns the {@linkplain Errata Errata} according to the specified {@link AFO afo}.
-     *
-     * @param afo
-     *            the query {@code AFO}
-     * @param <A>
-     *            the effectively wildcard {@link AFO} {@link Enum enum} type
-     * @return the Errata according to the specified {@code afo}
-     * @throws NullPointerException
-     *             if {@code afo} is {@code null}
-     * @throws IllegalArgumentException
-     *             if {@code afo} is neither assignable to {@link Enum} nor to {@link AFO}; or if there is no according
-     *             Errata available
-     */
-    @SuppressWarnings("unchecked")
-    public static <A extends Enum<A> & AFO> Erratas valueOf(final A afo) {
-        return valueOf((Class<? extends A>) afo.getClass());
-    }
+    private Erratas(final String reference, final List<AFO> testAFOs, final List<AFO> nonTestAFOs) {
+        assert nonNull(reference) : "There must be a non-null gematik reference identifier!";
+        assert !reference.isEmpty() : "There must be a non-empty gematik reference identifier!";
+        assert nonNull(testAFOs) : "There must be a non-null list of (test-relevant) AOFs!";
+        assert nonNull(nonTestAFOs) : "There must be a non-null list of (test-irrelevant) AOFs!";
 
-    private <A extends Enum<A> & AFO> Erratas(final String reference, final Class<? extends A> base) {
         this.reference = reference;
-        this.base = base;
+        this.testAFOs = unmodifiableSet(new HashSet<>(testAFOs));
+        // assert disjoint(testAFOs, nonTestAFOs);
+        nonTestAFOs.stream().filter(testAFOs::contains).forEach(afo -> System.err.format("Hey dude; Please ask yourself (or the gematik) why %1$s contains AFO %2$s that is both testable and non-testable!", this.name(), afo));
+        this.afos = unmodifiableSet(concat(testAFOs.stream(), nonTestAFOs.stream()).collect(toSet()));
     }
 
     private final String reference;
@@ -73,18 +44,18 @@ public enum Erratas implements Errata {
         return this.reference;
     }
 
-    private final Class<? extends Enum<? extends AFO>> base;
+    private final Set<AFO> afos;
 
-    @SuppressWarnings({ "unchecked", "rawtypes" })
     @Override
     public Set<AFO> getAFOs() {
-        final Set set = EnumSet.allOf((Class) this.base);
-        return set;
+        return this.afos;
     }
+
+    private final Set<AFO> testAFOs;
 
     @Override
     public Set<AFO> getTestableAFOs() {
-        return this.getAFOs();
+        return this.testAFOs;
     }
 
 }
