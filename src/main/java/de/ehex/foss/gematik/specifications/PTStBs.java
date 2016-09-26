@@ -994,7 +994,7 @@ public enum PTStBs implements PTStB {
                     VSDM_A_3006, GS_A_4864, GS_A_4720, GS_A_2070, GS_A_2071, GS_A_2072, GS_A_2073, GS_A_2074, GS_A_2075, GS_A_2156)),
 
     /**
-     * Definition of all partial AFOs of [gemProdT_Kon_PTV2.6.0] required to execute test targeting the LDAP-Proxy.
+     * Partial definition of all AFOs of [gemProdT_Kon_PTV2.6.0] required to execute test targeting the LDAP-Proxy.
      */
     gemProdT_Kon_PTV260_V100_LDAPProxy("gemProdT_Kon_PTV2.6.0 (LDAP-Proxy)", asList(GS_A_3695, GS_A_3804, GS_A_3856, GS_A_3931, GS_A_4386, TIP1_A_4514, TIP1_A_4515, TIP1_A_4518, TIP1_A_4689, TIP1_A_4693, TIP1_A_4696, TIP1_A_4812, TIP1_A_5401, TIP1_A_5516, TIP1_A_5517, TIP1_A_5518, TIP1_A_5519, TIP1_A_5520, TIP1_A_5521, TIP1_A_5568, TIP1_A_5570), asList(GS_A_3695, GS_A_3931, GS_A_4386, TIP1_A_4515, TIP1_A_4693, TIP1_A_4696, TIP1_A_4812)),
 
