@@ -1006,9 +1006,7 @@ public enum PTStBs implements PTStB {
         assert nonNull(nonTestAFOs) : "There must be a non-null list of (test-irrelevant) AOFs!";
 
         this.reference = reference;
-        assert testAFOs != null;
         this.testAFOs = unmodifiableSet(new HashSet<>(testAFOs));
-        assert nonTestAFOs != null;
         // assert disjoint(testAFOs, nonTestAFOs);
         nonTestAFOs.stream().filter(testAFOs::contains).forEach(x -> System.err.format("Hey dude; Please ask yourself (or the gematik) why %1$s contains AFO %2$s that is both testable and non-testable!", this.name(), x));
         this.afos = unmodifiableSet(concat(testAFOs.stream(), nonTestAFOs.stream()).collect(toSet()));
