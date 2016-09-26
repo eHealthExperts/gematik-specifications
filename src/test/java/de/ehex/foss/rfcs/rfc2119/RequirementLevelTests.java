@@ -38,6 +38,7 @@ public abstract interface RequirementLevelTests<SUT extends RequirementLevel> ex
     @Test
     public default void testNonAliasingRequirementLevel() throws Exception {
         final SUT sut = createNewSUT();
+        assert nonNull(sut);
         assumeFalse("Test is not suitable for aliasing requirement levels.", sut.isAlias());
         final RequirementLevel proper = sut.getProperRequirementLevel();
         assertEquals(sut, proper);
@@ -46,6 +47,7 @@ public abstract interface RequirementLevelTests<SUT extends RequirementLevel> ex
     @Test
     public default void testAliasingRequirementLevel() throws Exception {
         final SUT sut = createNewSUT();
+        assert nonNull(sut);
         assumeTrue("Test is not suitable for non-aliasing requirement levels.", sut.isAlias());
         final RequirementLevel proper = sut.getProperRequirementLevel();
         assertFalse(proper.isAlias());
