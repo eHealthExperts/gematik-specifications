@@ -1,5 +1,7 @@
 package de.ehex.foss.gematik.specifications;
 
+import static java.util.Objects.nonNull;
+
 import java.util.Arrays;
 import java.util.EnumSet;
 import java.util.Set;
@@ -63,6 +65,12 @@ public enum Specifications implements Specification {
     ;
 
     private <AFO_ENUM extends Enum<AFO_ENUM> & AFO> Specifications(final String reference, final Class<AFO_ENUM> base) {
+        assert nonNull(reference) : "There must be a non-null gematik reference identifier!";
+        assert !reference.isEmpty() : "There must be a non-empty gematik reference identifier!";
+        assert nonNull(base) : "There must be a non-null AFO-enum base class!";
+        assert Enum.class.isAssignableFrom(base) : "AFO base must be assignable to " + Enum.class + "!";
+        assert AFO.class.isAssignableFrom(base) : "AFO base must be assignable to " + AFO.class + "!";
+
         this.reference = reference;
         this.base = base;
     }
@@ -71,6 +79,9 @@ public enum Specifications implements Specification {
 
     @Override
     public String getReference() {
+        assert nonNull(this.reference) : "Class invariant violation!";
+        assert !this.reference.isEmpty() : "Class invariant violation!";
+
         return this.reference;
     }
 
