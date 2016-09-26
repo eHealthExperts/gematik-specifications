@@ -5,6 +5,7 @@ import static java.util.Objects.nonNull;
 
 import de.ehex.foss.gematik.specifications.AFO;
 import de.ehex.foss.gematik.specifications.AFOType;
+import de.ehex.foss.gematik.specifications.AfoHistory;
 
 /**
  * Enumeration of all &ndash;&nbsp;currently considered&nbsp;&ndash; {@link AFO}s of {@code [gemErrata_R1.4.6]}.
@@ -14,6 +15,7 @@ import de.ehex.foss.gematik.specifications.AFOType;
  */
 public enum AFOs implements AFO {
 
+    @AfoHistory(description = "Unter Beibehaltung der AFO-ID inhaltlich verändert. Insbesondere von KANN auf SOLL.", documentVersion = "[gemErrata_R1.4.6]")
     ARV_706_3_SPEC_SST_STAMPEL_AFO_0010("ARV_706.3_SPEC_SST_STAMPEL_AFO_0010", "Prüfung des Störungsampel-Zertifikats gemäß gemSpec_PKI#TUC_PKI_018"),
 
     ;
