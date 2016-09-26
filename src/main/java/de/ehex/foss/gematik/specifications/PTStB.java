@@ -16,12 +16,12 @@ public abstract interface PTStB extends TestableSpecification {
     /**
      * Returns the reference label of {@code this} PTStB.
      *
-     * Usually, this field can be derive from the cover of the gematik specification (most probably identified by
+     * Usually, this field can be derive from the cover of the gematik PTStB (most probably identified by
      * <em>Referenzierung</em>).
      *
      * @return the reference label of {@code this} PTStB
      */
-    @Override
+    @Override /* to update the javadoc */
     public abstract String getReference();
 
     /**
@@ -29,7 +29,16 @@ public abstract interface PTStB extends TestableSpecification {
      *
      * @return a set of all AFOs referenced by {@code this} PTStB
      */
-    @Override
+    @Override /* to update the javadoc */
     public abstract Set<AFO> getAFOs();
+
+    /**
+     * Returns a {@linkplain Set set} of all {@link AFO}s referenced by {@code this} PTStB that have to be tested by
+     * manufacturers on its own responsibility.
+     *
+     * <em>Any implementation must ensure the sub-set relation of this method's result in relation to {@link #getAFOs()}.</em>
+     */
+    @Override /* to update the javadoc */
+    public abstract Set<AFO> getTestableAFOs();
 
 }
