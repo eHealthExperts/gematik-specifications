@@ -38,15 +38,15 @@ public enum EVTScopes {
 
     /**
      * TODO: Put a note why
-     * <em>GS_A_4642, GS_A_4643, GS_A_4646, GS_A_4647, GS_A_4648, GS_A_4649, GS_A_4650, GS_A_4655, TIP1_A_5120</em> are
-     * included into test-scope.
+     * <em>GS_A_4642, GS_A_4643, GS_A_4646, GS_A_4647, GS_A_4648, GS_A_4649, GS_A_4650, GS_A_4655, TIP1_A_5120</em>
+     * is/are included into test-scope.
      */
     OCSP_EGK(asList(gemProdT_X_509_TSP_nonQES_eGK_PTV1_5_0_V1_0_0, gemErrata_R1_4_6), emptyList(), asList(GS_A_4642, GS_A_4643, GS_A_4646, GS_A_4647, GS_A_4648, GS_A_4649, GS_A_4650, GS_A_4655, TIP1_A_5120)),
 
     /**
-     * TODO: Put a note why <em>VSDM_A_2323</em> can be excluded from testing.
+     * TODO: Put a note why <em>VSDM_A_2323</em> is/are be excluded from testing.
      *
-     * TODO: Put a note why <em>GS_A_4384, GS_A_4387</em> are included into test-scope.
+     * TODO: Put a note why <em>GS_A_4384, GS_A_4387</em> is/are included into test-scope.
      */
     VSDM_FD(asList(gemProdT_FD_VSDM_PTV1_4_0, gemErrata_R1_4_6), asList(VSDM_A_2323), asList(GS_A_4384, GS_A_4387)),
 
