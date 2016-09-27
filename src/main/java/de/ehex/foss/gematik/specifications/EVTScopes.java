@@ -28,7 +28,14 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
-public enum EVTScopes {
+/**
+ * According to the currently released specifications, this enumeration list all (currently considered) gematik EVT
+ * scopes.
+ *
+ * @author Stefan Gasterst&auml;dt
+ * @since September 27th, 2016
+ */
+public enum EVTScopes implements TestScope {
 
     KOMLE_CM(asList(gemProdT_CM_KOMLE_PTV1_2_0), emptyList(), emptyList()),
 
@@ -71,6 +78,7 @@ public enum EVTScopes {
         this.testAFOs = unmodifiableSet(resultSet);
     }
 
+    @Override
     public Set<AFO> getTestableAFOs() {
         return this.testAFOs;
     }
