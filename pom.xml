@@ -14,9 +14,11 @@
   <groupId>de.ehex.foss</groupId>
   <artifactId>gematik-specifications</artifactId>
   <version>1.5.20160719-SNAPSHOT</version>
+
   <name>eHealthExperts' FOOS gematik specifications</name>
   <description>This project provides the eHealthExperts-related, commonly used gematik specifications (AFOs, Specs, PTStBs, etc.).</description>
   <url>https://github.com/eHealthExperts/gematik-specifications</url>
+  <inceptionYear>2016</inceptionYear>
 
   <organization>
     <name>eHealth Experts GmbH</name>
