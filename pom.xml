@@ -25,6 +25,22 @@
     <url>http://ehealthexperts.de</url>
   </organization>
 
+  <developers>
+    <developer>
+      <id>SGA</id>
+      <name>Stefan Gasterstädt</name>
+      <email>gasterstaedt@ehealthexperts.de</email>
+      <organization>eHealth Experts GmbH</organization>
+      <organizationUrl>http://ehealthexperts.de</organizationUrl>
+      <roles>
+        <role>maintainer</role>
+        <role>architect</role>
+        <role>committer</role>
+        <role>developer</role>
+      </roles>
+    </developer>
+  </developers>
+
   <licenses>
     <license>
       <name>MIT License</name>
