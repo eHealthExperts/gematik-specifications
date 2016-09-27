@@ -10,15 +10,21 @@ import java.util.Set;
  * @author Stefan Gasterst&auml;dt
  * @since September 21st, 2016
  */
-public abstract interface TestableSpecification extends Specification {
+public abstract interface TestableSpecification extends Specification, TestScope {
 
     /**
-     * Returns a {@linkplain Set set} of all {@link AFO}s to be tested by manufacturers on its own responsibility.
+     * {@inheritDoc}
      *
-     * <em>Any implementation must ensure the sub-set relation of this method's result in relation to {@link #getAFOs()}.</em>
+     * <p>
+     * In addition to the API requirements of {@link TestScope}, any {@link TestableSpecification} implementation must
+     * ensure the sub-set relation of this method's result in relation to {@link #getAFOs()}!
+     * </p>
      *
-     * @return of all AFOs to be tested by manufacturers on its own responsibility
+     * @implSpec {@inheritDoc}
+     *
+     * @return {@inheritDoc} (must be sub-set of {@link #getAFOs()})
      */
+    @Override
     public abstract Set<AFO> getTestableAFOs();
 
 }
