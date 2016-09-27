@@ -28,7 +28,7 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
-public enum TestScope {
+public enum EVTScopes {
 
     KOMLE_CM(asList(gemProdT_CM_KOMLE_PTV1_2_0), emptyList(), emptyList()),
 
@@ -56,7 +56,7 @@ public enum TestScope {
 
     private Set<AFO> testAFOs;
 
-    private TestScope(final List<? extends TestableSpecification> baseSpecs, final List<AFO> excludedAFOs, final List<AFO> includedAFOs) {
+    private EVTScopes(final List<? extends TestableSpecification> baseSpecs, final List<AFO> excludedAFOs, final List<AFO> includedAFOs) {
         final List<AFO> tmpExcludedAFOs = new ArrayList<>(excludedAFOs);
         tmpExcludedAFOs.retainAll(includedAFOs);
         if (!tmpExcludedAFOs.isEmpty()) {
