@@ -38,33 +38,33 @@ import java.util.Set;
  */
 public enum EVTScopes implements TestScope {
 
-    KOMLE_CM(asList(gemProdT_CM_KOMLE_PTV1_2_0), emptyList(), emptyList()),
+    KOMLE_CM(gemProdT_CM_KOMLE_PTV1_2_0, emptyList(), emptyList()),
 
-    KOMLE_FD(asList(gemProdT_FD_KOMLE_PTV1_2_0), emptyList(), emptyList()),
+    KOMLE_FD(gemProdT_FD_KOMLE_PTV1_2_0, emptyList(), emptyList()),
 
-    LDAP_PROXY(asList(gemProdT_Kon_PTV260_V100_LDAPProxy), emptyList(), emptyList()),
+    LDAP_PROXY(gemProdT_Kon_PTV260_V100_LDAPProxy, emptyList(), emptyList()),
 
     /**
      * TODO: Put a note why
      * <em>GS_A_4642, GS_A_4643, GS_A_4646, GS_A_4647, GS_A_4648, GS_A_4649, GS_A_4650, GS_A_4655, TIP1_A_5120</em>
      * is/are included into test-scope.
      */
-    OCSP_EGK(asList(gemProdT_X_509_TSP_nonQES_eGK_PTV1_5_0_V1_0_0), emptyList(), asList(ARV_706_3_SPEC_SST_STAMPEL_AFO_0010, GS_A_4642, GS_A_4643, GS_A_4646, GS_A_4647, GS_A_4648, GS_A_4649, GS_A_4650, GS_A_4655, TIP1_A_5120)),
+    OCSP_EGK(gemProdT_X_509_TSP_nonQES_eGK_PTV1_5_0_V1_0_0, emptyList(), asList(ARV_706_3_SPEC_SST_STAMPEL_AFO_0010, GS_A_4642, GS_A_4643, GS_A_4646, GS_A_4647, GS_A_4648, GS_A_4649, GS_A_4650, GS_A_4655, TIP1_A_5120)),
 
     /**
      * TODO: Put a note why <em>VSDM_A_2323</em> is/are be excluded from testing.
      *
      * TODO: Put a note why <em>GS_A_4384, GS_A_4387</em> is/are included into test-scope.
      */
-    VSDM_FD(asList(gemProdT_FD_VSDM_PTV1_4_0), asList(VSDM_A_2323), asList(ARV_706_3_SPEC_SST_STAMPEL_AFO_0010, GS_A_4384, GS_A_4387)),
+    VSDM_FD(gemProdT_FD_VSDM_PTV1_4_0, asList(VSDM_A_2323), asList(ARV_706_3_SPEC_SST_STAMPEL_AFO_0010, GS_A_4384, GS_A_4387)),
 
-    INTERMEDIAER_VSDM(asList(gemProdT_Intermediaer_VSDM_PTV150_V100), emptyList(), singletonList(ARV_706_3_SPEC_SST_STAMPEL_AFO_0010)),
+    INTERMEDIAER_VSDM(gemProdT_Intermediaer_VSDM_PTV150_V100, emptyList(), singletonList(ARV_706_3_SPEC_SST_STAMPEL_AFO_0010)),
 
     ;
 
     private Set<AFO> testAFOs;
 
-    private EVTScopes(final List<? extends TestableSpecification> baseSpecs, final List<AFO> excludedAFOs, final List<AFO> includedAFOs) {
+    private EVTScopes(final TestableSpecification baseSpec, final List<AFO> excludedAFOs, final List<AFO> includedAFOs) {
         final List<AFO> tmpExcludedAFOs = new ArrayList<>(excludedAFOs);
         tmpExcludedAFOs.retainAll(includedAFOs);
         if (!tmpExcludedAFOs.isEmpty()) {
@@ -72,7 +72,7 @@ public enum EVTScopes implements TestScope {
         }
 
         final Set<AFO> resultSet = new HashSet<>();
-        baseSpecs.forEach(bs -> resultSet.addAll(bs.getTestableAFOs()));
+        resultSet.addAll(baseSpec.getTestableAFOs());
         resultSet.removeAll(excludedAFOs);
         resultSet.addAll(includedAFOs);
 
