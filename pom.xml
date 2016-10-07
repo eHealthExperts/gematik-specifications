@@ -119,6 +119,68 @@
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-javadoc-plugin</artifactId>
         <version>2.10.4</version>
+        <configuration>
+          <encoding> ${project.build.sourceEncoding}</encoding>
+          <docencoding>${project.reporting.outputEncoding}</docencoding>
+          <failOnError>true</failOnError>
+          <level>protected</level>
+          <show>protected</show>
+          <serialwarn>true</serialwarn>
+          <validateLinks>true</validateLinks>
+          <detectLinks>false</detectLinks>
+          <!-- <detectLinks>true</detectLinks> -->
+          <detectJavaApiLink>true</detectJavaApiLink>
+          <!-- http://blog.joda.org/2014/02/turning-off-doclint-in-jdk-8-javadoc.html -->
+          <additionalparam>-Xdoclint:none</additionalparam>
+          <!-- http://blog.codefx.org/java/new-javadoc-tags/#apiNote-implSpec-and-implNote -->
+          <!-- https://github.com/CodeFX-org/demo-javadoc-8-tags/blob/master/pom.xml?ts=4#L110-L133 -->
+          <tags>
+            <tag>
+              <name>apiNote</name>
+              <placement>a</placement>
+              <head>API Note:</head>
+            </tag>
+            <tag>
+              <name>implSpec</name>
+              <placement>a</placement>
+              <head>Implementation Requirements:</head>
+            </tag>
+            <tag>
+              <name>implNote</name>
+              <placement>a</placement>
+              <head>Implementation Note:</head>
+            </tag>
+            <tag>
+              <name>param</name>
+            </tag>
+            <tag>
+              <name>return</name>
+            </tag>
+            <tag>
+              <name>throws</name>
+            </tag>
+            <tag>
+              <name>since</name>
+            </tag>
+            <tag>
+              <name>version</name>
+            </tag>
+            <tag>
+              <name>serialData</name>
+            </tag>
+            <tag>
+              <name>see</name>
+            </tag>
+          </tags>
+        </configuration>
+        <executions>
+          <execution>
+            <id>attach-javadocs</id>
+            <goals>
+              <goal>jar</goal>
+            </goals>
+          </execution>
+        </executions>
       </plugin>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
