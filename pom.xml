@@ -90,6 +90,9 @@
         <configuration>
           <source>${version.java}</source>
           <target>${version.java}</target>
+          <testSource>${version.java}</testSource>
+          <testTarget>${version.java}</testTarget>
+          <encoding>${project.build.sourceEncoding}</encoding>
         </configuration>
       </plugin>
       <plugin>
