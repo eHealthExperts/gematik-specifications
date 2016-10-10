@@ -47,6 +47,12 @@
     </license>
   </licenses>
 
+  <scm>
+    <connection>scm:git:https://github.com/eHealthExperts/gematik-specifications.git</connection>
+    <developerConnection>scm:git:https://github.com/eHealthExperts/gematik-specifications.git</developerConnection>
+    <url>https://github.com/eHealthExperts/gematik-specifications</url>
+  </scm>
+
   <properties>
     <!-- General Build Stuff Versions -->
     <version.java>1.8</version.java>
