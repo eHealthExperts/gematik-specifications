@@ -75,12 +75,12 @@
 
   <profiles>
     <profile>
-      <!-- Activate by running "mvn -DossrhRelease=true ..." -->
+      <!-- This profile is motivated by: http://stackoverflow.com/questions/14825039/suppressing-gpg-signing-for-maven-based-continous-integration-builds-travis-ci -->
+      <!-- Activate by providing the "gpg.passphrase" property which must be provided anyway when doing signing. -->
       <id>ossrh</id>
       <activation>
         <property>
-          <name>ossrhRelease</name>
-          <value>true</value>
+          <name>gpg.passphrase</name>
         </property>
       </activation>
       <build>
