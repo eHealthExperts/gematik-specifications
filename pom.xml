@@ -53,6 +53,18 @@
     <url>https://github.com/eHealthExperts/gematik-specifications</url>
   </scm>
 
+  <distributionManagement>
+    <!-- For repository URLs see: https://issues.sonatype.org/browse/OSSRH-25435 -->
+    <snapshotRepository>
+      <id>ossrh</id>
+      <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+    </snapshotRepository>
+    <repository>
+      <id>ossrh</id>
+      <url>https://oss.sonatype.org/service/local/staging/deploy/maven2</url>
+    </repository>
+  </distributionManagement>
+
   <properties>
     <!-- General Build Stuff Versions -->
     <version.java>1.8</version.java>
