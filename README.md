@@ -23,7 +23,7 @@ Desweiteren sind die gematik-AFOs mit unterschiedlichen Anforderungsleveln verse
 
 Sie sind herzlich eingeladen, selbst zu diesem Projekt beizutragen. Legen Sie sich hierzu einem Fork des Projekts an (shared repository model) arbeiten Sie Ihre Ergänzungen ein und tragen Sie diese als Pull-Request an dieses Projekt heran.
 - Bitte beachten Sie die Code-Konventionen. 
-- Zudem sind alle `enum`-Konstanten alphabetisch sortiert (plus [Abschluss-Komma](http://docs.oracle.com/javase/specs/jls/se8/html/jls-8.html#jls-8.9)), um die Code-Änderungen schneller überblicken zu können.
+- Zudem sind alle `enum`-Konstanten alphabetisch sortiert (plus [Trailing-Komma](http://docs.oracle.com/javase/specs/jls/se8/html/jls-8.html#jls-8.9)), um die Code-Änderungen schneller überblicken zu können.
 - Arbeiten Sie stets gegen die Interfaces.
 - Jeder Code-Beitrag muss, wenn er eine neue Funktionalität beiträgt, durch einen passenden Test überprüfbar sein.
 https://help.github.com/articles/about-pull-requests/
