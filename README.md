@@ -15,4 +15,8 @@ Die Versionsnummern der einzelnen Releases referenzieren einen jeweiligen Stand 
 
 ## Hinweise für Nutzer der gematik-specifications
 
+Sämtliche konkreten Klassen sind stets gegen passende Interfaces entwickelt. Es wird ganz deutlich darauf hingewiesen, dass diese anstatt der konkreten Typen für sämtliche Methoden-Schnittstellen zu verwenden sind, um an zukünftigen Weiterentwicklungen teilhaben zu können.
+
+Desweiteren sind die gematik-AFOs mit unterschiedlichen Anforderungsleveln versehen. Diese sind grundsätzlich Bestandteil der bereits in den `enum`-Klassen erfassten AFOs. Eine Nichtangabe eines Anforderungslevels impliziert eine *MUSS*-Anforderung. Häufig sind jedoch AFOs erfasst worden ohne deren Anforderungslevel anzugeben, da es sich schlicht nicht aus den Produkttypsteckbriefen bzw. AFO-Titeln herauslesen lässt. Derartige AFOs sind mit einem entsprechenden TODO als Java-Kommentar vermerkt. (Das zur Laufzeit abrufbare Level ist daher ggf. nicht korrekt; In den meisten Fällen handelt es sich bei den gematik-AFOs jedoch um *MUSS*-AFOs.)
+
 ## Hinweise für Entwickler der gematik-specifications
