@@ -29,5 +29,5 @@ Sie sind herzlich eingeladen, selbst zu diesem Projekt beizutragen. Legen Sie si
 - Bitte beachten Sie die Code-Konventionen. 
 - Zudem sind alle `enum`-Konstanten alphabetisch sortiert (plus [Trailing-Komma](http://docs.oracle.com/javase/specs/jls/se8/html/jls-8.html#jls-8.9)), um die Code-Änderungen schneller überblicken zu können.
 - Arbeiten Sie stets gegen die Interfaces.
-- Jeder Code-Beitrag muss, wenn er eine neue Funktionalität beiträgt, durch einen passenden Test überprüfbar sein.
-https://help.github.com/articles/about-pull-requests/
+- Jeder Code-Beitrag muss, wenn er eine neue Funktionalität beiträgt, durch passende Unit-Tests (oder sogar [j8unit](https://github.com/j8unit-team/j8unit)-Tests) überprüfbar sein (mehr unter:
+https://help.github.com/articles/about-pull-requests/)
