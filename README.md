@@ -2,6 +2,10 @@
 
 Dieses Projekt bietet eine Java-Interpretation der gematik-AFOs, die in diversen gematik-Spezifikationen verteilt sind und durch gematik-Produkttypsteckbriefe querreferenziert werden. Die Umsetzung unterteilt die AFOs in jeweilige Namensräume (Java-Packages) und bietet global entsprechende API-Typen (Interfaces) an.
 
+## Lizenz
+
+Dieses 2016 initiierte Free-Open-Source Projekt wird unter der MIT-Lizenz veröffentlicht. Den Wortlaut der Lizenzvereinbarung finden sie in der beigefügten Datei *[LICENSE](LICENSE)*.
+
 ## Versionierung / Release-Umsetzung
 
 Die Versionsnummern der einzelnen Releases referenzieren einen jeweiligen Stand eines gematik-Releases.
