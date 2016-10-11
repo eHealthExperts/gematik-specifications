@@ -4,7 +4,7 @@ Dieses Projekt bietet eine Java-Interpretation der gematik-AFOs, die in diversen
 
 ## Lizenz
 
-Dieses 2016 initiierte Free-Open-Source Projekt wird unter der MIT-Lizenz veröffentlicht. Den Wortlaut der Lizenzvereinbarung finden sie in der beigefügten Datei *[LICENSE](LICENSE)*.
+Dieses 2016 durch die [eHealth Experts GmbH](http://www.ehealthexperts.de) initiierte Free-Open-Source Projekt wird unter der MIT-Lizenz veröffentlicht. Den Wortlaut der Lizenzvereinbarung finden sie in der beigefügten Datei *[LICENSE](LICENSE)*.
 
 ## Versionierung / Release-Umsetzung
 
