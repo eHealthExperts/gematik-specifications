@@ -1,11 +1,13 @@
 # gematik-specifications
 
+Dieses Projekt bietet eine Java-Interpretation der gematik-AFOs, die in diversen gematik-Spezifikationen verteilt sind und durch gematik-Produkttypsteckbriefe querreferenziert werden. Die Umsetzung unterteilt die AFOs in jeweilige Namensräume (Java-Packages) und bietet global entsprechende API-Typen (Interfaces) an.
+
 ## Versionierung / Release-Umsetzung
 
 Die Versionsnummern der einzelnen Releases referenzieren einen jeweiligen Stand eines gematik-Releases.
-Die Major-Nummer **1** zeigt den Bezug zur gematik Release 1.5 ORS1 mit Basis-Rollout – Erprobung und Produktivbetrieb.
-Jede Minor-Nummer bezieht sich auf einen bestimmten Dokumentenstand der Produkttypsteckbriefe. Exemplarisch steht **1.0** für eine Umsetzung der ORS-1.5-Dokumente vom 19. Juli 2016.
-Die Patch-Nummer repräsentiert den Programmierumfang des Projekts und kann den jeweiligen Release-Notes entnommen werden. 
+- Die Major-Nummer **1** zeigt den Bezug zur gematik Release 1.5 ORS1 mit Basis-Rollout – Erprobung und Produktivbetrieb.
+- Jede Minor-Nummer bezieht sich auf einen bestimmten Dokumentenstand der Produkttypsteckbriefe. Exemplarisch steht **1.0** für eine Umsetzung der ORS-1.5-Dokumente vom 19. Juli 2016.
+- Die Patch-Nummer repräsentiert den Programmierumfang des Projekts und kann den jeweiligen Release-Notes entnommen werden. 
 
 | Version gematik-specifications |                              Umsetzung von gematik-Release                             |                                           Version Produkttypsteckbriefe                                          |
 |:------------------------------:|:--------------------------------------------------------------------------------------:|:----------------------------------------------------------------------------------------------------------------:|
