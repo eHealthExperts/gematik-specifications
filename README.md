@@ -11,7 +11,7 @@ Die Versionsnummern der einzelnen Releases referenzieren einen jeweiligen Stand 
 
 | Version gematik-specifications |                              Umsetzung von gematik-Release                             |                                           Version Produkttypsteckbriefe                                          |
 |:------------------------------:|:--------------------------------------------------------------------------------------:|:----------------------------------------------------------------------------------------------------------------:|
-| 1.0.*                          | [ORS 1.5](http://www.gematik.de/cms/de/spezifikation/release_1_5_ors1/release_1_5.jsp) | [2016-07-19](http://www.gematik.de/cms/media/dokumente/ors1_release_1_5/ORS1_Produkttypsteckbriefe_20160719.zip) |
+| 1.0.* (Master-Branch)          | [ORS 1.5](http://www.gematik.de/cms/de/spezifikation/release_1_5_ors1/release_1_5.jsp) | [2016-07-19](http://www.gematik.de/cms/media/dokumente/ors1_release_1_5/ORS1_Produkttypsteckbriefe_20160719.zip) |
 
 ## Hinweise für Nutzer der gematik-specifications
 
