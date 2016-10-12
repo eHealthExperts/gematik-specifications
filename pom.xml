@@ -13,7 +13,7 @@
 
   <groupId>de.ehex.foss</groupId>
   <artifactId>gematik-specifications</artifactId>
-  <version>1.5.20160719-SNAPSHOT</version>
+  <version>1.0.1</version>
 
   <name>eHealthExperts' FOOS gematik specifications</name>
   <description>This project provides the eHealthExperts-related, commonly used gematik specifications (AFOs, Specs, PTStBs, etc.).</description>
@@ -254,7 +254,7 @@
           <execution>
             <id>attach-sources</id>
             <goals>
-              <goal>jar</goal>
+              <goal>jar-no-fork</goal>
             </goals>
           </execution>
         </executions>
