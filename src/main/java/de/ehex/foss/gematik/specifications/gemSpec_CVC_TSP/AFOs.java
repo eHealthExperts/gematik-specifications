@@ -7,7 +7,7 @@ import de.ehex.foss.gematik.specifications.AFO;
 import de.ehex.foss.gematik.specifications.AFOType;
 
 /**
- * Enumeration of all &ndash;&nbsp;currently considered&nbsp;&ndash; {@link AFO}s of {@code [gemRL_TSL_SP_CP]}.
+ * Enumeration of all &ndash;&nbsp;currently considered&nbsp;&ndash; {@link AFO}s of {@code [gemSpec_CVC_TSP]}.
  *
  * @author Anastasiya Zuyeva
  * @since October 18th, 2016

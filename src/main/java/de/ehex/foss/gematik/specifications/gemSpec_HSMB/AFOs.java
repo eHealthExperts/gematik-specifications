@@ -7,7 +7,7 @@ import de.ehex.foss.gematik.specifications.AFO;
 import de.ehex.foss.gematik.specifications.AFOType;
 
 /**
- * Enumeration of all &ndash;&nbsp;currently considered&nbsp;&ndash; {@link AFO}s of {@code [gemSpec_FD_KOMLE]}.
+ * Enumeration of all &ndash;&nbsp;currently considered&nbsp;&ndash; {@link AFO}s of {@code [gemSpec_HSM-B]}.
  *
  * @author Anastasiya Zuyeva
  * @since October 18th, 2016
