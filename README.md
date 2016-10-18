@@ -10,6 +10,7 @@ Dieses 2016 durch die [eHealth Experts GmbH](http://www.ehealthexperts.de) initi
 
 Die Versionsnummern der einzelnen Releases referenzieren einen jeweiligen Stand eines gematik-Releases.
 - Die Major-Nummer **1** zeigt den Bezug zum gematik Release 1.5 ORS1 mit Basis-Rollout – Erprobung und Produktivbetrieb.
+  Die Major-Nummer **2** zeigt den Bezug zum gematik Release 1.6 Online-Produktivbetrieb (Stufe 1) - OPB1.
 - Jede Minor-Nummer bezieht sich auf einen bestimmten Dokumentenstand der Produkttypsteckbriefe. Exemplarisch steht **1.0** für eine Umsetzung der ORS-1.5-Dokumente vom 19. Juli 2016.
 - Die Patch-Nummer repräsentiert den Programmierumfang des Projekts und kann den jeweiligen Release-Notes entnommen werden. 
 
