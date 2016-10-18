@@ -56,6 +56,10 @@ public enum AFOs implements AFO {
     // TODO: AFO-Typ klären derzeit implizit MUSS-AFO
     GS_A_4599("GS-A_4599", "Umsetzung Zertifikatsprofil C.CH.ENCV"),
 
+    GS_A_4621("GS-A_4621", "Zugriffsprofil von HBA und SM-B (SMC-B, HSM-B)"),
+
+    GS_A_4624("GS-A_4624", "Zugriffsprofil einer SM-B"),
+
     GS_A_4637("GS-A_4637", "TUCs, Durchführung Fehlerüberprüfung"),
 
     // TODO: AFO-Typ klären derzeit implizit MUSS-AFO
@@ -101,6 +105,8 @@ public enum AFOs implements AFO {
     GS_A_4662("GS-A_4662", "Bedingungen für TLS-Handshake"),
 
     GS_A_4663("GS-A_4663", "Zertifikats-Prüfparameter für den TLS-Aufbau"),
+
+    GS_A_4668("GS-A_4668", "Prüfung der mathematischen Korrektheit bei CV-Zertifikaten der Generation G1"),
 
     GS_A_4669("GS-A_4669", "Umsetzung Statusprüfdienst"),
 
@@ -244,21 +250,7 @@ public enum AFOs implements AFO {
 
     GS_A_4957("GS-A_4957", "Beschränkung Anzahl Zertifikate je OCSP-Request", MUST_NOT),
 
-    GS_A_5077("GS-A_5077", "FQDN-Prüfung beim TLS-Aufbau"),
-
-    GS_A_5090("GS-A_5090", "Statusprüfdienst - Keine Angabe von Sperrgründen"),
-
-    GS_A_5215("GS-A_5215", "Festlegung der zeitlichen Toleranzen in einer OCSP-Response"),
-
     GS_A_4974("GS-A_4974", "CV-Ausstattung von Smartcards der TI"),
-
-    GS_A_4621("GS-A_4621", "Zugriffsprofil von HBA und SM-B (SMC-B, HSM-B)"),
-
-    GS_A_5126("GS-A_5126", "Zugriffsprofil einer gSMC-KT"),
-
-    GS_A_4624("GS-A_4624", "Zugriffsprofil einer SM-B"),
-
-    GS_A_4668("GS-A_4668", "Prüfung der mathematischen Korrektheit bei CV-Zertifikaten der Generation G1"),
 
     GS_A_5009("GS-A_5009", "Prüfung der mathematischen Korrektheit von CV-Zertifikate der Generation 2"),
 
@@ -267,6 +259,14 @@ public enum AFOs implements AFO {
     GS_A_5011("GS-A_5011", "Prüfung der Gültigkeit von CV-Zertifikaten der Generation G2"),
 
     GS_A_5012("GS-A_5012", "Prüfung von CV-Zertifikaten der Generation 2 "),
+
+    GS_A_5077("GS-A_5077", "FQDN-Prüfung beim TLS-Aufbau"),
+
+    GS_A_5090("GS-A_5090", "Statusprüfdienst - Keine Angabe von Sperrgründen"),
+
+    GS_A_5126("GS-A_5126", "Zugriffsprofil einer gSMC-KT"),
+
+    GS_A_5215("GS-A_5215", "Festlegung der zeitlichen Toleranzen in einer OCSP-Response"),
 
     @AfoHistory(documentVersion = "gemSpec_PKI_V1.8.0", description = "Aus OPB1-Paket - Stand 10.05.2016")
     GS_A_5336("GS-A_5336", "Zertifikatsprüfung nach Ablauf TSL-Graceperiod"),

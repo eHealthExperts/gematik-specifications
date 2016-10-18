@@ -495,13 +495,13 @@ public enum AFOs implements AFO {
     GS_A_4933("GS-A_4933", "CP-Test, Zertifikatsprofile für Testzertifikate"),
 
     // TODO: AFO-Typ klären derzeit implizit MUSS-AFO
+    GS_A_5020("GS-A_5020", "Einbringung des Komponentenzertifikats durch den Kartenherausgeber"),
+
+    // TODO: AFO-Typ klären derzeit implizit MUSS-AFO
     GS_A_5083("GS-A_5083", "Zertifikatsantragstellung im Vier-Augen-Prinzip"),
 
     // TODO: AFO-Typ klären derzeit implizit MUSS-AFO
     GS_A_5084("GS-A_5084", "Zugang zu HSM-Systemen im Vier-Augen-Prinzip"),
-
-    // TODO: AFO-Typ klären derzeit implizit MUSS-AFO
-    GS_A_5020("GS-A_5020", "Einbringung des Komponentenzertifikats durch den Kartenherausgeber"),
 
     ;
 

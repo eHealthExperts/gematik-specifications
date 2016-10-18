@@ -23,6 +23,8 @@ public enum AFOs implements AFO {
     // TODO: AFO-Typ klären derzeit implizit MUSS-AFO
     GS_A_3697("GS-A_3697", "Anlass der Erhöhung von Versionsnummern"),
 
+    GS_A_3700("GS-A_3700", "Versionierung von Produkten auf Basis von dezentralen Produkttypen der TI-Plattform durch die Produktidentifikation"),
+
     GS_A_3702("GS-A_3702", "Inhalt der Selbstauskunft von Produkten außer Karten"),
 
     GS_A_3796("GS-A_3796", "Transport Fehlermeldungen als gematik-SOAP-Fault"),
@@ -56,6 +58,8 @@ public enum AFOs implements AFO {
     // TODO: AFO-Typ klären derzeit implizit MUSS-AFO
     GS_A_4864("GS-A_4864", "Logging-Vorgaben nach dem Übergang zum Wirkbetrieb"),
 
+    GS_A_4941("GS-A_4941", "Betriebsdokumentation der dezentralen Produkte der TIPlattform"),
+
     // TODO: AFO-Typ klären derzeit implizit MUSS-AFO
     GS_A_5018("GS-A_5018", "Sicherheitsrelevanter Fehler an organisatorischen Schnittstellen"),
 
@@ -77,11 +81,6 @@ public enum AFOs implements AFO {
 
     // TODO: AFO-Typ klären derzeit implizit MUSS-AFO
     GS_A_5252("GS-A_5252", "Generische Fehlermeldungen außerhalb von WebServices"),
-
-    GS_A_4941("GS-A_4941", "Betriebsdokumentation der dezentralen Produkte der TIPlattform"),
-
-    GS_A_3700("GS-A_3700", "Versionierung von Produkten auf Basis von dezentralen Produkttypen der TI-Plattform durch die Produktidentifikation"),
-
 
     ;
 
