@@ -9,8 +9,8 @@ import de.ehex.foss.gematik.specifications.AFOType;
 /**
  * Enumeration of all &ndash;&nbsp;currently considered&nbsp;&ndash; {@link AFO}s of {@code [gemRL_TSL_SP_CP]}.
  *
- * @author Stefan Gasterst&auml;dt
- * @since September 21st, 2016
+ * @author Anastasiya Zuyeva
+ * @since October 18th, 2016
  */
 public enum AFOs implements AFO {
 
