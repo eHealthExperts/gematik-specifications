@@ -124,7 +124,7 @@ public enum AFOs implements AFO {
     TIP1_A_6241("TIP1-A_6241", "Umsetzung des Kommandos „Internal Authenticate“"),
     TIP1_A_6242("TIP1-A_6242", "Unterstützte „Internal Authenticate“-Varianten"),
     TIP1_A_6243("TIP1-A_6243", "TUC_HSM-B_017 „Internal Authenticate“"),
-    TIP1_A_6244("TIP1A_6244", "Umsetzung des Kommandos „External Authenticate“"),
+    TIP1_A_6244("TIP1-A_6244", "Umsetzung des Kommandos „External Authenticate“"),
     TIP1_A_6245("TIP1-A_6245", "Unterstützte „External Authenticate“-Varianten"),
     TIP1_A_6246("TIP1-A_6246", "TUC_HSM-B_018 „External Authenticate“"),
     TIP1_A_6247("TIP1-A_6247", "Umsetzung des Kommandos „Get Challenge“"),
