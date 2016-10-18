@@ -7,22 +7,33 @@ import de.ehex.foss.gematik.specifications.AFO;
 import de.ehex.foss.gematik.specifications.AFOType;
 
 /**
- * Enumeration of all &ndash;&nbsp;currently considered&nbsp;&ndash; {@link AFO}s of {@code [gemRL_TSL_SP_CP]}.
+ * Enumeration of all &ndash;&nbsp;currently considered&nbsp;&ndash; {@link AFO}s of {@code [gemSpec_CVC_TSP]}.
  *
- * @author Stefan Gasterst&auml;dt
- * @since September 21st, 2016
+ * @author Anastasiya Zuyeva
+ * @since October 18th, 2016
  */
 public enum AFOs implements AFO {
 
     // TODO: AFO-Typ klären derzeit implizit MUSS-AFO
     TIP1_A_2575("TIP1-A_2575", "Zugelassenes Zugriffsprofil im CV-Rollen-Zertifikat"),
-    TIP1_A_2576("TIP1-A_2576", "Zugelassenes Zugriffsprofil im CV-Geräte-Zertifikat"),
-    TIP1_A_2578("TIP1-A_2578", "Korrekte ICCSN der Chipkarte"),
-    TIP1_A_2579("TIP1-A_2579", "Korrekter privater Schlüssel in der Chipkarte"),
-    TIP1_A_2586("TIP1-A_2586", "Personalisierung von CV-Zertifikaten für ein Sicherheitsmodul vom Typ B"),
-    TIP1_A_2588("TIP1-A_2588", "Personalisierung des öffentlichen Root-Schlüssels"),
-    TIP1_A_2589("TIP1-A_2589", "Personalisierung des CVC-CA-Zertifikats"),
 
+    // TODO: AFO-Typ klären derzeit implizit MUSS-AFO
+    TIP1_A_2576("TIP1-A_2576", "Zugelassenes Zugriffsprofil im CV-Geräte-Zertifikat"),
+
+    // TODO: AFO-Typ klären derzeit implizit MUSS-AFO
+    TIP1_A_2578("TIP1-A_2578", "Korrekte ICCSN der Chipkarte"),
+
+    // TODO: AFO-Typ klären derzeit implizit MUSS-AFO
+    TIP1_A_2579("TIP1-A_2579", "Korrekter privater Schlüssel in der Chipkarte"),
+
+    // TODO: AFO-Typ klären derzeit implizit MUSS-AFO
+    TIP1_A_2586("TIP1-A_2586", "Personalisierung von CV-Zertifikaten für ein Sicherheitsmodul vom Typ B"),
+
+    // TODO: AFO-Typ klären derzeit implizit MUSS-AFO
+    TIP1_A_2588("TIP1-A_2588", "Personalisierung des öffentlichen Root-Schlüssels"),
+
+    // TODO: AFO-Typ klären derzeit implizit MUSS-AFO
+    TIP1_A_2589("TIP1-A_2589", "Personalisierung des CVC-CA-Zertifikats"),
 
     ;
 

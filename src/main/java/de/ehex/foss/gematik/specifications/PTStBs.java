@@ -1,41 +1,751 @@
 package de.ehex.foss.gematik.specifications;
 
-
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
-
-import static de.ehex.foss.gematik.specifications.gemKPT_Test_ORS1.AFOs.*;
+import static de.ehex.foss.gematik.specifications.gemKPT_Test_ORS1.AFOs.KOM_LE_A_2234;
+import static de.ehex.foss.gematik.specifications.gemKPT_Test_ORS1.AFOs.KOM_LE_A_2238;
+import static de.ehex.foss.gematik.specifications.gemKPT_Test_ORS1.AFOs.KOM_LE_A_2239;
+import static de.ehex.foss.gematik.specifications.gemKPT_Test_ORS1.AFOs.KOM_LE_A_2241;
+import static de.ehex.foss.gematik.specifications.gemKPT_Test_ORS1.AFOs.KOM_LE_A_2242;
+import static de.ehex.foss.gematik.specifications.gemKPT_Test_ORS1.AFOs.KOM_LE_A_2244;
+import static de.ehex.foss.gematik.specifications.gemKPT_Test_ORS1.AFOs.KOM_LE_A_2245;
+import static de.ehex.foss.gematik.specifications.gemKPT_Test_ORS1.AFOs.KOM_LE_A_2247;
+import static de.ehex.foss.gematik.specifications.gemKPT_Test_ORS1.AFOs.KOM_LE_A_2250;
+import static de.ehex.foss.gematik.specifications.gemKPT_Test_ORS1.AFOs.KOM_LE_A_2251;
+import static de.ehex.foss.gematik.specifications.gemKPT_Test_ORS1.AFOs.KOM_LE_A_2252;
+import static de.ehex.foss.gematik.specifications.gemKPT_Test_ORS1.AFOs.KOM_LE_A_2254;
+import static de.ehex.foss.gematik.specifications.gemKPT_Test_ORS1.AFOs.KOM_LE_A_2255;
+import static de.ehex.foss.gematik.specifications.gemKPT_Test_ORS1.AFOs.KOM_LE_A_2257;
+import static de.ehex.foss.gematik.specifications.gemKPT_Test_ORS1.AFOs.KOM_LE_A_2260;
+import static de.ehex.foss.gematik.specifications.gemKPT_Test_ORS1.AFOs.KOM_LE_A_2261;
+import static de.ehex.foss.gematik.specifications.gemKPT_Test_ORS1.AFOs.KOM_LE_A_2265;
+import static de.ehex.foss.gematik.specifications.gemKPT_Test_ORS1.AFOs.KOM_LE_A_2268;
+import static de.ehex.foss.gematik.specifications.gemKPT_Test_ORS1.AFOs.TIP1_A_2730;
+import static de.ehex.foss.gematik.specifications.gemKPT_Test_ORS1.AFOs.TIP1_A_2769;
+import static de.ehex.foss.gematik.specifications.gemKPT_Test_ORS1.AFOs.TIP1_A_2781;
+import static de.ehex.foss.gematik.specifications.gemKPT_Test_ORS1.AFOs.TIP1_A_2805;
+import static de.ehex.foss.gematik.specifications.gemKPT_Test_ORS1.AFOs.TIP1_A_2820;
+import static de.ehex.foss.gematik.specifications.gemKPT_Test_ORS1.AFOs.TIP1_A_3202;
+import static de.ehex.foss.gematik.specifications.gemKPT_Test_ORS1.AFOs.TIP1_A_3212;
+import static de.ehex.foss.gematik.specifications.gemKPT_Test_ORS1.AFOs.TIP1_A_4121;
+import static de.ehex.foss.gematik.specifications.gemKPT_Test_ORS1.AFOs.TIP1_A_4122;
+import static de.ehex.foss.gematik.specifications.gemKPT_Test_ORS1.AFOs.TIP1_A_4126;
+import static de.ehex.foss.gematik.specifications.gemKPT_Test_ORS1.AFOs.TIP1_A_4127;
+import static de.ehex.foss.gematik.specifications.gemKPT_Test_ORS1.AFOs.TIP1_A_4132;
+import static de.ehex.foss.gematik.specifications.gemKPT_Test_ORS1.AFOs.TIP1_A_4133;
+import static de.ehex.foss.gematik.specifications.gemKPT_Test_ORS1.AFOs.TIP1_A_4149;
+import static de.ehex.foss.gematik.specifications.gemKPT_Test_ORS1.AFOs.TIP1_A_4157;
+import static de.ehex.foss.gematik.specifications.gemKPT_Test_ORS1.AFOs.TIP1_A_4158;
+import static de.ehex.foss.gematik.specifications.gemKPT_Test_ORS1.AFOs.TIP1_A_4911;
+import static de.ehex.foss.gematik.specifications.gemKPT_Test_ORS1.AFOs.TIP1_A_4912;
+import static de.ehex.foss.gematik.specifications.gemKPT_Test_ORS1.AFOs.TIP1_A_4913;
+import static de.ehex.foss.gematik.specifications.gemKPT_Test_ORS1.AFOs.TIP1_A_4914;
+import static de.ehex.foss.gematik.specifications.gemKPT_Test_ORS1.AFOs.TIP1_A_4915;
+import static de.ehex.foss.gematik.specifications.gemKPT_Test_ORS1.AFOs.TIP1_A_4916;
+import static de.ehex.foss.gematik.specifications.gemKPT_Test_ORS1.AFOs.TIP1_A_4918;
+import static de.ehex.foss.gematik.specifications.gemKPT_Test_ORS1.AFOs.TIP1_A_4919;
+import static de.ehex.foss.gematik.specifications.gemKPT_Test_ORS1.AFOs.TIP1_A_4920;
+import static de.ehex.foss.gematik.specifications.gemKPT_Test_ORS1.AFOs.TIP1_A_4929;
+import static de.ehex.foss.gematik.specifications.gemKPT_Test_ORS1.AFOs.TIP1_A_4932;
+import static de.ehex.foss.gematik.specifications.gemKPT_Test_ORS1.AFOs.TIP1_A_5052;
+import static de.ehex.foss.gematik.specifications.gemKPT_Test_ORS1.AFOs.TIP1_A_5060;
+import static de.ehex.foss.gematik.specifications.gemKPT_Test_ORS1.AFOs.TIP1_A_5061;
+import static de.ehex.foss.gematik.specifications.gemKPT_Test_ORS1.AFOs.TIP1_A_5062;
+import static de.ehex.foss.gematik.specifications.gemKPT_Test_ORS1.AFOs.VSDM_A_2797;
+import static de.ehex.foss.gematik.specifications.gemKPT_Test_ORS1.AFOs.VSDM_A_2799;
+import static de.ehex.foss.gematik.specifications.gemKPT_Test_ORS1.AFOs.VSDM_A_2800;
+import static de.ehex.foss.gematik.specifications.gemKPT_Test_ORS1.AFOs.VSDM_A_2802;
+import static de.ehex.foss.gematik.specifications.gemKPT_Test_ORS1.AFOs.VSDM_A_2803;
+import static de.ehex.foss.gematik.specifications.gemKPT_Test_ORS1.AFOs.VSDM_A_2812;
+import static de.ehex.foss.gematik.specifications.gemKPT_Test_ORS1.AFOs.VSDM_A_2813;
+import static de.ehex.foss.gematik.specifications.gemKPT_Test_ORS1.AFOs.VSDM_A_2814;
+import static de.ehex.foss.gematik.specifications.gemKPT_Test_ORS1.AFOs.VSDM_A_2815;
+import static de.ehex.foss.gematik.specifications.gemKPT_Test_ORS1.AFOs.VSDM_A_2824;
+import static de.ehex.foss.gematik.specifications.gemKPT_Test_ORS1.AFOs.VSDM_A_2825;
+import static de.ehex.foss.gematik.specifications.gemKPT_Test_ORS1.AFOs.VSDM_A_2826;
+import static de.ehex.foss.gematik.specifications.gemKPT_Test_ORS1.AFOs.VSDM_A_2827;
+import static de.ehex.foss.gematik.specifications.gemKPT_Test_ORS1.AFOs.VSDM_A_2828;
+import static de.ehex.foss.gematik.specifications.gemKPT_Test_ORS1.AFOs.VSDM_A_2829;
+import static de.ehex.foss.gematik.specifications.gemKPT_Test_ORS1.AFOs.VSDM_A_2830;
+import static de.ehex.foss.gematik.specifications.gemKPT_Test_ORS1.AFOs.VSDM_A_2831;
+import static de.ehex.foss.gematik.specifications.gemKPT_Test_ORS1.AFOs.VSDM_A_2832;
+import static de.ehex.foss.gematik.specifications.gemKPT_Test_ORS1.AFOs.VSDM_A_2845;
+import static de.ehex.foss.gematik.specifications.gemKPT_Test_ORS1.AFOs.VSDM_A_2846;
+import static de.ehex.foss.gematik.specifications.gemKPT_Test_ORS1.AFOs.VSDM_A_2853;
+import static de.ehex.foss.gematik.specifications.gemKPT_Test_ORS1.AFOs.VSDM_A_2854;
+import static de.ehex.foss.gematik.specifications.gemKPT_Test_ORS1.AFOs.VSDM_A_2858;
+import static de.ehex.foss.gematik.specifications.gemKPT_Test_ORS1.AFOs.VSDM_A_2862;
+import static de.ehex.foss.gematik.specifications.gemKPT_Test_ORS1.AFOs.VSDM_A_2912;
+import static de.ehex.foss.gematik.specifications.gemKPT_Test_ORS1.AFOs.VSDM_A_2913;
+import static de.ehex.foss.gematik.specifications.gemKPT_Test_ORS1.AFOs.VSDM_A_2914;
+import static de.ehex.foss.gematik.specifications.gemKPT_Test_ORS1.AFOs.VSDM_A_2915;
+import static de.ehex.foss.gematik.specifications.gemKPT_Test_ORS1.AFOs.VSDM_A_2916;
+import static de.ehex.foss.gematik.specifications.gemKPT_Test_ORS1.AFOs.VSDM_A_2917;
+import static de.ehex.foss.gematik.specifications.gemKPT_Test_ORS1.AFOs.VSDM_A_2918;
+import static de.ehex.foss.gematik.specifications.gemKPT_Test_ORS1.AFOs.VSDM_A_2919;
+import static de.ehex.foss.gematik.specifications.gemKPT_Test_ORS1.AFOs.VSDM_A_2920;
+import static de.ehex.foss.gematik.specifications.gemKPT_Test_ORS1.AFOs.VSDM_A_2921;
+import static de.ehex.foss.gematik.specifications.gemKPT_Test_ORS1.AFOs.VSDM_A_2922;
+import static de.ehex.foss.gematik.specifications.gemKPT_Test_ORS1.AFOs.VSDM_A_2923;
 import static de.ehex.foss.gematik.specifications.gemRL_Betr_TI.AFOs.*;
 import static de.ehex.foss.gematik.specifications.gemRL_TSL_SP_CP.AFOs.*;
-import static de.ehex.foss.gematik.specifications.gemSMIME_KOMLE.AFOs.*;
-import static de.ehex.foss.gematik.specifications.gemSpec_CM_KOMLE.AFOs.*;
-import static de.ehex.foss.gematik.specifications.gemSpec_CVC_TSP.AFOs.*;
-import static de.ehex.foss.gematik.specifications.gemSpec_DSM.AFOs.*;
-import static de.ehex.foss.gematik.specifications.gemSpec_FD_KOMLE.AFOs.*;
-import static de.ehex.foss.gematik.specifications.gemSpec_HSMB.AFOs.*;
-import static de.ehex.foss.gematik.specifications.gemSpec_ISM.AFOs.*;
-import static de.ehex.foss.gematik.specifications.gemSpec_Intermediär_VSDM.AFOs.*;
-import static de.ehex.foss.gematik.specifications.gemSpec_Kon.AFOs.*;
-import static de.ehex.foss.gematik.specifications.gemSpec_Krypt.AFOs.*;
-import static de.ehex.foss.gematik.specifications.gemSpec_Net.AFOs.*;
-import static de.ehex.foss.gematik.specifications.gemSpec_OID.AFOs.*;
-import static de.ehex.foss.gematik.specifications.gemSpec_OM.AFOs.*;
+import static de.ehex.foss.gematik.specifications.gemSMIME_KOMLE.AFOs.KOM_LE_A_2095;
+import static de.ehex.foss.gematik.specifications.gemSMIME_KOMLE.AFOs.KOM_LE_A_2096;
+import static de.ehex.foss.gematik.specifications.gemSMIME_KOMLE.AFOs.KOM_LE_A_2097;
+import static de.ehex.foss.gematik.specifications.gemSMIME_KOMLE.AFOs.KOM_LE_A_2098;
+import static de.ehex.foss.gematik.specifications.gemSMIME_KOMLE.AFOs.KOM_LE_A_2099;
+import static de.ehex.foss.gematik.specifications.gemSMIME_KOMLE.AFOs.KOM_LE_A_2100;
+import static de.ehex.foss.gematik.specifications.gemSMIME_KOMLE.AFOs.KOM_LE_A_2101;
+import static de.ehex.foss.gematik.specifications.gemSMIME_KOMLE.AFOs.KOM_LE_A_2102;
+import static de.ehex.foss.gematik.specifications.gemSMIME_KOMLE.AFOs.KOM_LE_A_2103;
+import static de.ehex.foss.gematik.specifications.gemSMIME_KOMLE.AFOs.KOM_LE_A_2104;
+import static de.ehex.foss.gematik.specifications.gemSMIME_KOMLE.AFOs.KOM_LE_A_2106;
+import static de.ehex.foss.gematik.specifications.gemSMIME_KOMLE.AFOs.KOM_LE_A_2107;
+import static de.ehex.foss.gematik.specifications.gemSMIME_KOMLE.AFOs.KOM_LE_A_2108;
+import static de.ehex.foss.gematik.specifications.gemSMIME_KOMLE.AFOs.KOM_LE_A_2109;
+import static de.ehex.foss.gematik.specifications.gemSMIME_KOMLE.AFOs.KOM_LE_A_2111;
+import static de.ehex.foss.gematik.specifications.gemSMIME_KOMLE.AFOs.KOM_LE_A_2112;
+import static de.ehex.foss.gematik.specifications.gemSMIME_KOMLE.AFOs.KOM_LE_A_2114;
+import static de.ehex.foss.gematik.specifications.gemSMIME_KOMLE.AFOs.KOM_LE_A_2115;
+import static de.ehex.foss.gematik.specifications.gemSMIME_KOMLE.AFOs.KOM_LE_A_2116;
+import static de.ehex.foss.gematik.specifications.gemSMIME_KOMLE.AFOs.KOM_LE_A_2117;
+import static de.ehex.foss.gematik.specifications.gemSMIME_KOMLE.AFOs.KOM_LE_A_2118;
+import static de.ehex.foss.gematik.specifications.gemSMIME_KOMLE.AFOs.KOM_LE_A_2119;
+import static de.ehex.foss.gematik.specifications.gemSMIME_KOMLE.AFOs.KOM_LE_A_2121;
+import static de.ehex.foss.gematik.specifications.gemSMIME_KOMLE.AFOs.KOM_LE_A_2122;
+import static de.ehex.foss.gematik.specifications.gemSMIME_KOMLE.AFOs.KOM_LE_A_2123;
+import static de.ehex.foss.gematik.specifications.gemSMIME_KOMLE.AFOs.KOM_LE_A_2124;
+import static de.ehex.foss.gematik.specifications.gemSMIME_KOMLE.AFOs.KOM_LE_A_2125;
+import static de.ehex.foss.gematik.specifications.gemSMIME_KOMLE.AFOs.KOM_LE_A_2126;
+import static de.ehex.foss.gematik.specifications.gemSMIME_KOMLE.AFOs.KOM_LE_A_2127;
+import static de.ehex.foss.gematik.specifications.gemSMIME_KOMLE.AFOs.KOM_LE_A_2128;
+import static de.ehex.foss.gematik.specifications.gemSMIME_KOMLE.AFOs.KOM_LE_A_2129;
+import static de.ehex.foss.gematik.specifications.gemSpec_CM_KOMLE.AFOs.KOM_LE_A_2003;
+import static de.ehex.foss.gematik.specifications.gemSpec_CM_KOMLE.AFOs.KOM_LE_A_2004;
+import static de.ehex.foss.gematik.specifications.gemSpec_CM_KOMLE.AFOs.KOM_LE_A_2005;
+import static de.ehex.foss.gematik.specifications.gemSpec_CM_KOMLE.AFOs.KOM_LE_A_2006;
+import static de.ehex.foss.gematik.specifications.gemSpec_CM_KOMLE.AFOs.KOM_LE_A_2007;
+import static de.ehex.foss.gematik.specifications.gemSpec_CM_KOMLE.AFOs.KOM_LE_A_2008;
+import static de.ehex.foss.gematik.specifications.gemSpec_CM_KOMLE.AFOs.KOM_LE_A_2009;
+import static de.ehex.foss.gematik.specifications.gemSpec_CM_KOMLE.AFOs.KOM_LE_A_2010;
+import static de.ehex.foss.gematik.specifications.gemSpec_CM_KOMLE.AFOs.KOM_LE_A_2011;
+import static de.ehex.foss.gematik.specifications.gemSpec_CM_KOMLE.AFOs.KOM_LE_A_2012;
+import static de.ehex.foss.gematik.specifications.gemSpec_CM_KOMLE.AFOs.KOM_LE_A_2013;
+import static de.ehex.foss.gematik.specifications.gemSpec_CM_KOMLE.AFOs.KOM_LE_A_2014;
+import static de.ehex.foss.gematik.specifications.gemSpec_CM_KOMLE.AFOs.KOM_LE_A_2015;
+import static de.ehex.foss.gematik.specifications.gemSpec_CM_KOMLE.AFOs.KOM_LE_A_2016;
+import static de.ehex.foss.gematik.specifications.gemSpec_CM_KOMLE.AFOs.KOM_LE_A_2017;
+import static de.ehex.foss.gematik.specifications.gemSpec_CM_KOMLE.AFOs.KOM_LE_A_2018;
+import static de.ehex.foss.gematik.specifications.gemSpec_CM_KOMLE.AFOs.KOM_LE_A_2019;
+import static de.ehex.foss.gematik.specifications.gemSpec_CM_KOMLE.AFOs.KOM_LE_A_2020;
+import static de.ehex.foss.gematik.specifications.gemSpec_CM_KOMLE.AFOs.KOM_LE_A_2021;
+import static de.ehex.foss.gematik.specifications.gemSpec_CM_KOMLE.AFOs.KOM_LE_A_2022;
+import static de.ehex.foss.gematik.specifications.gemSpec_CM_KOMLE.AFOs.KOM_LE_A_2023;
+import static de.ehex.foss.gematik.specifications.gemSpec_CM_KOMLE.AFOs.KOM_LE_A_2024;
+import static de.ehex.foss.gematik.specifications.gemSpec_CM_KOMLE.AFOs.KOM_LE_A_2025;
+import static de.ehex.foss.gematik.specifications.gemSpec_CM_KOMLE.AFOs.KOM_LE_A_2026;
+import static de.ehex.foss.gematik.specifications.gemSpec_CM_KOMLE.AFOs.KOM_LE_A_2027;
+import static de.ehex.foss.gematik.specifications.gemSpec_CM_KOMLE.AFOs.KOM_LE_A_2028;
+import static de.ehex.foss.gematik.specifications.gemSpec_CM_KOMLE.AFOs.KOM_LE_A_2029;
+import static de.ehex.foss.gematik.specifications.gemSpec_CM_KOMLE.AFOs.KOM_LE_A_2030;
+import static de.ehex.foss.gematik.specifications.gemSpec_CM_KOMLE.AFOs.KOM_LE_A_2031;
+import static de.ehex.foss.gematik.specifications.gemSpec_CM_KOMLE.AFOs.KOM_LE_A_2032;
+import static de.ehex.foss.gematik.specifications.gemSpec_CM_KOMLE.AFOs.KOM_LE_A_2033;
+import static de.ehex.foss.gematik.specifications.gemSpec_CM_KOMLE.AFOs.KOM_LE_A_2034;
+import static de.ehex.foss.gematik.specifications.gemSpec_CM_KOMLE.AFOs.KOM_LE_A_2035;
+import static de.ehex.foss.gematik.specifications.gemSpec_CM_KOMLE.AFOs.KOM_LE_A_2036;
+import static de.ehex.foss.gematik.specifications.gemSpec_CM_KOMLE.AFOs.KOM_LE_A_2037;
+import static de.ehex.foss.gematik.specifications.gemSpec_CM_KOMLE.AFOs.KOM_LE_A_2038;
+import static de.ehex.foss.gematik.specifications.gemSpec_CM_KOMLE.AFOs.KOM_LE_A_2039;
+import static de.ehex.foss.gematik.specifications.gemSpec_CM_KOMLE.AFOs.KOM_LE_A_2040;
+import static de.ehex.foss.gematik.specifications.gemSpec_CM_KOMLE.AFOs.KOM_LE_A_2041;
+import static de.ehex.foss.gematik.specifications.gemSpec_CM_KOMLE.AFOs.KOM_LE_A_2042;
+import static de.ehex.foss.gematik.specifications.gemSpec_CM_KOMLE.AFOs.KOM_LE_A_2043;
+import static de.ehex.foss.gematik.specifications.gemSpec_CM_KOMLE.AFOs.KOM_LE_A_2044;
+import static de.ehex.foss.gematik.specifications.gemSpec_CM_KOMLE.AFOs.KOM_LE_A_2045;
+import static de.ehex.foss.gematik.specifications.gemSpec_CM_KOMLE.AFOs.KOM_LE_A_2046;
+import static de.ehex.foss.gematik.specifications.gemSpec_CM_KOMLE.AFOs.KOM_LE_A_2047;
+import static de.ehex.foss.gematik.specifications.gemSpec_CM_KOMLE.AFOs.KOM_LE_A_2048;
+import static de.ehex.foss.gematik.specifications.gemSpec_CM_KOMLE.AFOs.KOM_LE_A_2049;
+import static de.ehex.foss.gematik.specifications.gemSpec_CM_KOMLE.AFOs.KOM_LE_A_2050;
+import static de.ehex.foss.gematik.specifications.gemSpec_CM_KOMLE.AFOs.KOM_LE_A_2052;
+import static de.ehex.foss.gematik.specifications.gemSpec_CM_KOMLE.AFOs.KOM_LE_A_2057;
+import static de.ehex.foss.gematik.specifications.gemSpec_CM_KOMLE.AFOs.KOM_LE_A_2058;
+import static de.ehex.foss.gematik.specifications.gemSpec_CM_KOMLE.AFOs.KOM_LE_A_2059;
+import static de.ehex.foss.gematik.specifications.gemSpec_CM_KOMLE.AFOs.KOM_LE_A_2060;
+import static de.ehex.foss.gematik.specifications.gemSpec_CM_KOMLE.AFOs.KOM_LE_A_2061;
+import static de.ehex.foss.gematik.specifications.gemSpec_CM_KOMLE.AFOs.KOM_LE_A_2062;
+import static de.ehex.foss.gematik.specifications.gemSpec_CM_KOMLE.AFOs.KOM_LE_A_2063;
+import static de.ehex.foss.gematik.specifications.gemSpec_CM_KOMLE.AFOs.KOM_LE_A_2064;
+import static de.ehex.foss.gematik.specifications.gemSpec_CM_KOMLE.AFOs.KOM_LE_A_2065;
+import static de.ehex.foss.gematik.specifications.gemSpec_CM_KOMLE.AFOs.KOM_LE_A_2066;
+import static de.ehex.foss.gematik.specifications.gemSpec_CM_KOMLE.AFOs.KOM_LE_A_2067;
+import static de.ehex.foss.gematik.specifications.gemSpec_CM_KOMLE.AFOs.KOM_LE_A_2069;
+import static de.ehex.foss.gematik.specifications.gemSpec_CM_KOMLE.AFOs.KOM_LE_A_2070;
+import static de.ehex.foss.gematik.specifications.gemSpec_CM_KOMLE.AFOs.KOM_LE_A_2071;
+import static de.ehex.foss.gematik.specifications.gemSpec_CM_KOMLE.AFOs.KOM_LE_A_2072;
+import static de.ehex.foss.gematik.specifications.gemSpec_CM_KOMLE.AFOs.KOM_LE_A_2074;
+import static de.ehex.foss.gematik.specifications.gemSpec_CM_KOMLE.AFOs.KOM_LE_A_2075;
+import static de.ehex.foss.gematik.specifications.gemSpec_CM_KOMLE.AFOs.KOM_LE_A_2076;
+import static de.ehex.foss.gematik.specifications.gemSpec_CM_KOMLE.AFOs.KOM_LE_A_2077;
+import static de.ehex.foss.gematik.specifications.gemSpec_CM_KOMLE.AFOs.KOM_LE_A_2079;
+import static de.ehex.foss.gematik.specifications.gemSpec_CM_KOMLE.AFOs.KOM_LE_A_2080;
+import static de.ehex.foss.gematik.specifications.gemSpec_CM_KOMLE.AFOs.KOM_LE_A_2081;
+import static de.ehex.foss.gematik.specifications.gemSpec_CM_KOMLE.AFOs.KOM_LE_A_2082;
+import static de.ehex.foss.gematik.specifications.gemSpec_CM_KOMLE.AFOs.KOM_LE_A_2083;
+import static de.ehex.foss.gematik.specifications.gemSpec_CM_KOMLE.AFOs.KOM_LE_A_2084;
+import static de.ehex.foss.gematik.specifications.gemSpec_CM_KOMLE.AFOs.KOM_LE_A_2085;
+import static de.ehex.foss.gematik.specifications.gemSpec_CM_KOMLE.AFOs.KOM_LE_A_2086;
+import static de.ehex.foss.gematik.specifications.gemSpec_CM_KOMLE.AFOs.KOM_LE_A_2087;
+import static de.ehex.foss.gematik.specifications.gemSpec_CM_KOMLE.AFOs.KOM_LE_A_2088;
+import static de.ehex.foss.gematik.specifications.gemSpec_CM_KOMLE.AFOs.KOM_LE_A_2089;
+import static de.ehex.foss.gematik.specifications.gemSpec_CM_KOMLE.AFOs.KOM_LE_A_2090;
+import static de.ehex.foss.gematik.specifications.gemSpec_CM_KOMLE.AFOs.KOM_LE_A_2091;
+import static de.ehex.foss.gematik.specifications.gemSpec_CM_KOMLE.AFOs.KOM_LE_A_2092;
+import static de.ehex.foss.gematik.specifications.gemSpec_CM_KOMLE.AFOs.KOM_LE_A_2094;
+import static de.ehex.foss.gematik.specifications.gemSpec_CM_KOMLE.AFOs.KOM_LE_A_2176;
+import static de.ehex.foss.gematik.specifications.gemSpec_CM_KOMLE.AFOs.KOM_LE_A_2177;
+import static de.ehex.foss.gematik.specifications.gemSpec_CM_KOMLE.AFOs.KOM_LE_A_2178;
+import static de.ehex.foss.gematik.specifications.gemSpec_CM_KOMLE.AFOs.KOM_LE_A_2179;
+import static de.ehex.foss.gematik.specifications.gemSpec_CM_KOMLE.AFOs.KOM_LE_A_2180;
+import static de.ehex.foss.gematik.specifications.gemSpec_CM_KOMLE.AFOs.KOM_LE_A_2181;
+import static de.ehex.foss.gematik.specifications.gemSpec_CM_KOMLE.AFOs.KOM_LE_A_2182;
+import static de.ehex.foss.gematik.specifications.gemSpec_CM_KOMLE.AFOs.KOM_LE_A_2184;
+import static de.ehex.foss.gematik.specifications.gemSpec_CM_KOMLE.AFOs.KOM_LE_A_2190;
+import static de.ehex.foss.gematik.specifications.gemSpec_CM_KOMLE.AFOs.KOM_LE_A_2191;
+import static de.ehex.foss.gematik.specifications.gemSpec_CM_KOMLE.AFOs.KOM_LE_A_2192;
+import static de.ehex.foss.gematik.specifications.gemSpec_CM_KOMLE.AFOs.KOM_LE_A_2193;
+import static de.ehex.foss.gematik.specifications.gemSpec_CM_KOMLE.AFOs.KOM_LE_A_2225;
+import static de.ehex.foss.gematik.specifications.gemSpec_CM_KOMLE.AFOs.KOM_LE_A_2230;
+import static de.ehex.foss.gematik.specifications.gemSpec_CVC_TSP.AFOs.TIP1_A_2575;
+import static de.ehex.foss.gematik.specifications.gemSpec_CVC_TSP.AFOs.TIP1_A_2576;
+import static de.ehex.foss.gematik.specifications.gemSpec_CVC_TSP.AFOs.TIP1_A_2578;
+import static de.ehex.foss.gematik.specifications.gemSpec_CVC_TSP.AFOs.TIP1_A_2579;
+import static de.ehex.foss.gematik.specifications.gemSpec_CVC_TSP.AFOs.TIP1_A_2586;
+import static de.ehex.foss.gematik.specifications.gemSpec_CVC_TSP.AFOs.TIP1_A_2588;
+import static de.ehex.foss.gematik.specifications.gemSpec_CVC_TSP.AFOs.TIP1_A_2589;
+import static de.ehex.foss.gematik.specifications.gemSpec_DSM.AFOs.GS_A_4435;
+import static de.ehex.foss.gematik.specifications.gemSpec_DSM.AFOs.GS_A_4436;
+import static de.ehex.foss.gematik.specifications.gemSpec_DSM.AFOs.GS_A_4437;
+import static de.ehex.foss.gematik.specifications.gemSpec_DSM.AFOs.GS_A_4448;
+import static de.ehex.foss.gematik.specifications.gemSpec_DSM.AFOs.GS_A_4449;
+import static de.ehex.foss.gematik.specifications.gemSpec_DSM.AFOs.GS_A_4450;
+import static de.ehex.foss.gematik.specifications.gemSpec_DSM.AFOs.GS_A_4451;
+import static de.ehex.foss.gematik.specifications.gemSpec_DSM.AFOs.GS_A_4453;
+import static de.ehex.foss.gematik.specifications.gemSpec_DSM.AFOs.GS_A_4455;
+import static de.ehex.foss.gematik.specifications.gemSpec_DSM.AFOs.GS_A_4456;
+import static de.ehex.foss.gematik.specifications.gemSpec_DSM.AFOs.GS_A_4457;
+import static de.ehex.foss.gematik.specifications.gemSpec_DSM.AFOs.GS_A_4458;
+import static de.ehex.foss.gematik.specifications.gemSpec_DSM.AFOs.GS_A_4459;
+import static de.ehex.foss.gematik.specifications.gemSpec_DSM.AFOs.GS_A_4460;
+import static de.ehex.foss.gematik.specifications.gemSpec_DSM.AFOs.GS_A_4461;
+import static de.ehex.foss.gematik.specifications.gemSpec_DSM.AFOs.GS_A_4462;
+import static de.ehex.foss.gematik.specifications.gemSpec_DSM.AFOs.GS_A_4463;
+import static de.ehex.foss.gematik.specifications.gemSpec_DSM.AFOs.GS_A_4464;
+import static de.ehex.foss.gematik.specifications.gemSpec_DSM.AFOs.GS_A_4465;
+import static de.ehex.foss.gematik.specifications.gemSpec_DSM.AFOs.GS_A_4466;
+import static de.ehex.foss.gematik.specifications.gemSpec_DSM.AFOs.GS_A_4467;
+import static de.ehex.foss.gematik.specifications.gemSpec_DSM.AFOs.GS_A_4468;
+import static de.ehex.foss.gematik.specifications.gemSpec_DSM.AFOs.GS_A_4470;
+import static de.ehex.foss.gematik.specifications.gemSpec_DSM.AFOs.GS_A_4471;
+import static de.ehex.foss.gematik.specifications.gemSpec_DSM.AFOs.GS_A_4472;
+import static de.ehex.foss.gematik.specifications.gemSpec_DSM.AFOs.GS_A_4473;
+import static de.ehex.foss.gematik.specifications.gemSpec_DSM.AFOs.GS_A_4474;
+import static de.ehex.foss.gematik.specifications.gemSpec_DSM.AFOs.GS_A_4475;
+import static de.ehex.foss.gematik.specifications.gemSpec_DSM.AFOs.GS_A_4476;
+import static de.ehex.foss.gematik.specifications.gemSpec_DSM.AFOs.GS_A_4477;
+import static de.ehex.foss.gematik.specifications.gemSpec_DSM.AFOs.GS_A_4478;
+import static de.ehex.foss.gematik.specifications.gemSpec_DSM.AFOs.GS_A_4479;
+import static de.ehex.foss.gematik.specifications.gemSpec_DSM.AFOs.GS_A_4480;
+import static de.ehex.foss.gematik.specifications.gemSpec_DSM.AFOs.GS_A_4481;
+import static de.ehex.foss.gematik.specifications.gemSpec_DSM.AFOs.GS_A_4482;
+import static de.ehex.foss.gematik.specifications.gemSpec_FD_KOMLE.AFOs.KOM_LE_A_2130;
+import static de.ehex.foss.gematik.specifications.gemSpec_FD_KOMLE.AFOs.KOM_LE_A_2131;
+import static de.ehex.foss.gematik.specifications.gemSpec_FD_KOMLE.AFOs.KOM_LE_A_2132;
+import static de.ehex.foss.gematik.specifications.gemSpec_FD_KOMLE.AFOs.KOM_LE_A_2133;
+import static de.ehex.foss.gematik.specifications.gemSpec_FD_KOMLE.AFOs.KOM_LE_A_2134;
+import static de.ehex.foss.gematik.specifications.gemSpec_FD_KOMLE.AFOs.KOM_LE_A_2135;
+import static de.ehex.foss.gematik.specifications.gemSpec_FD_KOMLE.AFOs.KOM_LE_A_2136;
+import static de.ehex.foss.gematik.specifications.gemSpec_FD_KOMLE.AFOs.KOM_LE_A_2137;
+import static de.ehex.foss.gematik.specifications.gemSpec_FD_KOMLE.AFOs.KOM_LE_A_2138;
+import static de.ehex.foss.gematik.specifications.gemSpec_FD_KOMLE.AFOs.KOM_LE_A_2139;
+import static de.ehex.foss.gematik.specifications.gemSpec_FD_KOMLE.AFOs.KOM_LE_A_2140;
+import static de.ehex.foss.gematik.specifications.gemSpec_FD_KOMLE.AFOs.KOM_LE_A_2141;
+import static de.ehex.foss.gematik.specifications.gemSpec_FD_KOMLE.AFOs.KOM_LE_A_2142;
+import static de.ehex.foss.gematik.specifications.gemSpec_FD_KOMLE.AFOs.KOM_LE_A_2143;
+import static de.ehex.foss.gematik.specifications.gemSpec_FD_KOMLE.AFOs.KOM_LE_A_2144;
+import static de.ehex.foss.gematik.specifications.gemSpec_FD_KOMLE.AFOs.KOM_LE_A_2145;
+import static de.ehex.foss.gematik.specifications.gemSpec_FD_KOMLE.AFOs.KOM_LE_A_2146;
+import static de.ehex.foss.gematik.specifications.gemSpec_FD_KOMLE.AFOs.KOM_LE_A_2147;
+import static de.ehex.foss.gematik.specifications.gemSpec_FD_KOMLE.AFOs.KOM_LE_A_2148;
+import static de.ehex.foss.gematik.specifications.gemSpec_FD_KOMLE.AFOs.KOM_LE_A_2149;
+import static de.ehex.foss.gematik.specifications.gemSpec_FD_KOMLE.AFOs.KOM_LE_A_2150;
+import static de.ehex.foss.gematik.specifications.gemSpec_FD_KOMLE.AFOs.KOM_LE_A_2151;
+import static de.ehex.foss.gematik.specifications.gemSpec_FD_KOMLE.AFOs.KOM_LE_A_2152;
+import static de.ehex.foss.gematik.specifications.gemSpec_FD_KOMLE.AFOs.KOM_LE_A_2154;
+import static de.ehex.foss.gematik.specifications.gemSpec_FD_KOMLE.AFOs.KOM_LE_A_2155;
+import static de.ehex.foss.gematik.specifications.gemSpec_FD_KOMLE.AFOs.KOM_LE_A_2156;
+import static de.ehex.foss.gematik.specifications.gemSpec_FD_KOMLE.AFOs.KOM_LE_A_2157;
+import static de.ehex.foss.gematik.specifications.gemSpec_FD_KOMLE.AFOs.KOM_LE_A_2158;
+import static de.ehex.foss.gematik.specifications.gemSpec_FD_KOMLE.AFOs.KOM_LE_A_2159;
+import static de.ehex.foss.gematik.specifications.gemSpec_FD_KOMLE.AFOs.KOM_LE_A_2160;
+import static de.ehex.foss.gematik.specifications.gemSpec_FD_KOMLE.AFOs.KOM_LE_A_2161;
+import static de.ehex.foss.gematik.specifications.gemSpec_FD_KOMLE.AFOs.KOM_LE_A_2162;
+import static de.ehex.foss.gematik.specifications.gemSpec_FD_KOMLE.AFOs.KOM_LE_A_2163;
+import static de.ehex.foss.gematik.specifications.gemSpec_FD_KOMLE.AFOs.KOM_LE_A_2164;
+import static de.ehex.foss.gematik.specifications.gemSpec_FD_KOMLE.AFOs.KOM_LE_A_2165;
+import static de.ehex.foss.gematik.specifications.gemSpec_FD_KOMLE.AFOs.KOM_LE_A_2166;
+import static de.ehex.foss.gematik.specifications.gemSpec_FD_KOMLE.AFOs.KOM_LE_A_2167;
+import static de.ehex.foss.gematik.specifications.gemSpec_FD_KOMLE.AFOs.KOM_LE_A_2168;
+import static de.ehex.foss.gematik.specifications.gemSpec_FD_KOMLE.AFOs.KOM_LE_A_2169;
+import static de.ehex.foss.gematik.specifications.gemSpec_FD_KOMLE.AFOs.KOM_LE_A_2171;
+import static de.ehex.foss.gematik.specifications.gemSpec_FD_KOMLE.AFOs.KOM_LE_A_2185;
+import static de.ehex.foss.gematik.specifications.gemSpec_FD_KOMLE.AFOs.KOM_LE_A_2186;
+import static de.ehex.foss.gematik.specifications.gemSpec_FD_KOMLE.AFOs.KOM_LE_A_2187;
+import static de.ehex.foss.gematik.specifications.gemSpec_FD_KOMLE.AFOs.KOM_LE_A_2188;
+import static de.ehex.foss.gematik.specifications.gemSpec_FD_KOMLE.AFOs.KOM_LE_A_2189;
+import static de.ehex.foss.gematik.specifications.gemSpec_FD_KOMLE.AFOs.KOM_LE_A_2223;
+import static de.ehex.foss.gematik.specifications.gemSpec_FD_KOMLE.AFOs.KOM_LE_A_2224;
+import static de.ehex.foss.gematik.specifications.gemSpec_FD_KOMLE.AFOs.KOM_LE_A_2231;
+import static de.ehex.foss.gematik.specifications.gemSpec_FD_KOMLE.AFOs.KOM_LE_A_2277;
+import static de.ehex.foss.gematik.specifications.gemSpec_FD_KOMLE.AFOs.KOM_LE_A_2278;
+import static de.ehex.foss.gematik.specifications.gemSpec_HSM_B.AFOs.*;
+import static de.ehex.foss.gematik.specifications.gemSpec_ISM.AFOs.GS_A_4503;
+import static de.ehex.foss.gematik.specifications.gemSpec_ISM.AFOs.GS_A_4504;
+import static de.ehex.foss.gematik.specifications.gemSpec_ISM.AFOs.GS_A_4505;
+import static de.ehex.foss.gematik.specifications.gemSpec_ISM.AFOs.GS_A_4506;
+import static de.ehex.foss.gematik.specifications.gemSpec_ISM.AFOs.GS_A_4507;
+import static de.ehex.foss.gematik.specifications.gemSpec_ISM.AFOs.GS_A_4508;
+import static de.ehex.foss.gematik.specifications.gemSpec_ISM.AFOs.GS_A_4509;
+import static de.ehex.foss.gematik.specifications.gemSpec_ISM.AFOs.GS_A_4510;
+import static de.ehex.foss.gematik.specifications.gemSpec_ISM.AFOs.GS_A_4511;
+import static de.ehex.foss.gematik.specifications.gemSpec_ISM.AFOs.GS_A_4512;
+import static de.ehex.foss.gematik.specifications.gemSpec_ISM.AFOs.GS_A_4513;
+import static de.ehex.foss.gematik.specifications.gemSpec_ISM.AFOs.GS_A_4514;
+import static de.ehex.foss.gematik.specifications.gemSpec_ISM.AFOs.GS_A_4515;
+import static de.ehex.foss.gematik.specifications.gemSpec_ISM.AFOs.GS_A_4516;
+import static de.ehex.foss.gematik.specifications.gemSpec_ISM.AFOs.GS_A_4517;
+import static de.ehex.foss.gematik.specifications.gemSpec_ISM.AFOs.GS_A_4518;
+import static de.ehex.foss.gematik.specifications.gemSpec_ISM.AFOs.GS_A_4519;
+import static de.ehex.foss.gematik.specifications.gemSpec_ISM.AFOs.GS_A_4520;
+import static de.ehex.foss.gematik.specifications.gemSpec_ISM.AFOs.GS_A_4521;
+import static de.ehex.foss.gematik.specifications.gemSpec_ISM.AFOs.GS_A_4522;
+import static de.ehex.foss.gematik.specifications.gemSpec_ISM.AFOs.GS_A_4523;
+import static de.ehex.foss.gematik.specifications.gemSpec_ISM.AFOs.GS_A_4524;
+import static de.ehex.foss.gematik.specifications.gemSpec_ISM.AFOs.GS_A_4525;
+import static de.ehex.foss.gematik.specifications.gemSpec_ISM.AFOs.GS_A_4526;
+import static de.ehex.foss.gematik.specifications.gemSpec_ISM.AFOs.GS_A_4527;
+import static de.ehex.foss.gematik.specifications.gemSpec_ISM.AFOs.GS_A_4528;
+import static de.ehex.foss.gematik.specifications.gemSpec_ISM.AFOs.GS_A_4529;
+import static de.ehex.foss.gematik.specifications.gemSpec_ISM.AFOs.GS_A_4530;
+import static de.ehex.foss.gematik.specifications.gemSpec_ISM.AFOs.GS_A_4531;
+import static de.ehex.foss.gematik.specifications.gemSpec_ISM.AFOs.GS_A_4532;
+import static de.ehex.foss.gematik.specifications.gemSpec_ISM.AFOs.GS_A_4533;
+import static de.ehex.foss.gematik.specifications.gemSpec_ISM.AFOs.GS_A_4534;
+import static de.ehex.foss.gematik.specifications.gemSpec_ISM.AFOs.GS_A_4535;
+import static de.ehex.foss.gematik.specifications.gemSpec_ISM.AFOs.GS_A_4537;
+import static de.ehex.foss.gematik.specifications.gemSpec_ISM.AFOs.GS_A_4538;
+import static de.ehex.foss.gematik.specifications.gemSpec_ISM.AFOs.GS_A_4539;
+import static de.ehex.foss.gematik.specifications.gemSpec_ISM.AFOs.GS_A_4540;
+import static de.ehex.foss.gematik.specifications.gemSpec_Intermediär_VSDM.AFOs.VSDM_A_2348;
+import static de.ehex.foss.gematik.specifications.gemSpec_Intermediär_VSDM.AFOs.VSDM_A_2349;
+import static de.ehex.foss.gematik.specifications.gemSpec_Intermediär_VSDM.AFOs.VSDM_A_2350;
+import static de.ehex.foss.gematik.specifications.gemSpec_Intermediär_VSDM.AFOs.VSDM_A_2351;
+import static de.ehex.foss.gematik.specifications.gemSpec_Intermediär_VSDM.AFOs.VSDM_A_2353;
+import static de.ehex.foss.gematik.specifications.gemSpec_Intermediär_VSDM.AFOs.VSDM_A_2356;
+import static de.ehex.foss.gematik.specifications.gemSpec_Intermediär_VSDM.AFOs.VSDM_A_2357;
+import static de.ehex.foss.gematik.specifications.gemSpec_Intermediär_VSDM.AFOs.VSDM_A_2358;
+import static de.ehex.foss.gematik.specifications.gemSpec_Intermediär_VSDM.AFOs.VSDM_A_2359;
+import static de.ehex.foss.gematik.specifications.gemSpec_Intermediär_VSDM.AFOs.VSDM_A_2547;
+import static de.ehex.foss.gematik.specifications.gemSpec_Intermediär_VSDM.AFOs.VSDM_A_2548;
+import static de.ehex.foss.gematik.specifications.gemSpec_Intermediär_VSDM.AFOs.VSDM_A_2549;
+import static de.ehex.foss.gematik.specifications.gemSpec_Intermediär_VSDM.AFOs.VSDM_A_2550;
+import static de.ehex.foss.gematik.specifications.gemSpec_Intermediär_VSDM.AFOs.VSDM_A_2669;
+import static de.ehex.foss.gematik.specifications.gemSpec_Intermediär_VSDM.AFOs.VSDM_A_2673;
+import static de.ehex.foss.gematik.specifications.gemSpec_Intermediär_VSDM.AFOs.VSDM_A_2704;
+import static de.ehex.foss.gematik.specifications.gemSpec_Intermediär_VSDM.AFOs.VSDM_A_2706;
+import static de.ehex.foss.gematik.specifications.gemSpec_Intermediär_VSDM.AFOs.VSDM_A_2707;
+import static de.ehex.foss.gematik.specifications.gemSpec_Intermediär_VSDM.AFOs.VSDM_A_2712;
+import static de.ehex.foss.gematik.specifications.gemSpec_Intermediär_VSDM.AFOs.VSDM_A_2747;
+import static de.ehex.foss.gematik.specifications.gemSpec_Intermediär_VSDM.AFOs.VSDM_A_2748;
+import static de.ehex.foss.gematik.specifications.gemSpec_Intermediär_VSDM.AFOs.VSDM_A_2761;
+import static de.ehex.foss.gematik.specifications.gemSpec_Intermediär_VSDM.AFOs.VSDM_A_2940;
+import static de.ehex.foss.gematik.specifications.gemSpec_Intermediär_VSDM.AFOs.VSDM_A_2942;
+import static de.ehex.foss.gematik.specifications.gemSpec_Intermediär_VSDM.AFOs.VSDM_A_2943;
+import static de.ehex.foss.gematik.specifications.gemSpec_Intermediär_VSDM.AFOs.VSDM_A_3006;
+import static de.ehex.foss.gematik.specifications.gemSpec_Intermediär_VSDM.AFOs.VSDM_A_3021;
+import static de.ehex.foss.gematik.specifications.gemSpec_Intermediär_VSDM.AFOs.VSDM_A_3022;
+import static de.ehex.foss.gematik.specifications.gemSpec_Intermediär_VSDM.AFOs.VSDM_A_3023;
+import static de.ehex.foss.gematik.specifications.gemSpec_Intermediär_VSDM.AFOs.VSDM_A_3028;
+import static de.ehex.foss.gematik.specifications.gemSpec_Kon.AFOs.TIP1_A_4514;
+import static de.ehex.foss.gematik.specifications.gemSpec_Kon.AFOs.TIP1_A_4515;
+import static de.ehex.foss.gematik.specifications.gemSpec_Kon.AFOs.TIP1_A_4518;
+import static de.ehex.foss.gematik.specifications.gemSpec_Kon.AFOs.TIP1_A_4689;
+import static de.ehex.foss.gematik.specifications.gemSpec_Kon.AFOs.TIP1_A_4693;
+import static de.ehex.foss.gematik.specifications.gemSpec_Kon.AFOs.TIP1_A_4696;
+import static de.ehex.foss.gematik.specifications.gemSpec_Kon.AFOs.TIP1_A_4812;
+import static de.ehex.foss.gematik.specifications.gemSpec_Kon.AFOs.TIP1_A_5401;
+import static de.ehex.foss.gematik.specifications.gemSpec_Kon.AFOs.TIP1_A_5516;
+import static de.ehex.foss.gematik.specifications.gemSpec_Kon.AFOs.TIP1_A_5517;
+import static de.ehex.foss.gematik.specifications.gemSpec_Kon.AFOs.TIP1_A_5518;
+import static de.ehex.foss.gematik.specifications.gemSpec_Kon.AFOs.TIP1_A_5519;
+import static de.ehex.foss.gematik.specifications.gemSpec_Kon.AFOs.TIP1_A_5520;
+import static de.ehex.foss.gematik.specifications.gemSpec_Kon.AFOs.TIP1_A_5521;
+import static de.ehex.foss.gematik.specifications.gemSpec_Krypt.AFOs.GS_A_4357;
+import static de.ehex.foss.gematik.specifications.gemSpec_Krypt.AFOs.GS_A_4359;
+import static de.ehex.foss.gematik.specifications.gemSpec_Krypt.AFOs.GS_A_4361;
+import static de.ehex.foss.gematik.specifications.gemSpec_Krypt.AFOs.GS_A_4362;
+import static de.ehex.foss.gematik.specifications.gemSpec_Krypt.AFOs.GS_A_4367;
+import static de.ehex.foss.gematik.specifications.gemSpec_Krypt.AFOs.GS_A_4368;
+import static de.ehex.foss.gematik.specifications.gemSpec_Krypt.AFOs.GS_A_4377;
+import static de.ehex.foss.gematik.specifications.gemSpec_Krypt.AFOs.GS_A_4378;
+import static de.ehex.foss.gematik.specifications.gemSpec_Krypt.AFOs.GS_A_4379;
+import static de.ehex.foss.gematik.specifications.gemSpec_Krypt.AFOs.GS_A_4380;
+import static de.ehex.foss.gematik.specifications.gemSpec_Krypt.AFOs.GS_A_4384;
+import static de.ehex.foss.gematik.specifications.gemSpec_Krypt.AFOs.GS_A_4385;
+import static de.ehex.foss.gematik.specifications.gemSpec_Krypt.AFOs.GS_A_4386;
+import static de.ehex.foss.gematik.specifications.gemSpec_Krypt.AFOs.GS_A_4387;
+import static de.ehex.foss.gematik.specifications.gemSpec_Krypt.AFOs.GS_A_4388;
+import static de.ehex.foss.gematik.specifications.gemSpec_Krypt.AFOs.GS_A_4393;
+import static de.ehex.foss.gematik.specifications.gemSpec_Krypt.AFOs.GS_A_5035;
+import static de.ehex.foss.gematik.specifications.gemSpec_Krypt.AFOs.GS_A_5079;
+import static de.ehex.foss.gematik.specifications.gemSpec_Krypt.AFOs.GS_A_5091;
+import static de.ehex.foss.gematik.specifications.gemSpec_Krypt.AFOs.GS_A_5131;
+import static de.ehex.foss.gematik.specifications.gemSpec_Krypt.AFOs.GS_A_5207;
+import static de.ehex.foss.gematik.specifications.gemSpec_Krypt.AFOs.GS_A_5322;
+import static de.ehex.foss.gematik.specifications.gemSpec_Net.AFOs.GS_A_3824;
+import static de.ehex.foss.gematik.specifications.gemSpec_Net.AFOs.GS_A_3832;
+import static de.ehex.foss.gematik.specifications.gemSpec_Net.AFOs.GS_A_3833;
+import static de.ehex.foss.gematik.specifications.gemSpec_Net.AFOs.GS_A_3834;
+import static de.ehex.foss.gematik.specifications.gemSpec_Net.AFOs.GS_A_3839;
+import static de.ehex.foss.gematik.specifications.gemSpec_Net.AFOs.GS_A_3840;
+import static de.ehex.foss.gematik.specifications.gemSpec_Net.AFOs.GS_A_3841;
+import static de.ehex.foss.gematik.specifications.gemSpec_Net.AFOs.GS_A_3842;
+import static de.ehex.foss.gematik.specifications.gemSpec_Net.AFOs.GS_A_3928;
+import static de.ehex.foss.gematik.specifications.gemSpec_Net.AFOs.GS_A_3930;
+import static de.ehex.foss.gematik.specifications.gemSpec_Net.AFOs.GS_A_3931;
+import static de.ehex.foss.gematik.specifications.gemSpec_Net.AFOs.GS_A_3932;
+import static de.ehex.foss.gematik.specifications.gemSpec_Net.AFOs.GS_A_3933;
+import static de.ehex.foss.gematik.specifications.gemSpec_Net.AFOs.GS_A_3934;
+import static de.ehex.foss.gematik.specifications.gemSpec_Net.AFOs.GS_A_3937;
+import static de.ehex.foss.gematik.specifications.gemSpec_Net.AFOs.GS_A_3939;
+import static de.ehex.foss.gematik.specifications.gemSpec_Net.AFOs.GS_A_3946;
+import static de.ehex.foss.gematik.specifications.gemSpec_Net.AFOs.GS_A_4009;
+import static de.ehex.foss.gematik.specifications.gemSpec_Net.AFOs.GS_A_4010;
+import static de.ehex.foss.gematik.specifications.gemSpec_Net.AFOs.GS_A_4011;
+import static de.ehex.foss.gematik.specifications.gemSpec_Net.AFOs.GS_A_4012;
+import static de.ehex.foss.gematik.specifications.gemSpec_Net.AFOs.GS_A_4013;
+import static de.ehex.foss.gematik.specifications.gemSpec_Net.AFOs.GS_A_4018;
+import static de.ehex.foss.gematik.specifications.gemSpec_Net.AFOs.GS_A_4024;
+import static de.ehex.foss.gematik.specifications.gemSpec_Net.AFOs.GS_A_4027;
+import static de.ehex.foss.gematik.specifications.gemSpec_Net.AFOs.GS_A_4033;
+import static de.ehex.foss.gematik.specifications.gemSpec_Net.AFOs.GS_A_4035;
+import static de.ehex.foss.gematik.specifications.gemSpec_Net.AFOs.GS_A_4036;
+import static de.ehex.foss.gematik.specifications.gemSpec_Net.AFOs.GS_A_4759;
+import static de.ehex.foss.gematik.specifications.gemSpec_Net.AFOs.GS_A_4762;
+import static de.ehex.foss.gematik.specifications.gemSpec_Net.AFOs.GS_A_4763;
+import static de.ehex.foss.gematik.specifications.gemSpec_Net.AFOs.GS_A_4805;
+import static de.ehex.foss.gematik.specifications.gemSpec_Net.AFOs.GS_A_4808;
+import static de.ehex.foss.gematik.specifications.gemSpec_Net.AFOs.GS_A_4809;
+import static de.ehex.foss.gematik.specifications.gemSpec_Net.AFOs.GS_A_4810;
+import static de.ehex.foss.gematik.specifications.gemSpec_Net.AFOs.GS_A_4817;
+import static de.ehex.foss.gematik.specifications.gemSpec_Net.AFOs.GS_A_4819;
+import static de.ehex.foss.gematik.specifications.gemSpec_Net.AFOs.GS_A_4820;
+import static de.ehex.foss.gematik.specifications.gemSpec_Net.AFOs.GS_A_4831;
+import static de.ehex.foss.gematik.specifications.gemSpec_Net.AFOs.GS_A_4832;
+import static de.ehex.foss.gematik.specifications.gemSpec_Net.AFOs.GS_A_5089;
+import static de.ehex.foss.gematik.specifications.gemSpec_OID.AFOs.GS_A_4442;
+import static de.ehex.foss.gematik.specifications.gemSpec_OID.AFOs.GS_A_4444;
+import static de.ehex.foss.gematik.specifications.gemSpec_OID.AFOs.GS_A_4445;
+import static de.ehex.foss.gematik.specifications.gemSpec_OM.AFOs.GS_A_3695;
+import static de.ehex.foss.gematik.specifications.gemSpec_OM.AFOs.GS_A_3696;
+import static de.ehex.foss.gematik.specifications.gemSpec_OM.AFOs.GS_A_3697;
+import static de.ehex.foss.gematik.specifications.gemSpec_OM.AFOs.GS_A_3700;
+import static de.ehex.foss.gematik.specifications.gemSpec_OM.AFOs.GS_A_3702;
+import static de.ehex.foss.gematik.specifications.gemSpec_OM.AFOs.GS_A_3796;
+import static de.ehex.foss.gematik.specifications.gemSpec_OM.AFOs.GS_A_3801;
+import static de.ehex.foss.gematik.specifications.gemSpec_OM.AFOs.GS_A_3804;
+import static de.ehex.foss.gematik.specifications.gemSpec_OM.AFOs.GS_A_3805;
+import static de.ehex.foss.gematik.specifications.gemSpec_OM.AFOs.GS_A_3806;
+import static de.ehex.foss.gematik.specifications.gemSpec_OM.AFOs.GS_A_3807;
+import static de.ehex.foss.gematik.specifications.gemSpec_OM.AFOs.GS_A_3813;
+import static de.ehex.foss.gematik.specifications.gemSpec_OM.AFOs.GS_A_3816;
+import static de.ehex.foss.gematik.specifications.gemSpec_OM.AFOs.GS_A_3856;
+import static de.ehex.foss.gematik.specifications.gemSpec_OM.AFOs.GS_A_4541;
+import static de.ehex.foss.gematik.specifications.gemSpec_OM.AFOs.GS_A_4543;
+import static de.ehex.foss.gematik.specifications.gemSpec_OM.AFOs.GS_A_4545;
+import static de.ehex.foss.gematik.specifications.gemSpec_OM.AFOs.GS_A_4547;
+import static de.ehex.foss.gematik.specifications.gemSpec_OM.AFOs.GS_A_4864;
+import static de.ehex.foss.gematik.specifications.gemSpec_OM.AFOs.GS_A_4941;
+import static de.ehex.foss.gematik.specifications.gemSpec_OM.AFOs.GS_A_5018;
+import static de.ehex.foss.gematik.specifications.gemSpec_OM.AFOs.GS_A_5025;
+import static de.ehex.foss.gematik.specifications.gemSpec_OM.AFOs.GS_A_5033;
+import static de.ehex.foss.gematik.specifications.gemSpec_OM.AFOs.GS_A_5038;
+import static de.ehex.foss.gematik.specifications.gemSpec_OM.AFOs.GS_A_5039;
+import static de.ehex.foss.gematik.specifications.gemSpec_OM.AFOs.GS_A_5040;
+import static de.ehex.foss.gematik.specifications.gemSpec_OM.AFOs.GS_A_5054;
+import static de.ehex.foss.gematik.specifications.gemSpec_OM.AFOs.GS_A_5252;
 import static de.ehex.foss.gematik.specifications.gemSpec_PKI.AFOs.*;
-import static de.ehex.foss.gematik.specifications.gemSpec_Perf.AFOs.*;
-import static de.ehex.foss.gematik.specifications.gemSpec_SST_FD_VSDM.AFOs.*;
-import static de.ehex.foss.gematik.specifications.gemSpec_SST_VSDM.AFOs.*;
-import static de.ehex.foss.gematik.specifications.gemSpec_SiBetrUmg.AFOs.*;
-import static de.ehex.foss.gematik.specifications.gemSpec_Sich_DS.AFOs.*;
+import static de.ehex.foss.gematik.specifications.gemSpec_Perf.AFOs.GS_A_3055;
+import static de.ehex.foss.gematik.specifications.gemSpec_Perf.AFOs.GS_A_3058;
+import static de.ehex.foss.gematik.specifications.gemSpec_Perf.AFOs.GS_A_4145;
+import static de.ehex.foss.gematik.specifications.gemSpec_Perf.AFOs.GS_A_4146;
+import static de.ehex.foss.gematik.specifications.gemSpec_Perf.AFOs.GS_A_4147;
+import static de.ehex.foss.gematik.specifications.gemSpec_Perf.AFOs.GS_A_4148;
+import static de.ehex.foss.gematik.specifications.gemSpec_Perf.AFOs.GS_A_4149;
+import static de.ehex.foss.gematik.specifications.gemSpec_Perf.AFOs.GS_A_4154;
+import static de.ehex.foss.gematik.specifications.gemSpec_Perf.AFOs.GS_A_4155;
+import static de.ehex.foss.gematik.specifications.gemSpec_Perf.AFOs.GS_A_4159;
+import static de.ehex.foss.gematik.specifications.gemSpec_Perf.AFOs.GS_A_4160;
+import static de.ehex.foss.gematik.specifications.gemSpec_Perf.AFOs.GS_A_5028;
+import static de.ehex.foss.gematik.specifications.gemSpec_Perf.AFOs.GS_A_5029;
+import static de.ehex.foss.gematik.specifications.gemSpec_Perf.AFOs.GS_A_5030;
+import static de.ehex.foss.gematik.specifications.gemSpec_Perf.AFOs.GS_A_5031;
+import static de.ehex.foss.gematik.specifications.gemSpec_Perf.AFOs.GS_A_5032;
+import static de.ehex.foss.gematik.specifications.gemSpec_Perf.AFOs.GS_A_5073;
+import static de.ehex.foss.gematik.specifications.gemSpec_Perf.AFOs.GS_A_5092;
+import static de.ehex.foss.gematik.specifications.gemSpec_Perf.AFOs.GS_A_5093;
+import static de.ehex.foss.gematik.specifications.gemSpec_Perf.AFOs.GS_A_5094;
+import static de.ehex.foss.gematik.specifications.gemSpec_Perf.AFOs.GS_A_5095;
+import static de.ehex.foss.gematik.specifications.gemSpec_Perf.AFOs.GS_A_5134;
+import static de.ehex.foss.gematik.specifications.gemSpec_Perf.AFOs.GS_A_5136;
+import static de.ehex.foss.gematik.specifications.gemSpec_Perf.AFOs.GS_A_5137;
+import static de.ehex.foss.gematik.specifications.gemSpec_Perf.AFOs.GS_A_5138;
+import static de.ehex.foss.gematik.specifications.gemSpec_Perf.AFOs.GS_A_5139;
+import static de.ehex.foss.gematik.specifications.gemSpec_Perf.AFOs.GS_A_5143;
+import static de.ehex.foss.gematik.specifications.gemSpec_SST_FD_VSDM.AFOs.VSDM_A_2280;
+import static de.ehex.foss.gematik.specifications.gemSpec_SST_FD_VSDM.AFOs.VSDM_A_2281;
+import static de.ehex.foss.gematik.specifications.gemSpec_SST_FD_VSDM.AFOs.VSDM_A_2283;
+import static de.ehex.foss.gematik.specifications.gemSpec_SST_FD_VSDM.AFOs.VSDM_A_2286;
+import static de.ehex.foss.gematik.specifications.gemSpec_SST_FD_VSDM.AFOs.VSDM_A_2287;
+import static de.ehex.foss.gematik.specifications.gemSpec_SST_FD_VSDM.AFOs.VSDM_A_2288;
+import static de.ehex.foss.gematik.specifications.gemSpec_SST_FD_VSDM.AFOs.VSDM_A_2290;
+import static de.ehex.foss.gematik.specifications.gemSpec_SST_FD_VSDM.AFOs.VSDM_A_2291;
+import static de.ehex.foss.gematik.specifications.gemSpec_SST_FD_VSDM.AFOs.VSDM_A_2292;
+import static de.ehex.foss.gematik.specifications.gemSpec_SST_FD_VSDM.AFOs.VSDM_A_2293;
+import static de.ehex.foss.gematik.specifications.gemSpec_SST_FD_VSDM.AFOs.VSDM_A_2294;
+import static de.ehex.foss.gematik.specifications.gemSpec_SST_FD_VSDM.AFOs.VSDM_A_2295;
+import static de.ehex.foss.gematik.specifications.gemSpec_SST_FD_VSDM.AFOs.VSDM_A_2297;
+import static de.ehex.foss.gematik.specifications.gemSpec_SST_FD_VSDM.AFOs.VSDM_A_2302;
+import static de.ehex.foss.gematik.specifications.gemSpec_SST_FD_VSDM.AFOs.VSDM_A_2305;
+import static de.ehex.foss.gematik.specifications.gemSpec_SST_FD_VSDM.AFOs.VSDM_A_2314;
+import static de.ehex.foss.gematik.specifications.gemSpec_SST_FD_VSDM.AFOs.VSDM_A_2315;
+import static de.ehex.foss.gematik.specifications.gemSpec_SST_FD_VSDM.AFOs.VSDM_A_2316;
+import static de.ehex.foss.gematik.specifications.gemSpec_SST_FD_VSDM.AFOs.VSDM_A_2317;
+import static de.ehex.foss.gematik.specifications.gemSpec_SST_FD_VSDM.AFOs.VSDM_A_2322;
+import static de.ehex.foss.gematik.specifications.gemSpec_SST_FD_VSDM.AFOs.VSDM_A_2323;
+import static de.ehex.foss.gematik.specifications.gemSpec_SST_FD_VSDM.AFOs.VSDM_A_2324;
+import static de.ehex.foss.gematik.specifications.gemSpec_SST_FD_VSDM.AFOs.VSDM_A_2325;
+import static de.ehex.foss.gematik.specifications.gemSpec_SST_FD_VSDM.AFOs.VSDM_A_2326;
+import static de.ehex.foss.gematik.specifications.gemSpec_SST_FD_VSDM.AFOs.VSDM_A_2327;
+import static de.ehex.foss.gematik.specifications.gemSpec_SST_FD_VSDM.AFOs.VSDM_A_2328;
+import static de.ehex.foss.gematik.specifications.gemSpec_SST_FD_VSDM.AFOs.VSDM_A_2329;
+import static de.ehex.foss.gematik.specifications.gemSpec_SST_FD_VSDM.AFOs.VSDM_A_2331;
+import static de.ehex.foss.gematik.specifications.gemSpec_SST_FD_VSDM.AFOs.VSDM_A_2332;
+import static de.ehex.foss.gematik.specifications.gemSpec_SST_FD_VSDM.AFOs.VSDM_A_2333;
+import static de.ehex.foss.gematik.specifications.gemSpec_SST_FD_VSDM.AFOs.VSDM_A_2334;
+import static de.ehex.foss.gematik.specifications.gemSpec_SST_FD_VSDM.AFOs.VSDM_A_2339;
+import static de.ehex.foss.gematik.specifications.gemSpec_SST_FD_VSDM.AFOs.VSDM_A_2341;
+import static de.ehex.foss.gematik.specifications.gemSpec_SST_FD_VSDM.AFOs.VSDM_A_2342;
+import static de.ehex.foss.gematik.specifications.gemSpec_SST_FD_VSDM.AFOs.VSDM_A_2546;
+import static de.ehex.foss.gematik.specifications.gemSpec_SST_FD_VSDM.AFOs.VSDM_A_2751;
+import static de.ehex.foss.gematik.specifications.gemSpec_SST_FD_VSDM.AFOs.VSDM_A_2961;
+import static de.ehex.foss.gematik.specifications.gemSpec_SST_FD_VSDM.AFOs.VSDM_A_2999;
+import static de.ehex.foss.gematik.specifications.gemSpec_SST_FD_VSDM.AFOs.VSDM_A_3009;
+import static de.ehex.foss.gematik.specifications.gemSpec_SST_VSDM.AFOs.VSDM_A_2222;
+import static de.ehex.foss.gematik.specifications.gemSpec_SST_VSDM.AFOs.VSDM_A_2223;
+import static de.ehex.foss.gematik.specifications.gemSpec_SST_VSDM.AFOs.VSDM_A_2225;
+import static de.ehex.foss.gematik.specifications.gemSpec_SST_VSDM.AFOs.VSDM_A_2226;
+import static de.ehex.foss.gematik.specifications.gemSpec_SST_VSDM.AFOs.VSDM_A_2227;
+import static de.ehex.foss.gematik.specifications.gemSpec_SST_VSDM.AFOs.VSDM_A_2228;
+import static de.ehex.foss.gematik.specifications.gemSpec_SST_VSDM.AFOs.VSDM_A_2231;
+import static de.ehex.foss.gematik.specifications.gemSpec_SST_VSDM.AFOs.VSDM_A_2233;
+import static de.ehex.foss.gematik.specifications.gemSpec_SST_VSDM.AFOs.VSDM_A_2234;
+import static de.ehex.foss.gematik.specifications.gemSpec_SST_VSDM.AFOs.VSDM_A_2236;
+import static de.ehex.foss.gematik.specifications.gemSpec_SST_VSDM.AFOs.VSDM_A_2240;
+import static de.ehex.foss.gematik.specifications.gemSpec_SST_VSDM.AFOs.VSDM_A_2241;
+import static de.ehex.foss.gematik.specifications.gemSpec_SST_VSDM.AFOs.VSDM_A_2242;
+import static de.ehex.foss.gematik.specifications.gemSpec_SST_VSDM.AFOs.VSDM_A_2253;
+import static de.ehex.foss.gematik.specifications.gemSpec_SST_VSDM.AFOs.VSDM_A_2254;
+import static de.ehex.foss.gematik.specifications.gemSpec_SST_VSDM.AFOs.VSDM_A_2255;
+import static de.ehex.foss.gematik.specifications.gemSpec_SST_VSDM.AFOs.VSDM_A_2256;
+import static de.ehex.foss.gematik.specifications.gemSpec_SST_VSDM.AFOs.VSDM_A_2257;
+import static de.ehex.foss.gematik.specifications.gemSpec_SST_VSDM.AFOs.VSDM_A_2258;
+import static de.ehex.foss.gematik.specifications.gemSpec_SST_VSDM.AFOs.VSDM_A_2259;
+import static de.ehex.foss.gematik.specifications.gemSpec_SST_VSDM.AFOs.VSDM_A_2260;
+import static de.ehex.foss.gematik.specifications.gemSpec_SST_VSDM.AFOs.VSDM_A_2261;
+import static de.ehex.foss.gematik.specifications.gemSpec_SST_VSDM.AFOs.VSDM_A_2262;
+import static de.ehex.foss.gematik.specifications.gemSpec_SST_VSDM.AFOs.VSDM_A_2263;
+import static de.ehex.foss.gematik.specifications.gemSpec_SST_VSDM.AFOs.VSDM_A_2264;
+import static de.ehex.foss.gematik.specifications.gemSpec_SST_VSDM.AFOs.VSDM_A_2266;
+import static de.ehex.foss.gematik.specifications.gemSpec_SST_VSDM.AFOs.VSDM_A_2267;
+import static de.ehex.foss.gematik.specifications.gemSpec_SST_VSDM.AFOs.VSDM_A_2268;
+import static de.ehex.foss.gematik.specifications.gemSpec_SST_VSDM.AFOs.VSDM_A_2269;
+import static de.ehex.foss.gematik.specifications.gemSpec_SST_VSDM.AFOs.VSDM_A_2270;
+import static de.ehex.foss.gematik.specifications.gemSpec_SST_VSDM.AFOs.VSDM_A_2271;
+import static de.ehex.foss.gematik.specifications.gemSpec_SST_VSDM.AFOs.VSDM_A_2272;
+import static de.ehex.foss.gematik.specifications.gemSpec_SST_VSDM.AFOs.VSDM_A_2273;
+import static de.ehex.foss.gematik.specifications.gemSpec_SST_VSDM.AFOs.VSDM_A_2274;
+import static de.ehex.foss.gematik.specifications.gemSpec_SST_VSDM.AFOs.VSDM_A_2279;
+import static de.ehex.foss.gematik.specifications.gemSpec_SST_VSDM.AFOs.VSDM_A_2299;
+import static de.ehex.foss.gematik.specifications.gemSpec_SST_VSDM.AFOs.VSDM_A_2301;
+import static de.ehex.foss.gematik.specifications.gemSpec_SST_VSDM.AFOs.VSDM_A_2313;
+import static de.ehex.foss.gematik.specifications.gemSpec_SST_VSDM.AFOs.VSDM_A_2330;
+import static de.ehex.foss.gematik.specifications.gemSpec_SST_VSDM.AFOs.VSDM_A_2674;
+import static de.ehex.foss.gematik.specifications.gemSpec_SST_VSDM.AFOs.VSDM_A_2902;
+import static de.ehex.foss.gematik.specifications.gemSpec_SST_VSDM.AFOs.VSDM_A_2950;
+import static de.ehex.foss.gematik.specifications.gemSpec_SST_VSDM.AFOs.VSDM_A_2952;
+import static de.ehex.foss.gematik.specifications.gemSpec_SST_VSDM.AFOs.VSDM_A_2955;
+import static de.ehex.foss.gematik.specifications.gemSpec_SST_VSDM.AFOs.VSDM_A_2958;
+import static de.ehex.foss.gematik.specifications.gemSpec_SST_VSDM.AFOs.VSDM_A_3001;
+import static de.ehex.foss.gematik.specifications.gemSpec_SST_VSDM.AFOs.VSDM_A_3002;
+import static de.ehex.foss.gematik.specifications.gemSpec_SST_VSDM.AFOs.VSDM_A_3026;
+import static de.ehex.foss.gematik.specifications.gemSpec_SST_VSDM.AFOs.VSDM_A_3027;
+import static de.ehex.foss.gematik.specifications.gemSpec_SiBetrUmg.AFOs.GS_A_3737;
+import static de.ehex.foss.gematik.specifications.gemSpec_SiBetrUmg.AFOs.GS_A_3747;
+import static de.ehex.foss.gematik.specifications.gemSpec_SiBetrUmg.AFOs.GS_A_3753;
+import static de.ehex.foss.gematik.specifications.gemSpec_SiBetrUmg.AFOs.GS_A_3756;
+import static de.ehex.foss.gematik.specifications.gemSpec_SiBetrUmg.AFOs.GS_A_3760;
+import static de.ehex.foss.gematik.specifications.gemSpec_SiBetrUmg.AFOs.GS_A_3772;
+import static de.ehex.foss.gematik.specifications.gemSpec_SiBetrUmg.AFOs.GS_A_3784;
+import static de.ehex.foss.gematik.specifications.gemSpec_SiBetrUmg.AFOs.GS_A_4980;
+import static de.ehex.foss.gematik.specifications.gemSpec_SiBetrUmg.AFOs.GS_A_4981;
+import static de.ehex.foss.gematik.specifications.gemSpec_SiBetrUmg.AFOs.GS_A_4982;
+import static de.ehex.foss.gematik.specifications.gemSpec_SiBetrUmg.AFOs.GS_A_4983;
+import static de.ehex.foss.gematik.specifications.gemSpec_SiBetrUmg.AFOs.GS_A_4984;
+import static de.ehex.foss.gematik.specifications.gemSpec_Sich_DS.AFOs.GS_A_2012;
+import static de.ehex.foss.gematik.specifications.gemSpec_Sich_DS.AFOs.GS_A_2021;
+import static de.ehex.foss.gematik.specifications.gemSpec_Sich_DS.AFOs.GS_A_2046;
+import static de.ehex.foss.gematik.specifications.gemSpec_Sich_DS.AFOs.GS_A_2047;
+import static de.ehex.foss.gematik.specifications.gemSpec_Sich_DS.AFOs.GS_A_2065;
+import static de.ehex.foss.gematik.specifications.gemSpec_Sich_DS.AFOs.GS_A_2070;
+import static de.ehex.foss.gematik.specifications.gemSpec_Sich_DS.AFOs.GS_A_2071;
+import static de.ehex.foss.gematik.specifications.gemSpec_Sich_DS.AFOs.GS_A_2072;
+import static de.ehex.foss.gematik.specifications.gemSpec_Sich_DS.AFOs.GS_A_2073;
+import static de.ehex.foss.gematik.specifications.gemSpec_Sich_DS.AFOs.GS_A_2074;
+import static de.ehex.foss.gematik.specifications.gemSpec_Sich_DS.AFOs.GS_A_2075;
+import static de.ehex.foss.gematik.specifications.gemSpec_Sich_DS.AFOs.GS_A_2076;
+import static de.ehex.foss.gematik.specifications.gemSpec_Sich_DS.AFOs.GS_A_2087;
+import static de.ehex.foss.gematik.specifications.gemSpec_Sich_DS.AFOs.GS_A_2156;
+import static de.ehex.foss.gematik.specifications.gemSpec_Sich_DS.AFOs.GS_A_2174;
+import static de.ehex.foss.gematik.specifications.gemSpec_Sich_DS.AFOs.GS_A_2177;
+import static de.ehex.foss.gematik.specifications.gemSpec_Sich_DS.AFOs.GS_A_2213;
+import static de.ehex.foss.gematik.specifications.gemSpec_Sich_DS.AFOs.GS_A_2214;
+import static de.ehex.foss.gematik.specifications.gemSpec_Sich_DS.AFOs.GS_A_2309;
+import static de.ehex.foss.gematik.specifications.gemSpec_Sich_DS.AFOs.GS_A_2326;
+import static de.ehex.foss.gematik.specifications.gemSpec_Sich_DS.AFOs.GS_A_2328;
+import static de.ehex.foss.gematik.specifications.gemSpec_Sich_DS.AFOs.GS_A_2329;
+import static de.ehex.foss.gematik.specifications.gemSpec_Sich_DS.AFOs.GS_A_2330;
+import static de.ehex.foss.gematik.specifications.gemSpec_Sich_DS.AFOs.GS_A_2331;
+import static de.ehex.foss.gematik.specifications.gemSpec_Sich_DS.AFOs.GS_A_2332;
+import static de.ehex.foss.gematik.specifications.gemSpec_Sich_DS.AFOs.GS_A_2333;
+import static de.ehex.foss.gematik.specifications.gemSpec_Sich_DS.AFOs.GS_A_2339;
+import static de.ehex.foss.gematik.specifications.gemSpec_Sich_DS.AFOs.GS_A_2343;
+import static de.ehex.foss.gematik.specifications.gemSpec_Sich_DS.AFOs.GS_A_2345;
+import static de.ehex.foss.gematik.specifications.gemSpec_Sich_DS.AFOs.GS_A_2347;
+import static de.ehex.foss.gematik.specifications.gemSpec_Sich_DS.AFOs.GS_A_2350;
+import static de.ehex.foss.gematik.specifications.gemSpec_Sich_DS.AFOs.GS_A_2354;
+import static de.ehex.foss.gematik.specifications.gemSpec_Sich_DS.AFOs.GS_A_2355;
+import static de.ehex.foss.gematik.specifications.gemSpec_Sich_DS.AFOs.GS_A_2356;
+import static de.ehex.foss.gematik.specifications.gemSpec_Sich_DS.AFOs.GS_A_2357;
+import static de.ehex.foss.gematik.specifications.gemSpec_Sich_DS.AFOs.GS_A_2359;
+import static de.ehex.foss.gematik.specifications.gemSpec_Sich_DS.AFOs.GS_A_2360;
+import static de.ehex.foss.gematik.specifications.gemSpec_Sich_DS.AFOs.GS_A_2361;
+import static de.ehex.foss.gematik.specifications.gemSpec_Sich_DS.AFOs.GS_A_2362;
+import static de.ehex.foss.gematik.specifications.gemSpec_Sich_DS.AFOs.GS_A_2363;
+import static de.ehex.foss.gematik.specifications.gemSpec_Sich_DS.AFOs.GS_A_2366;
+import static de.ehex.foss.gematik.specifications.gemSpec_Sich_DS.AFOs.GS_A_2524;
+import static de.ehex.foss.gematik.specifications.gemSpec_Sich_DS.AFOs.GS_A_2525;
+import static de.ehex.foss.gematik.specifications.gemSpec_Sich_DS.AFOs.GS_A_3078;
+import static de.ehex.foss.gematik.specifications.gemSpec_Sich_DS.AFOs.GS_A_3125;
+import static de.ehex.foss.gematik.specifications.gemSpec_Sich_DS.AFOs.GS_A_3130;
+import static de.ehex.foss.gematik.specifications.gemSpec_Sich_DS.AFOs.GS_A_3139;
+import static de.ehex.foss.gematik.specifications.gemSpec_Sich_DS.AFOs.GS_A_3141;
+import static de.ehex.foss.gematik.specifications.gemSpec_Sich_DS.AFOs.GS_A_3149;
+import static de.ehex.foss.gematik.specifications.gemSpec_Sich_DS.AFOs.GS_A_4944;
+import static de.ehex.foss.gematik.specifications.gemSpec_Sich_DS.AFOs.GS_A_4945;
+import static de.ehex.foss.gematik.specifications.gemSpec_Sich_DS.AFOs.GS_A_4946;
+import static de.ehex.foss.gematik.specifications.gemSpec_Sich_DS.AFOs.GS_A_4947;
+import static de.ehex.foss.gematik.specifications.gemSpec_Sich_DS.AFOs.GS_A_5017;
 import static de.ehex.foss.gematik.specifications.gemSpec_TSL.AFOs.TIP1_A_5120;
-import static de.ehex.foss.gematik.specifications.gemSpec_VZD.AFOs.*;
-import static de.ehex.foss.gematik.specifications.gemSpec_X_509_TSP.AFOs.*;
-import static de.ehex.foss.gematik.specifications.gemSpec_eGK_Fach_VSDM.AFOs.*;
+import static de.ehex.foss.gematik.specifications.gemSpec_VZD.AFOs.TIP1_A_5566;
+import static de.ehex.foss.gematik.specifications.gemSpec_VZD.AFOs.TIP1_A_5568;
+import static de.ehex.foss.gematik.specifications.gemSpec_VZD.AFOs.TIP1_A_5570;
+import static de.ehex.foss.gematik.specifications.gemSpec_VZD.AFOs.TIP1_A_5588;
+import static de.ehex.foss.gematik.specifications.gemSpec_VZD.AFOs.TIP1_A_5589;
+import static de.ehex.foss.gematik.specifications.gemSpec_VZD.AFOs.TIP1_A_5591;
+import static de.ehex.foss.gematik.specifications.gemSpec_VZD.AFOs.TIP1_A_5592;
+import static de.ehex.foss.gematik.specifications.gemSpec_VZD.AFOs.TIP1_A_5594;
+import static de.ehex.foss.gematik.specifications.gemSpec_VZD.AFOs.TIP1_A_5596;
+import static de.ehex.foss.gematik.specifications.gemSpec_VZD.AFOs.TIP1_A_5598;
+import static de.ehex.foss.gematik.specifications.gemSpec_VZD.AFOs.TIP1_A_5600;
+import static de.ehex.foss.gematik.specifications.gemSpec_VZD.AFOs.TIP1_A_5601;
+import static de.ehex.foss.gematik.specifications.gemSpec_VZD.AFOs.TIP1_A_5603;
+import static de.ehex.foss.gematik.specifications.gemSpec_X_509_TSP.AFOs.TIP1_A_3547;
+import static de.ehex.foss.gematik.specifications.gemSpec_X_509_TSP.AFOs.TIP1_A_3548;
+import static de.ehex.foss.gematik.specifications.gemSpec_X_509_TSP.AFOs.TIP1_A_3549;
+import static de.ehex.foss.gematik.specifications.gemSpec_X_509_TSP.AFOs.TIP1_A_3550;
+import static de.ehex.foss.gematik.specifications.gemSpec_X_509_TSP.AFOs.TIP1_A_3554;
+import static de.ehex.foss.gematik.specifications.gemSpec_X_509_TSP.AFOs.TIP1_A_3555;
+import static de.ehex.foss.gematik.specifications.gemSpec_X_509_TSP.AFOs.TIP1_A_3557;
+import static de.ehex.foss.gematik.specifications.gemSpec_X_509_TSP.AFOs.TIP1_A_3558;
+import static de.ehex.foss.gematik.specifications.gemSpec_X_509_TSP.AFOs.TIP1_A_3564;
+import static de.ehex.foss.gematik.specifications.gemSpec_X_509_TSP.AFOs.TIP1_A_3565;
+import static de.ehex.foss.gematik.specifications.gemSpec_X_509_TSP.AFOs.TIP1_A_3567;
+import static de.ehex.foss.gematik.specifications.gemSpec_X_509_TSP.AFOs.TIP1_A_3569;
+import static de.ehex.foss.gematik.specifications.gemSpec_X_509_TSP.AFOs.TIP1_A_3574;
+import static de.ehex.foss.gematik.specifications.gemSpec_X_509_TSP.AFOs.TIP1_A_3575;
+import static de.ehex.foss.gematik.specifications.gemSpec_X_509_TSP.AFOs.TIP1_A_3576;
+import static de.ehex.foss.gematik.specifications.gemSpec_X_509_TSP.AFOs.TIP1_A_3577;
+import static de.ehex.foss.gematik.specifications.gemSpec_X_509_TSP.AFOs.TIP1_A_3580;
+import static de.ehex.foss.gematik.specifications.gemSpec_X_509_TSP.AFOs.TIP1_A_3581;
+import static de.ehex.foss.gematik.specifications.gemSpec_X_509_TSP.AFOs.TIP1_A_3590;
+import static de.ehex.foss.gematik.specifications.gemSpec_X_509_TSP.AFOs.TIP1_A_3591;
+import static de.ehex.foss.gematik.specifications.gemSpec_X_509_TSP.AFOs.TIP1_A_3592;
+import static de.ehex.foss.gematik.specifications.gemSpec_X_509_TSP.AFOs.TIP1_A_3594;
+import static de.ehex.foss.gematik.specifications.gemSpec_X_509_TSP.AFOs.TIP1_A_3595;
+import static de.ehex.foss.gematik.specifications.gemSpec_X_509_TSP.AFOs.TIP1_A_3596;
+import static de.ehex.foss.gematik.specifications.gemSpec_X_509_TSP.AFOs.TIP1_A_3630;
+import static de.ehex.foss.gematik.specifications.gemSpec_X_509_TSP.AFOs.TIP1_A_3631;
+import static de.ehex.foss.gematik.specifications.gemSpec_X_509_TSP.AFOs.TIP1_A_3632;
+import static de.ehex.foss.gematik.specifications.gemSpec_X_509_TSP.AFOs.TIP1_A_3633;
+import static de.ehex.foss.gematik.specifications.gemSpec_X_509_TSP.AFOs.TIP1_A_3634;
+import static de.ehex.foss.gematik.specifications.gemSpec_X_509_TSP.AFOs.TIP1_A_3635;
+import static de.ehex.foss.gematik.specifications.gemSpec_X_509_TSP.AFOs.TIP1_A_3637;
+import static de.ehex.foss.gematik.specifications.gemSpec_X_509_TSP.AFOs.TIP1_A_3638;
+import static de.ehex.foss.gematik.specifications.gemSpec_X_509_TSP.AFOs.TIP1_A_3639;
+import static de.ehex.foss.gematik.specifications.gemSpec_X_509_TSP.AFOs.TIP1_A_3640;
+import static de.ehex.foss.gematik.specifications.gemSpec_X_509_TSP.AFOs.TIP1_A_3642;
+import static de.ehex.foss.gematik.specifications.gemSpec_X_509_TSP.AFOs.TIP1_A_3660;
+import static de.ehex.foss.gematik.specifications.gemSpec_X_509_TSP.AFOs.TIP1_A_3877;
+import static de.ehex.foss.gematik.specifications.gemSpec_X_509_TSP.AFOs.TIP1_A_3880;
+import static de.ehex.foss.gematik.specifications.gemSpec_X_509_TSP.AFOs.TIP1_A_3881;
+import static de.ehex.foss.gematik.specifications.gemSpec_X_509_TSP.AFOs.TIP1_A_3883;
+import static de.ehex.foss.gematik.specifications.gemSpec_X_509_TSP.AFOs.TIP1_A_3884;
+import static de.ehex.foss.gematik.specifications.gemSpec_X_509_TSP.AFOs.TIP1_A_3886;
+import static de.ehex.foss.gematik.specifications.gemSpec_X_509_TSP.AFOs.TIP1_A_3887;
+import static de.ehex.foss.gematik.specifications.gemSpec_X_509_TSP.AFOs.TIP1_A_3888;
+import static de.ehex.foss.gematik.specifications.gemSpec_X_509_TSP.AFOs.TIP1_A_4230;
+import static de.ehex.foss.gematik.specifications.gemSpec_X_509_TSP.AFOs.TIP1_A_4231;
+import static de.ehex.foss.gematik.specifications.gemSpec_X_509_TSP.AFOs.TIP1_A_4232;
+import static de.ehex.foss.gematik.specifications.gemSpec_X_509_TSP.AFOs.TIP1_A_4234;
+import static de.ehex.foss.gematik.specifications.gemSpec_X_509_TSP.AFOs.TIP1_A_4235;
+import static de.ehex.foss.gematik.specifications.gemSpec_X_509_TSP.AFOs.TIP1_A_4427;
+import static de.ehex.foss.gematik.specifications.gemSpec_X_509_TSP.AFOs.TIP1_A_4428;
+import static de.ehex.foss.gematik.specifications.gemSpec_X_509_TSP.AFOs.TIP1_A_5087;
+import static de.ehex.foss.gematik.specifications.gemSpec_X_509_TSP.AFOs.TIP1_A_5376;
+import static de.ehex.foss.gematik.specifications.gemSpec_eGK_Fach_VSDM.AFOs.VSDM_A_2973;
+import static de.ehex.foss.gematik.specifications.gemSpec_eGK_Fach_VSDM.AFOs.VSDM_A_2974;
+import static de.ehex.foss.gematik.specifications.gemSpec_eGK_Fach_VSDM.AFOs.VSDM_A_2975;
+import static de.ehex.foss.gematik.specifications.gemSpec_eGK_Fach_VSDM.AFOs.VSDM_A_2976;
+import static de.ehex.foss.gematik.specifications.gemSpec_eGK_Fach_VSDM.AFOs.VSDM_A_2994;
 import static java.util.Arrays.asList;
 import static java.util.Collections.unmodifiableSet;
 import static java.util.Objects.nonNull;
 import static java.util.stream.Collectors.toSet;
 import static java.util.stream.Stream.concat;
+
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
 
 /**
  * Enumeration of all &ndash;&nbsp;currently considered&nbsp;&ndash; gematik {@link PTStB}s.
@@ -186,66 +896,42 @@ public enum PTStBs implements PTStB {
                     GS_A_4124, GS_A_4125, GS_A_4126, GS_A_4127, GS_A_4128, GS_A_4129, GS_A_4130, GS_A_4131, GS_A_4893, GS_A_4132, GS_A_4133, GS_A_4134, GS_A_4135, GS_A_4136, GS_A_4137, GS_A_4138, GS_A_4139, GS_A_4805, TIP1_A_2730,
                     VSDM_A_3006, GS_A_4864, GS_A_4720, GS_A_2070, GS_A_2071, GS_A_2072, GS_A_2073, GS_A_2074, GS_A_2075, GS_A_2156)),
 
-    gemProdT_HSMB_PTV10("gemProdT_HSMB_PTV10",
-            asList(TIP1_A_4126, TIP1_A_4127, TIP1_A_4157, GS_A_4330, GS_A_5020, TIP1_A_2575, TIP1_A_2576,
-                    TIP1_A_2578, TIP1_A_2579, TIP1_A_2586, TIP1_A_2588, TIP1_A_2589, TIP1_A_6137, TIP1_A_6138, TIP1_A_6139, TIP1_A_6140, TIP1_A_6141,
-                    TIP1_A_6142, TIP1_A_6143, TIP1_A_6144, TIP1_A_6145, TIP1_A_6146, TIP1_A_6147, TIP1_A_6148, TIP1_A_6149, TIP1_A_6150, TIP1_A_6151,
-                    TIP1_A_6152, TIP1_A_6153, TIP1_A_6154, TIP1_A_6155, TIP1_A_6156, TIP1_A_6157, TIP1_A_6158, TIP1_A_6159, TIP1_A_6160, TIP1_A_6161,
-                    TIP1_A_6162, TIP1_A_6163, TIP1_A_6164, TIP1_A_6165, TIP1_A_6166, TIP1_A_6167, TIP1_A_6168, TIP1_A_6169, TIP1_A_6170, TIP1_A_6171,
-                    TIP1_A_6172, TIP1_A_6173, TIP1_A_6174, TIP1_A_6175, TIP1_A_6176, TIP1_A_6177, TIP1_A_6178, TIP1_A_6179, TIP1_A_6180, TIP1_A_6181,
-                    TIP1_A_6182, TIP1_A_6183, TIP1_A_6184, TIP1_A_6185, TIP1_A_6186, TIP1_A_6187, TIP1_A_6188, TIP1_A_6189, TIP1_A_6190, TIP1_A_6191,
-                    TIP1_A_6192, TIP1_A_6193, TIP1_A_6194, TIP1_A_6195, TIP1_A_6196, TIP1_A_6197, TIP1_A_6198, TIP1_A_6199, TIP1_A_6200, TIP1_A_6201,
-                    TIP1_A_6202, TIP1_A_6203, TIP1_A_6204, TIP1_A_6205, TIP1_A_6206, TIP1_A_6207, TIP1_A_6208, TIP1_A_6209, TIP1_A_6210, TIP1_A_6211,
-                    TIP1_A_6212, TIP1_A_6213, TIP1_A_6214, TIP1_A_6215, TIP1_A_6216, TIP1_A_6217, TIP1_A_6218, TIP1_A_6219, TIP1_A_6220, TIP1_A_6221,
-                    TIP1_A_6222, TIP1_A_6223, TIP1_A_6224, TIP1_A_6225, TIP1_A_6226, TIP1_A_6227, TIP1_A_6228, TIP1_A_6229, TIP1_A_6230, TIP1_A_6231,
-                    TIP1_A_6232, TIP1_A_6233, TIP1_A_6234, TIP1_A_6235, TIP1_A_6236, TIP1_A_6237, TIP1_A_6238, TIP1_A_6239, TIP1_A_6240, TIP1_A_6241,
-                    TIP1_A_6242, TIP1_A_6243, TIP1_A_6244, TIP1_A_6245, TIP1_A_6246, TIP1_A_6247, TIP1_A_6248, TIP1_A_6249, TIP1_A_6250, TIP1_A_6251,
-                    TIP1_A_6252, TIP1_A_6253, TIP1_A_6254, TIP1_A_6255, TIP1_A_6256, TIP1_A_6257, TIP1_A_6258, TIP1_A_6259, TIP1_A_6260, TIP1_A_6261,
-                    TIP1_A_6262, TIP1_A_6263, TIP1_A_6264, TIP1_A_6265, TIP1_A_6266, TIP1_A_6267, TIP1_A_6268, TIP1_A_6269, TIP1_A_6270, TIP1_A_6271,
-                    TIP1_A_6272, TIP1_A_6273, TIP1_A_6274, TIP1_A_6275, TIP1_A_6276, TIP1_A_6277, TIP1_A_6278, TIP1_A_6279, TIP1_A_6280, TIP1_A_6281,
-                    TIP1_A_6282, TIP1_A_6283, TIP1_A_6284, TIP1_A_6285, TIP1_A_6286, TIP1_A_6287, TIP1_A_6288, TIP1_A_6289, TIP1_A_6290, TIP1_A_6291,
-                    TIP1_A_6292, TIP1_A_6293, TIP1_A_6294, TIP1_A_6295, TIP1_A_6296, TIP1_A_6297, TIP1_A_6298, TIP1_A_6299, TIP1_A_6300, TIP1_A_6301,
-                    TIP1_A_6302, TIP1_A_6303, TIP1_A_6304, TIP1_A_6305, TIP1_A_6306, TIP1_A_6307, TIP1_A_6308, TIP1_A_6309, TIP1_A_6310, TIP1_A_6311,
-                    TIP1_A_6312, TIP1_A_6313, TIP1_A_6314, TIP1_A_6315, TIP1_A_6316, TIP1_A_6317, TIP1_A_6318, TIP1_A_6319, TIP1_A_6320, TIP1_A_6321,
-                    TIP1_A_6322, TIP1_A_6323, TIP1_A_6324, TIP1_A_6325, TIP1_A_6326, TIP1_A_6327, TIP1_A_6328, TIP1_A_6329, TIP1_A_6330, TIP1_A_6331,
-                    TIP1_A_6332, TIP1_A_6333, TIP1_A_6334, TIP1_A_6335, TIP1_A_6336, TIP1_A_6337, TIP1_A_6338, TIP1_A_6339, TIP1_A_6340, TIP1_A_6341,
-                    TIP1_A_6342, TIP1_A_6343, TIP1_A_6344, TIP1_A_6345, TIP1_A_6346, TIP1_A_6347, TIP1_A_6348, TIP1_A_6349, TIP1_A_6350, TIP1_A_6351,
-                    TIP1_A_6352, TIP1_A_6353, TIP1_A_6354, TIP1_A_6355, TIP1_A_6356, TIP1_A_6357, GS_A_4359, GS_A_4361, GS_A_4377, GS_A_4379, GS_A_4384,
-                    GS_A_4385, GS_A_4386, GS_A_4387, GS_A_5035, GS_A_5322, GS_A_4393, GS_A_5207, GS_A_5091, GS_A_3700, GS_A_5038, GS_A_4941, GS_A_4154,
-                    GS_A_4585, GS_A_4707, GS_A_4587, GS_A_4710, GS_A_4711, GS_A_4974, GS_A_4621, GS_A_5126, GS_A_4624, GS_A_4668, GS_A_5009, GS_A_5010,
-                    GS_A_5011, GS_A_5012),
+    gemProdT_HSM_B_PTV120("gemProdT_HSM-B_PTV1.2.0",
+            asList(TIP1_A_4126, TIP1_A_4127, TIP1_A_4157, GS_A_4330, GS_A_5020, TIP1_A_2575, TIP1_A_2576, TIP1_A_2578, TIP1_A_2579, TIP1_A_2586, TIP1_A_2588, TIP1_A_2589, TIP1_A_6137, TIP1_A_6138, TIP1_A_6139, TIP1_A_6140, TIP1_A_6141,
+                    TIP1_A_6142, TIP1_A_6143, TIP1_A_6144, TIP1_A_6145, TIP1_A_6146, TIP1_A_6147, TIP1_A_6148, TIP1_A_6149, TIP1_A_6150, TIP1_A_6151, TIP1_A_6152, TIP1_A_6153, TIP1_A_6154, TIP1_A_6155, TIP1_A_6156, TIP1_A_6157, TIP1_A_6158,
+                    TIP1_A_6159, TIP1_A_6160, TIP1_A_6161, TIP1_A_6162, TIP1_A_6163, TIP1_A_6164, TIP1_A_6165, TIP1_A_6166, TIP1_A_6167, TIP1_A_6168, TIP1_A_6169, TIP1_A_6170, TIP1_A_6171, TIP1_A_6172, TIP1_A_6173, TIP1_A_6174, TIP1_A_6175,
+                    TIP1_A_6176, TIP1_A_6177, TIP1_A_6178, TIP1_A_6179, TIP1_A_6180, TIP1_A_6181, TIP1_A_6182, TIP1_A_6183, TIP1_A_6184, TIP1_A_6185, TIP1_A_6186, TIP1_A_6187, TIP1_A_6188, TIP1_A_6189, TIP1_A_6190, TIP1_A_6191, TIP1_A_6192,
+                    TIP1_A_6193, TIP1_A_6194, TIP1_A_6195, TIP1_A_6196, TIP1_A_6197, TIP1_A_6198, TIP1_A_6199, TIP1_A_6200, TIP1_A_6201, TIP1_A_6202, TIP1_A_6203, TIP1_A_6204, TIP1_A_6205, TIP1_A_6206, TIP1_A_6207, TIP1_A_6208, TIP1_A_6209,
+                    TIP1_A_6210, TIP1_A_6211, TIP1_A_6212, TIP1_A_6213, TIP1_A_6214, TIP1_A_6215, TIP1_A_6216, TIP1_A_6217, TIP1_A_6218, TIP1_A_6219, TIP1_A_6220, TIP1_A_6221, TIP1_A_6222, TIP1_A_6223, TIP1_A_6224, TIP1_A_6225, TIP1_A_6226,
+                    TIP1_A_6227, TIP1_A_6228, TIP1_A_6229, TIP1_A_6230, TIP1_A_6231, TIP1_A_6232, TIP1_A_6233, TIP1_A_6234, TIP1_A_6235, TIP1_A_6236, TIP1_A_6237, TIP1_A_6238, TIP1_A_6239, TIP1_A_6240, TIP1_A_6241, TIP1_A_6242, TIP1_A_6243,
+                    TIP1_A_6244, TIP1_A_6245, TIP1_A_6246, TIP1_A_6247, TIP1_A_6248, TIP1_A_6249, TIP1_A_6250, TIP1_A_6251, TIP1_A_6252, TIP1_A_6253, TIP1_A_6254, TIP1_A_6255, TIP1_A_6256, TIP1_A_6257, TIP1_A_6258, TIP1_A_6259, TIP1_A_6260,
+                    TIP1_A_6261, TIP1_A_6262, TIP1_A_6263, TIP1_A_6264, TIP1_A_6265, TIP1_A_6266, TIP1_A_6267, TIP1_A_6268, TIP1_A_6269, TIP1_A_6270, TIP1_A_6271, TIP1_A_6272, TIP1_A_6273, TIP1_A_6274, TIP1_A_6275, TIP1_A_6276, TIP1_A_6277,
+                    TIP1_A_6278, TIP1_A_6279, TIP1_A_6280, TIP1_A_6281, TIP1_A_6282, TIP1_A_6283, TIP1_A_6284, TIP1_A_6285, TIP1_A_6286, TIP1_A_6287, TIP1_A_6288, TIP1_A_6289, TIP1_A_6290, TIP1_A_6291, TIP1_A_6292, TIP1_A_6293, TIP1_A_6294,
+                    TIP1_A_6295, TIP1_A_6296, TIP1_A_6297, TIP1_A_6298, TIP1_A_6299, TIP1_A_6300, TIP1_A_6301, TIP1_A_6302, TIP1_A_6303, TIP1_A_6304, TIP1_A_6305, TIP1_A_6306, TIP1_A_6307, TIP1_A_6308, TIP1_A_6309, TIP1_A_6310, TIP1_A_6311,
+                    TIP1_A_6312, TIP1_A_6313, TIP1_A_6314, TIP1_A_6315, TIP1_A_6316, TIP1_A_6317, TIP1_A_6318, TIP1_A_6319, TIP1_A_6320, TIP1_A_6321, TIP1_A_6322, TIP1_A_6323, TIP1_A_6324, TIP1_A_6325, TIP1_A_6326, TIP1_A_6327, TIP1_A_6328,
+                    TIP1_A_6329, TIP1_A_6330, TIP1_A_6331, TIP1_A_6332, TIP1_A_6333, TIP1_A_6334, TIP1_A_6335, TIP1_A_6336, TIP1_A_6337, TIP1_A_6338, TIP1_A_6339, TIP1_A_6340, TIP1_A_6341, TIP1_A_6342, TIP1_A_6343, TIP1_A_6344, TIP1_A_6345,
+                    TIP1_A_6346, TIP1_A_6347, TIP1_A_6348, TIP1_A_6349, TIP1_A_6350, TIP1_A_6351, TIP1_A_6352, TIP1_A_6353, TIP1_A_6354, TIP1_A_6355, TIP1_A_6356, TIP1_A_6357, GS_A_4359, GS_A_4361, GS_A_4377, GS_A_4379, GS_A_4384,
+                    GS_A_4385, GS_A_4386, GS_A_4387, GS_A_5035, GS_A_5322, GS_A_4393, GS_A_5207, GS_A_5091, GS_A_3700, GS_A_5038, GS_A_4941, GS_A_4154, GS_A_4585, GS_A_4707, GS_A_4587, GS_A_4710, GS_A_4711, GS_A_4974, GS_A_4621, GS_A_5126,
+                    GS_A_4624, GS_A_4668, GS_A_5009, GS_A_5010, GS_A_5011, GS_A_5012),
 
-            asList(TIP1_A_4126, TIP1_A_4127, TIP1_A_4157, GS_A_4330, GS_A_5020, TIP1_A_2575, TIP1_A_2576, TIP1_A_2578, TIP1_A_2579, TIP1_A_2586,
-                    TIP1_A_2588, TIP1_A_2589, TIP1_A_6137, TIP1_A_6138, TIP1_A_6139, TIP1_A_6140, TIP1_A_6141, TIP1_A_6142, TIP1_A_6143,
-                    TIP1_A_6144, TIP1_A_6145, TIP1_A_6146, TIP1_A_6147, TIP1_A_6148, TIP1_A_6149, TIP1_A_6150, TIP1_A_6151, TIP1_A_6152,
-                    TIP1_A_6153, TIP1_A_6154, TIP1_A_6155, TIP1_A_6156, TIP1_A_6157, TIP1_A_6158, TIP1_A_6159, TIP1_A_6160, TIP1_A_6161,
-                    TIP1_A_6162, TIP1_A_6163, TIP1_A_6164, TIP1_A_6165, TIP1_A_6166, TIP1_A_6167, TIP1_A_6168, TIP1_A_6169, TIP1_A_6170,
-                    TIP1_A_6171, TIP1_A_6172, TIP1_A_6173, TIP1_A_6174, TIP1_A_6175, TIP1_A_6176, TIP1_A_6177, TIP1_A_6178, TIP1_A_6179,
-                    TIP1_A_6180, TIP1_A_6181, TIP1_A_6182, TIP1_A_6183, TIP1_A_6184, TIP1_A_6185, TIP1_A_6186, TIP1_A_6187, TIP1_A_6188,
-                    TIP1_A_6189, TIP1_A_6190, TIP1_A_6191, TIP1_A_6192, TIP1_A_6193, TIP1_A_6194, TIP1_A_6195, TIP1_A_6196, TIP1_A_6197,
-                    TIP1_A_6198, TIP1_A_6199, TIP1_A_6200, TIP1_A_6201, TIP1_A_6202, TIP1_A_6203, TIP1_A_6204, TIP1_A_6205, TIP1_A_6206,
-                    TIP1_A_6207, TIP1_A_6208, TIP1_A_6209, TIP1_A_6210, TIP1_A_6211, TIP1_A_6212, TIP1_A_6213, TIP1_A_6214, TIP1_A_6215,
-                    TIP1_A_6216, TIP1_A_6217, TIP1_A_6218, TIP1_A_6219, TIP1_A_6220, TIP1_A_6221, TIP1_A_6222, TIP1_A_6223, TIP1_A_6224,
-                    TIP1_A_6225, TIP1_A_6226, TIP1_A_6227, TIP1_A_6228, TIP1_A_6229, TIP1_A_6230, TIP1_A_6231, TIP1_A_6232, TIP1_A_6233,
-                    TIP1_A_6234, TIP1_A_6235, TIP1_A_6236, TIP1_A_6237, TIP1_A_6238, TIP1_A_6239, TIP1_A_6240, TIP1_A_6241, TIP1_A_6242,
-                    TIP1_A_6243, TIP1_A_6244, TIP1_A_6245, TIP1_A_6246, TIP1_A_6247, TIP1_A_6248, TIP1_A_6249, TIP1_A_6250, TIP1_A_6251,
-                    TIP1_A_6252, TIP1_A_6253, TIP1_A_6254, TIP1_A_6255, TIP1_A_6256, TIP1_A_6257, TIP1_A_6258, TIP1_A_6259, TIP1_A_6260,
-                    TIP1_A_6261, TIP1_A_6262, TIP1_A_6263, TIP1_A_6264, TIP1_A_6265, TIP1_A_6266, TIP1_A_6267, TIP1_A_6268, TIP1_A_6269,
-                    TIP1_A_6270, TIP1_A_6271, TIP1_A_6272, TIP1_A_6273, TIP1_A_6274, TIP1_A_6275, TIP1_A_6276, TIP1_A_6277, TIP1_A_6278,
-                    TIP1_A_6279, TIP1_A_6280, TIP1_A_6281, TIP1_A_6282, TIP1_A_6283, TIP1_A_6284, TIP1_A_6285, TIP1_A_6286, TIP1_A_6287,
-                    TIP1_A_6288, TIP1_A_6289, TIP1_A_6290, TIP1_A_6291, TIP1_A_6292, TIP1_A_6293, TIP1_A_6294, TIP1_A_6295, TIP1_A_6296,
-                    TIP1_A_6297, TIP1_A_6298, TIP1_A_6299, TIP1_A_6300, TIP1_A_6301, TIP1_A_6302, TIP1_A_6303, TIP1_A_6304, TIP1_A_6305,
-                    TIP1_A_6306, TIP1_A_6307, TIP1_A_6308, TIP1_A_6309, TIP1_A_6310, TIP1_A_6311, TIP1_A_6312, TIP1_A_6313, TIP1_A_6314,
-                    TIP1_A_6315, TIP1_A_6316, TIP1_A_6317, TIP1_A_6318, TIP1_A_6319, TIP1_A_6320, TIP1_A_6321, TIP1_A_6322, TIP1_A_6323,
-                    TIP1_A_6324, TIP1_A_6325, TIP1_A_6326, TIP1_A_6327, TIP1_A_6328, TIP1_A_6329, TIP1_A_6330, TIP1_A_6331, TIP1_A_6332,
-                    TIP1_A_6333, TIP1_A_6334, TIP1_A_6335, TIP1_A_6336, TIP1_A_6337, TIP1_A_6338, TIP1_A_6339, TIP1_A_6340, TIP1_A_6341,
-                    TIP1_A_6342, TIP1_A_6343, TIP1_A_6344, TIP1_A_6345, TIP1_A_6346, TIP1_A_6347, TIP1_A_6348, TIP1_A_6349, TIP1_A_6350,
-                    TIP1_A_6351, TIP1_A_6352, TIP1_A_6353, TIP1_A_6354, TIP1_A_6355, TIP1_A_6356, TIP1_A_6357, GS_A_4359, GS_A_4361, GS_A_4377,
-                    GS_A_4379, GS_A_4384, GS_A_4385, GS_A_4386, GS_A_4387, GS_A_5035, GS_A_5322, GS_A_4393, GS_A_5207, GS_A_5091, GS_A_3700,
-                    GS_A_5038, GS_A_4941, GS_A_4154, GS_A_4585, GS_A_4707, GS_A_4587, GS_A_4710, GS_A_4711, GS_A_4974, GS_A_4621, GS_A_5126,
+            asList(TIP1_A_4126, TIP1_A_4127, TIP1_A_4157, GS_A_4330, GS_A_5020, TIP1_A_2575, TIP1_A_2576, TIP1_A_2578, TIP1_A_2579, TIP1_A_2586, TIP1_A_2588, TIP1_A_2589, TIP1_A_6137, TIP1_A_6138, TIP1_A_6139, TIP1_A_6140, TIP1_A_6141,
+                    TIP1_A_6142, TIP1_A_6143, TIP1_A_6144, TIP1_A_6145, TIP1_A_6146, TIP1_A_6147, TIP1_A_6148, TIP1_A_6149, TIP1_A_6150, TIP1_A_6151, TIP1_A_6152, TIP1_A_6153, TIP1_A_6154, TIP1_A_6155, TIP1_A_6156, TIP1_A_6157, TIP1_A_6158,
+                    TIP1_A_6159, TIP1_A_6160, TIP1_A_6161, TIP1_A_6162, TIP1_A_6163, TIP1_A_6164, TIP1_A_6165, TIP1_A_6166, TIP1_A_6167, TIP1_A_6168, TIP1_A_6169, TIP1_A_6170, TIP1_A_6171, TIP1_A_6172, TIP1_A_6173, TIP1_A_6174, TIP1_A_6175,
+                    TIP1_A_6176, TIP1_A_6177, TIP1_A_6178, TIP1_A_6179, TIP1_A_6180, TIP1_A_6181, TIP1_A_6182, TIP1_A_6183, TIP1_A_6184, TIP1_A_6185, TIP1_A_6186, TIP1_A_6187, TIP1_A_6188, TIP1_A_6189, TIP1_A_6190, TIP1_A_6191, TIP1_A_6192,
+                    TIP1_A_6193, TIP1_A_6194, TIP1_A_6195, TIP1_A_6196, TIP1_A_6197, TIP1_A_6198, TIP1_A_6199, TIP1_A_6200, TIP1_A_6201, TIP1_A_6202, TIP1_A_6203, TIP1_A_6204, TIP1_A_6205, TIP1_A_6206, TIP1_A_6207, TIP1_A_6208, TIP1_A_6209,
+                    TIP1_A_6210, TIP1_A_6211, TIP1_A_6212, TIP1_A_6213, TIP1_A_6214, TIP1_A_6215, TIP1_A_6216, TIP1_A_6217, TIP1_A_6218, TIP1_A_6219, TIP1_A_6220, TIP1_A_6221, TIP1_A_6222, TIP1_A_6223, TIP1_A_6224, TIP1_A_6225, TIP1_A_6226,
+                    TIP1_A_6227, TIP1_A_6228, TIP1_A_6229, TIP1_A_6230, TIP1_A_6231, TIP1_A_6232, TIP1_A_6233, TIP1_A_6234, TIP1_A_6235, TIP1_A_6236, TIP1_A_6237, TIP1_A_6238, TIP1_A_6239, TIP1_A_6240, TIP1_A_6241, TIP1_A_6242, TIP1_A_6243,
+                    TIP1_A_6244, TIP1_A_6245, TIP1_A_6246, TIP1_A_6247, TIP1_A_6248, TIP1_A_6249, TIP1_A_6250, TIP1_A_6251, TIP1_A_6252, TIP1_A_6253, TIP1_A_6254, TIP1_A_6255, TIP1_A_6256, TIP1_A_6257, TIP1_A_6258, TIP1_A_6259, TIP1_A_6260,
+                    TIP1_A_6261, TIP1_A_6262, TIP1_A_6263, TIP1_A_6264, TIP1_A_6265, TIP1_A_6266, TIP1_A_6267, TIP1_A_6268, TIP1_A_6269, TIP1_A_6270, TIP1_A_6271, TIP1_A_6272, TIP1_A_6273, TIP1_A_6274, TIP1_A_6275, TIP1_A_6276, TIP1_A_6277,
+                    TIP1_A_6278, TIP1_A_6279, TIP1_A_6280, TIP1_A_6281, TIP1_A_6282, TIP1_A_6283, TIP1_A_6284, TIP1_A_6285, TIP1_A_6286, TIP1_A_6287, TIP1_A_6288, TIP1_A_6289, TIP1_A_6290, TIP1_A_6291, TIP1_A_6292, TIP1_A_6293, TIP1_A_6294,
+                    TIP1_A_6295, TIP1_A_6296, TIP1_A_6297, TIP1_A_6298, TIP1_A_6299, TIP1_A_6300, TIP1_A_6301, TIP1_A_6302, TIP1_A_6303, TIP1_A_6304, TIP1_A_6305, TIP1_A_6306, TIP1_A_6307, TIP1_A_6308, TIP1_A_6309, TIP1_A_6310, TIP1_A_6311,
+                    TIP1_A_6312, TIP1_A_6313, TIP1_A_6314, TIP1_A_6315, TIP1_A_6316, TIP1_A_6317, TIP1_A_6318, TIP1_A_6319, TIP1_A_6320, TIP1_A_6321, TIP1_A_6322, TIP1_A_6323, TIP1_A_6324, TIP1_A_6325, TIP1_A_6326, TIP1_A_6327, TIP1_A_6328,
+                    TIP1_A_6329, TIP1_A_6330, TIP1_A_6331, TIP1_A_6332, TIP1_A_6333, TIP1_A_6334, TIP1_A_6335, TIP1_A_6336, TIP1_A_6337, TIP1_A_6338, TIP1_A_6339, TIP1_A_6340, TIP1_A_6341, TIP1_A_6342, TIP1_A_6343, TIP1_A_6344, TIP1_A_6345,
+                    TIP1_A_6346, TIP1_A_6347, TIP1_A_6348, TIP1_A_6349, TIP1_A_6350, TIP1_A_6351, TIP1_A_6352, TIP1_A_6353, TIP1_A_6354, TIP1_A_6355, TIP1_A_6356, TIP1_A_6357, GS_A_4359, GS_A_4361, GS_A_4377, GS_A_4379, GS_A_4384,
+                    GS_A_4385, GS_A_4386, GS_A_4387, GS_A_5035, GS_A_5322, GS_A_4393, GS_A_5207, GS_A_5091, GS_A_3700, GS_A_5038, GS_A_4941, GS_A_4154, GS_A_4585, GS_A_4707, GS_A_4587, GS_A_4710, GS_A_4711, GS_A_4974, GS_A_4621, GS_A_5126,
                     GS_A_4624, GS_A_4668, GS_A_5009, GS_A_5010, GS_A_5011, GS_A_5012)),
 
-            @AfoHistory(documentVersion = "gemProdT_Intermediaer_VSDM_PTV150_V100", description = "Aus OPB1-Paket - ist State of Change und noch nicht released. Identisch mit gemProdT_Intermediaer_VSDM_PTV140_V100 zzgl. AFO GS-A_3027") gemProdT_Intermediaer_VSDM_PTV150_V100(
+    @AfoHistory(documentVersion = "gemProdT_Intermediaer_VSDM_PTV150_V100", description = "Aus OPB1-Paket - ist State of Change und noch nicht released. Identisch mit gemProdT_Intermediaer_VSDM_PTV140_V100 zzgl. AFO GS-A_3027") gemProdT_Intermediaer_VSDM_PTV150_V100(
             "gemProdT_Intermediär_VSDM_PTV1.5.0",
             asList(TIP1_A_4126, TIP1_A_4157, VSDM_A_2348, VSDM_A_2349, VSDM_A_2350, VSDM_A_2351, VSDM_A_2353, VSDM_A_2356, VSDM_A_2357, VSDM_A_2358, VSDM_A_2359, VSDM_A_2547, VSDM_A_2548, VSDM_A_2549, VSDM_A_2550, VSDM_A_2673, VSDM_A_2704,
                     VSDM_A_2706, VSDM_A_2707, VSDM_A_2712, VSDM_A_2747, VSDM_A_2761, VSDM_A_2940, VSDM_A_3022, VSDM_A_3023, GS_A_4386, GS_A_4009, GS_A_4832, GS_A_4013, GS_A_4024, GS_A_4033, GS_A_4035, GS_A_4762, GS_A_4036, GS_A_4763,
