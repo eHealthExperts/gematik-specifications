@@ -1,4 +1,4 @@
-package de.ehex.foss.gematik.specifications.gemSpec_HSMB;
+package de.ehex.foss.gematik.specifications.gemSpec_HSM_B;
 
 import static de.ehex.foss.gematik.specifications.AFOType.MUST;
 import static java.util.Objects.nonNull;

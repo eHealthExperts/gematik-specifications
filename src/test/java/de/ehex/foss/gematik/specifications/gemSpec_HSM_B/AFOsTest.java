@@ -1,4 +1,4 @@
-package de.ehex.foss.gematik.specifications.gemSpec_HSMB;
+package de.ehex.foss.gematik.specifications.gemSpec_HSM_B;
 
 import static java.util.Arrays.stream;
 import static java.util.stream.Collectors.toList;
