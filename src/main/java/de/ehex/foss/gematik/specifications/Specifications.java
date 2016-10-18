@@ -64,7 +64,7 @@ public enum Specifications implements Specification {
 
     gemSpec_HSMB("gemSpec_HSMB", de.ehex.foss.gematik.specifications.gemSpec_HSMB.AFOs.class),
 
-    gemSpec_CVC_TSP ("gemSpec_CVC_TSP", de.ehex.foss.gematik.specifications.gemSpec_CVC_TSP.AFOs.class),
+    gemSpec_CVC_TSP("gemSpec_CVC_TSP", de.ehex.foss.gematik.specifications.gemSpec_CVC_TSP.AFOs.class),
 
     ;
 
