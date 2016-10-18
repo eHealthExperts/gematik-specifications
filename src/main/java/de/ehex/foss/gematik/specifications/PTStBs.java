@@ -215,6 +215,13 @@ import static de.ehex.foss.gematik.specifications.gemSpec_CM_KOMLE.AFOs.KOM_LE_A
 import static de.ehex.foss.gematik.specifications.gemSpec_CM_KOMLE.AFOs.KOM_LE_A_2193;
 import static de.ehex.foss.gematik.specifications.gemSpec_CM_KOMLE.AFOs.KOM_LE_A_2225;
 import static de.ehex.foss.gematik.specifications.gemSpec_CM_KOMLE.AFOs.KOM_LE_A_2230;
+import static de.ehex.foss.gematik.specifications.gemSpec_CVC_TSP.AFOs.TIP1_A_2575;
+import static de.ehex.foss.gematik.specifications.gemSpec_CVC_TSP.AFOs.TIP1_A_2576;
+import static de.ehex.foss.gematik.specifications.gemSpec_CVC_TSP.AFOs.TIP1_A_2578;
+import static de.ehex.foss.gematik.specifications.gemSpec_CVC_TSP.AFOs.TIP1_A_2579;
+import static de.ehex.foss.gematik.specifications.gemSpec_CVC_TSP.AFOs.TIP1_A_2586;
+import static de.ehex.foss.gematik.specifications.gemSpec_CVC_TSP.AFOs.TIP1_A_2588;
+import static de.ehex.foss.gematik.specifications.gemSpec_CVC_TSP.AFOs.TIP1_A_2589;
 import static de.ehex.foss.gematik.specifications.gemSpec_DSM.AFOs.GS_A_4435;
 import static de.ehex.foss.gematik.specifications.gemSpec_DSM.AFOs.GS_A_4436;
 import static de.ehex.foss.gematik.specifications.gemSpec_DSM.AFOs.GS_A_4437;
@@ -300,6 +307,7 @@ import static de.ehex.foss.gematik.specifications.gemSpec_FD_KOMLE.AFOs.KOM_LE_A
 import static de.ehex.foss.gematik.specifications.gemSpec_FD_KOMLE.AFOs.KOM_LE_A_2231;
 import static de.ehex.foss.gematik.specifications.gemSpec_FD_KOMLE.AFOs.KOM_LE_A_2277;
 import static de.ehex.foss.gematik.specifications.gemSpec_FD_KOMLE.AFOs.KOM_LE_A_2278;
+import static de.ehex.foss.gematik.specifications.gemSpec_HSM_B.AFOs.*;
 import static de.ehex.foss.gematik.specifications.gemSpec_ISM.AFOs.GS_A_4503;
 import static de.ehex.foss.gematik.specifications.gemSpec_ISM.AFOs.GS_A_4504;
 import static de.ehex.foss.gematik.specifications.gemSpec_ISM.AFOs.GS_A_4505;
@@ -387,7 +395,9 @@ import static de.ehex.foss.gematik.specifications.gemSpec_Krypt.AFOs.GS_A_4361;
 import static de.ehex.foss.gematik.specifications.gemSpec_Krypt.AFOs.GS_A_4362;
 import static de.ehex.foss.gematik.specifications.gemSpec_Krypt.AFOs.GS_A_4367;
 import static de.ehex.foss.gematik.specifications.gemSpec_Krypt.AFOs.GS_A_4368;
+import static de.ehex.foss.gematik.specifications.gemSpec_Krypt.AFOs.GS_A_4377;
 import static de.ehex.foss.gematik.specifications.gemSpec_Krypt.AFOs.GS_A_4378;
+import static de.ehex.foss.gematik.specifications.gemSpec_Krypt.AFOs.GS_A_4379;
 import static de.ehex.foss.gematik.specifications.gemSpec_Krypt.AFOs.GS_A_4380;
 import static de.ehex.foss.gematik.specifications.gemSpec_Krypt.AFOs.GS_A_4384;
 import static de.ehex.foss.gematik.specifications.gemSpec_Krypt.AFOs.GS_A_4385;
@@ -397,7 +407,9 @@ import static de.ehex.foss.gematik.specifications.gemSpec_Krypt.AFOs.GS_A_4388;
 import static de.ehex.foss.gematik.specifications.gemSpec_Krypt.AFOs.GS_A_4393;
 import static de.ehex.foss.gematik.specifications.gemSpec_Krypt.AFOs.GS_A_5035;
 import static de.ehex.foss.gematik.specifications.gemSpec_Krypt.AFOs.GS_A_5079;
+import static de.ehex.foss.gematik.specifications.gemSpec_Krypt.AFOs.GS_A_5091;
 import static de.ehex.foss.gematik.specifications.gemSpec_Krypt.AFOs.GS_A_5131;
+import static de.ehex.foss.gematik.specifications.gemSpec_Krypt.AFOs.GS_A_5207;
 import static de.ehex.foss.gematik.specifications.gemSpec_Krypt.AFOs.GS_A_5322;
 import static de.ehex.foss.gematik.specifications.gemSpec_Net.AFOs.GS_A_3824;
 import static de.ehex.foss.gematik.specifications.gemSpec_Net.AFOs.GS_A_3832;
@@ -446,6 +458,7 @@ import static de.ehex.foss.gematik.specifications.gemSpec_OID.AFOs.GS_A_4445;
 import static de.ehex.foss.gematik.specifications.gemSpec_OM.AFOs.GS_A_3695;
 import static de.ehex.foss.gematik.specifications.gemSpec_OM.AFOs.GS_A_3696;
 import static de.ehex.foss.gematik.specifications.gemSpec_OM.AFOs.GS_A_3697;
+import static de.ehex.foss.gematik.specifications.gemSpec_OM.AFOs.GS_A_3700;
 import static de.ehex.foss.gematik.specifications.gemSpec_OM.AFOs.GS_A_3702;
 import static de.ehex.foss.gematik.specifications.gemSpec_OM.AFOs.GS_A_3796;
 import static de.ehex.foss.gematik.specifications.gemSpec_OM.AFOs.GS_A_3801;
@@ -461,6 +474,7 @@ import static de.ehex.foss.gematik.specifications.gemSpec_OM.AFOs.GS_A_4543;
 import static de.ehex.foss.gematik.specifications.gemSpec_OM.AFOs.GS_A_4545;
 import static de.ehex.foss.gematik.specifications.gemSpec_OM.AFOs.GS_A_4547;
 import static de.ehex.foss.gematik.specifications.gemSpec_OM.AFOs.GS_A_4864;
+import static de.ehex.foss.gematik.specifications.gemSpec_OM.AFOs.GS_A_4941;
 import static de.ehex.foss.gematik.specifications.gemSpec_OM.AFOs.GS_A_5018;
 import static de.ehex.foss.gematik.specifications.gemSpec_OM.AFOs.GS_A_5025;
 import static de.ehex.foss.gematik.specifications.gemSpec_OM.AFOs.GS_A_5033;
@@ -469,96 +483,7 @@ import static de.ehex.foss.gematik.specifications.gemSpec_OM.AFOs.GS_A_5039;
 import static de.ehex.foss.gematik.specifications.gemSpec_OM.AFOs.GS_A_5040;
 import static de.ehex.foss.gematik.specifications.gemSpec_OM.AFOs.GS_A_5054;
 import static de.ehex.foss.gematik.specifications.gemSpec_OM.AFOs.GS_A_5252;
-import static de.ehex.foss.gematik.specifications.gemSpec_PKI.AFOs.GS_A_4572;
-import static de.ehex.foss.gematik.specifications.gemSpec_PKI.AFOs.GS_A_4573;
-import static de.ehex.foss.gematik.specifications.gemSpec_PKI.AFOs.GS_A_4574;
-import static de.ehex.foss.gematik.specifications.gemSpec_PKI.AFOs.GS_A_4575;
-import static de.ehex.foss.gematik.specifications.gemSpec_PKI.AFOs.GS_A_4576;
-import static de.ehex.foss.gematik.specifications.gemSpec_PKI.AFOs.GS_A_4577;
-import static de.ehex.foss.gematik.specifications.gemSpec_PKI.AFOs.GS_A_4588;
-import static de.ehex.foss.gematik.specifications.gemSpec_PKI.AFOs.GS_A_4590;
-import static de.ehex.foss.gematik.specifications.gemSpec_PKI.AFOs.GS_A_4595;
-import static de.ehex.foss.gematik.specifications.gemSpec_PKI.AFOs.GS_A_4596;
-import static de.ehex.foss.gematik.specifications.gemSpec_PKI.AFOs.GS_A_4598;
-import static de.ehex.foss.gematik.specifications.gemSpec_PKI.AFOs.GS_A_4599;
-import static de.ehex.foss.gematik.specifications.gemSpec_PKI.AFOs.GS_A_4637;
-import static de.ehex.foss.gematik.specifications.gemSpec_PKI.AFOs.GS_A_4640;
-import static de.ehex.foss.gematik.specifications.gemSpec_PKI.AFOs.GS_A_4641;
-import static de.ehex.foss.gematik.specifications.gemSpec_PKI.AFOs.GS_A_4642;
-import static de.ehex.foss.gematik.specifications.gemSpec_PKI.AFOs.GS_A_4643;
-import static de.ehex.foss.gematik.specifications.gemSpec_PKI.AFOs.GS_A_4646;
-import static de.ehex.foss.gematik.specifications.gemSpec_PKI.AFOs.GS_A_4647;
-import static de.ehex.foss.gematik.specifications.gemSpec_PKI.AFOs.GS_A_4648;
-import static de.ehex.foss.gematik.specifications.gemSpec_PKI.AFOs.GS_A_4649;
-import static de.ehex.foss.gematik.specifications.gemSpec_PKI.AFOs.GS_A_4650;
-import static de.ehex.foss.gematik.specifications.gemSpec_PKI.AFOs.GS_A_4651;
-import static de.ehex.foss.gematik.specifications.gemSpec_PKI.AFOs.GS_A_4652;
-import static de.ehex.foss.gematik.specifications.gemSpec_PKI.AFOs.GS_A_4653;
-import static de.ehex.foss.gematik.specifications.gemSpec_PKI.AFOs.GS_A_4654;
-import static de.ehex.foss.gematik.specifications.gemSpec_PKI.AFOs.GS_A_4655;
-import static de.ehex.foss.gematik.specifications.gemSpec_PKI.AFOs.GS_A_4656;
-import static de.ehex.foss.gematik.specifications.gemSpec_PKI.AFOs.GS_A_4657;
-import static de.ehex.foss.gematik.specifications.gemSpec_PKI.AFOs.GS_A_4660;
-import static de.ehex.foss.gematik.specifications.gemSpec_PKI.AFOs.GS_A_4661;
-import static de.ehex.foss.gematik.specifications.gemSpec_PKI.AFOs.GS_A_4662;
-import static de.ehex.foss.gematik.specifications.gemSpec_PKI.AFOs.GS_A_4663;
-import static de.ehex.foss.gematik.specifications.gemSpec_PKI.AFOs.GS_A_4669;
-import static de.ehex.foss.gematik.specifications.gemSpec_PKI.AFOs.GS_A_4670;
-import static de.ehex.foss.gematik.specifications.gemSpec_PKI.AFOs.GS_A_4673;
-import static de.ehex.foss.gematik.specifications.gemSpec_PKI.AFOs.GS_A_4675;
-import static de.ehex.foss.gematik.specifications.gemSpec_PKI.AFOs.GS_A_4677;
-import static de.ehex.foss.gematik.specifications.gemSpec_PKI.AFOs.GS_A_4678;
-import static de.ehex.foss.gematik.specifications.gemSpec_PKI.AFOs.GS_A_4679;
-import static de.ehex.foss.gematik.specifications.gemSpec_PKI.AFOs.GS_A_4680;
-import static de.ehex.foss.gematik.specifications.gemSpec_PKI.AFOs.GS_A_4684;
-import static de.ehex.foss.gematik.specifications.gemSpec_PKI.AFOs.GS_A_4685;
-import static de.ehex.foss.gematik.specifications.gemSpec_PKI.AFOs.GS_A_4686;
-import static de.ehex.foss.gematik.specifications.gemSpec_PKI.AFOs.GS_A_4687;
-import static de.ehex.foss.gematik.specifications.gemSpec_PKI.AFOs.GS_A_4688;
-import static de.ehex.foss.gematik.specifications.gemSpec_PKI.AFOs.GS_A_4689;
-import static de.ehex.foss.gematik.specifications.gemSpec_PKI.AFOs.GS_A_4690;
-import static de.ehex.foss.gematik.specifications.gemSpec_PKI.AFOs.GS_A_4691;
-import static de.ehex.foss.gematik.specifications.gemSpec_PKI.AFOs.GS_A_4692;
-import static de.ehex.foss.gematik.specifications.gemSpec_PKI.AFOs.GS_A_4694;
-import static de.ehex.foss.gematik.specifications.gemSpec_PKI.AFOs.GS_A_4697;
-import static de.ehex.foss.gematik.specifications.gemSpec_PKI.AFOs.GS_A_4704;
-import static de.ehex.foss.gematik.specifications.gemSpec_PKI.AFOs.GS_A_4705;
-import static de.ehex.foss.gematik.specifications.gemSpec_PKI.AFOs.GS_A_4706;
-import static de.ehex.foss.gematik.specifications.gemSpec_PKI.AFOs.GS_A_4714;
-import static de.ehex.foss.gematik.specifications.gemSpec_PKI.AFOs.GS_A_4715;
-import static de.ehex.foss.gematik.specifications.gemSpec_PKI.AFOs.GS_A_4716;
-import static de.ehex.foss.gematik.specifications.gemSpec_PKI.AFOs.GS_A_4717;
-import static de.ehex.foss.gematik.specifications.gemSpec_PKI.AFOs.GS_A_4718;
-import static de.ehex.foss.gematik.specifications.gemSpec_PKI.AFOs.GS_A_4719;
-import static de.ehex.foss.gematik.specifications.gemSpec_PKI.AFOs.GS_A_4720;
-import static de.ehex.foss.gematik.specifications.gemSpec_PKI.AFOs.GS_A_4721;
-import static de.ehex.foss.gematik.specifications.gemSpec_PKI.AFOs.GS_A_4722;
-import static de.ehex.foss.gematik.specifications.gemSpec_PKI.AFOs.GS_A_4723;
-import static de.ehex.foss.gematik.specifications.gemSpec_PKI.AFOs.GS_A_4724;
-import static de.ehex.foss.gematik.specifications.gemSpec_PKI.AFOs.GS_A_4727;
-import static de.ehex.foss.gematik.specifications.gemSpec_PKI.AFOs.GS_A_4730;
-import static de.ehex.foss.gematik.specifications.gemSpec_PKI.AFOs.GS_A_4731;
-import static de.ehex.foss.gematik.specifications.gemSpec_PKI.AFOs.GS_A_4732;
-import static de.ehex.foss.gematik.specifications.gemSpec_PKI.AFOs.GS_A_4735;
-import static de.ehex.foss.gematik.specifications.gemSpec_PKI.AFOs.GS_A_4737;
-import static de.ehex.foss.gematik.specifications.gemSpec_PKI.AFOs.GS_A_4738;
-import static de.ehex.foss.gematik.specifications.gemSpec_PKI.AFOs.GS_A_4739;
-import static de.ehex.foss.gematik.specifications.gemSpec_PKI.AFOs.GS_A_4740;
-import static de.ehex.foss.gematik.specifications.gemSpec_PKI.AFOs.GS_A_4741;
-import static de.ehex.foss.gematik.specifications.gemSpec_PKI.AFOs.GS_A_4748;
-import static de.ehex.foss.gematik.specifications.gemSpec_PKI.AFOs.GS_A_4749;
-import static de.ehex.foss.gematik.specifications.gemSpec_PKI.AFOs.GS_A_4751;
-import static de.ehex.foss.gematik.specifications.gemSpec_PKI.AFOs.GS_A_4829;
-import static de.ehex.foss.gematik.specifications.gemSpec_PKI.AFOs.GS_A_4898;
-import static de.ehex.foss.gematik.specifications.gemSpec_PKI.AFOs.GS_A_4899;
-import static de.ehex.foss.gematik.specifications.gemSpec_PKI.AFOs.GS_A_4902;
-import static de.ehex.foss.gematik.specifications.gemSpec_PKI.AFOs.GS_A_4935;
-import static de.ehex.foss.gematik.specifications.gemSpec_PKI.AFOs.GS_A_4936;
-import static de.ehex.foss.gematik.specifications.gemSpec_PKI.AFOs.GS_A_4957;
-import static de.ehex.foss.gematik.specifications.gemSpec_PKI.AFOs.GS_A_5077;
-import static de.ehex.foss.gematik.specifications.gemSpec_PKI.AFOs.GS_A_5090;
-import static de.ehex.foss.gematik.specifications.gemSpec_PKI.AFOs.GS_A_5215;
-import static de.ehex.foss.gematik.specifications.gemSpec_PKI.AFOs.GS_A_5336;
+import static de.ehex.foss.gematik.specifications.gemSpec_PKI.AFOs.*;
 import static de.ehex.foss.gematik.specifications.gemSpec_Perf.AFOs.GS_A_3055;
 import static de.ehex.foss.gematik.specifications.gemSpec_Perf.AFOs.GS_A_3058;
 import static de.ehex.foss.gematik.specifications.gemSpec_Perf.AFOs.GS_A_4145;
@@ -566,6 +491,7 @@ import static de.ehex.foss.gematik.specifications.gemSpec_Perf.AFOs.GS_A_4146;
 import static de.ehex.foss.gematik.specifications.gemSpec_Perf.AFOs.GS_A_4147;
 import static de.ehex.foss.gematik.specifications.gemSpec_Perf.AFOs.GS_A_4148;
 import static de.ehex.foss.gematik.specifications.gemSpec_Perf.AFOs.GS_A_4149;
+import static de.ehex.foss.gematik.specifications.gemSpec_Perf.AFOs.GS_A_4154;
 import static de.ehex.foss.gematik.specifications.gemSpec_Perf.AFOs.GS_A_4155;
 import static de.ehex.foss.gematik.specifications.gemSpec_Perf.AFOs.GS_A_4159;
 import static de.ehex.foss.gematik.specifications.gemSpec_Perf.AFOs.GS_A_4160;
@@ -969,6 +895,41 @@ public enum PTStBs implements PTStB {
                     GS_A_3985, GS_A_3986, GS_A_3987, GS_A_3988, GS_A_3989, GS_A_3990, GS_A_3991, GS_A_3992, GS_A_3993, GS_A_3994, GS_A_4000, GS_A_3995, GS_A_3996, GS_A_3997, GS_A_3998, GS_A_3999, GS_A_5251, GS_A_4121, GS_A_4122, GS_A_4123,
                     GS_A_4124, GS_A_4125, GS_A_4126, GS_A_4127, GS_A_4128, GS_A_4129, GS_A_4130, GS_A_4131, GS_A_4893, GS_A_4132, GS_A_4133, GS_A_4134, GS_A_4135, GS_A_4136, GS_A_4137, GS_A_4138, GS_A_4139, GS_A_4805, TIP1_A_2730,
                     VSDM_A_3006, GS_A_4864, GS_A_4720, GS_A_2070, GS_A_2071, GS_A_2072, GS_A_2073, GS_A_2074, GS_A_2075, GS_A_2156)),
+
+    gemProdT_HSM_B_PTV120("gemProdT_HSM-B_PTV1.2.0",
+            asList(TIP1_A_4126, TIP1_A_4127, TIP1_A_4157, GS_A_4330, GS_A_5020, TIP1_A_2575, TIP1_A_2576, TIP1_A_2578, TIP1_A_2579, TIP1_A_2586, TIP1_A_2588, TIP1_A_2589, TIP1_A_6137, TIP1_A_6138, TIP1_A_6139, TIP1_A_6140, TIP1_A_6141,
+                    TIP1_A_6142, TIP1_A_6143, TIP1_A_6144, TIP1_A_6145, TIP1_A_6146, TIP1_A_6147, TIP1_A_6148, TIP1_A_6149, TIP1_A_6150, TIP1_A_6151, TIP1_A_6152, TIP1_A_6153, TIP1_A_6154, TIP1_A_6155, TIP1_A_6156, TIP1_A_6157, TIP1_A_6158,
+                    TIP1_A_6159, TIP1_A_6160, TIP1_A_6161, TIP1_A_6162, TIP1_A_6163, TIP1_A_6164, TIP1_A_6165, TIP1_A_6166, TIP1_A_6167, TIP1_A_6168, TIP1_A_6169, TIP1_A_6170, TIP1_A_6171, TIP1_A_6172, TIP1_A_6173, TIP1_A_6174, TIP1_A_6175,
+                    TIP1_A_6176, TIP1_A_6177, TIP1_A_6178, TIP1_A_6179, TIP1_A_6180, TIP1_A_6181, TIP1_A_6182, TIP1_A_6183, TIP1_A_6184, TIP1_A_6185, TIP1_A_6186, TIP1_A_6187, TIP1_A_6188, TIP1_A_6189, TIP1_A_6190, TIP1_A_6191, TIP1_A_6192,
+                    TIP1_A_6193, TIP1_A_6194, TIP1_A_6195, TIP1_A_6196, TIP1_A_6197, TIP1_A_6198, TIP1_A_6199, TIP1_A_6200, TIP1_A_6201, TIP1_A_6202, TIP1_A_6203, TIP1_A_6204, TIP1_A_6205, TIP1_A_6206, TIP1_A_6207, TIP1_A_6208, TIP1_A_6209,
+                    TIP1_A_6210, TIP1_A_6211, TIP1_A_6212, TIP1_A_6213, TIP1_A_6214, TIP1_A_6215, TIP1_A_6216, TIP1_A_6217, TIP1_A_6218, TIP1_A_6219, TIP1_A_6220, TIP1_A_6221, TIP1_A_6222, TIP1_A_6223, TIP1_A_6224, TIP1_A_6225, TIP1_A_6226,
+                    TIP1_A_6227, TIP1_A_6228, TIP1_A_6229, TIP1_A_6230, TIP1_A_6231, TIP1_A_6232, TIP1_A_6233, TIP1_A_6234, TIP1_A_6235, TIP1_A_6236, TIP1_A_6237, TIP1_A_6238, TIP1_A_6239, TIP1_A_6240, TIP1_A_6241, TIP1_A_6242, TIP1_A_6243,
+                    TIP1_A_6244, TIP1_A_6245, TIP1_A_6246, TIP1_A_6247, TIP1_A_6248, TIP1_A_6249, TIP1_A_6250, TIP1_A_6251, TIP1_A_6252, TIP1_A_6253, TIP1_A_6254, TIP1_A_6255, TIP1_A_6256, TIP1_A_6257, TIP1_A_6258, TIP1_A_6259, TIP1_A_6260,
+                    TIP1_A_6261, TIP1_A_6262, TIP1_A_6263, TIP1_A_6264, TIP1_A_6265, TIP1_A_6266, TIP1_A_6267, TIP1_A_6268, TIP1_A_6269, TIP1_A_6270, TIP1_A_6271, TIP1_A_6272, TIP1_A_6273, TIP1_A_6274, TIP1_A_6275, TIP1_A_6276, TIP1_A_6277,
+                    TIP1_A_6278, TIP1_A_6279, TIP1_A_6280, TIP1_A_6281, TIP1_A_6282, TIP1_A_6283, TIP1_A_6284, TIP1_A_6285, TIP1_A_6286, TIP1_A_6287, TIP1_A_6288, TIP1_A_6289, TIP1_A_6290, TIP1_A_6291, TIP1_A_6292, TIP1_A_6293, TIP1_A_6294,
+                    TIP1_A_6295, TIP1_A_6296, TIP1_A_6297, TIP1_A_6298, TIP1_A_6299, TIP1_A_6300, TIP1_A_6301, TIP1_A_6302, TIP1_A_6303, TIP1_A_6304, TIP1_A_6305, TIP1_A_6306, TIP1_A_6307, TIP1_A_6308, TIP1_A_6309, TIP1_A_6310, TIP1_A_6311,
+                    TIP1_A_6312, TIP1_A_6313, TIP1_A_6314, TIP1_A_6315, TIP1_A_6316, TIP1_A_6317, TIP1_A_6318, TIP1_A_6319, TIP1_A_6320, TIP1_A_6321, TIP1_A_6322, TIP1_A_6323, TIP1_A_6324, TIP1_A_6325, TIP1_A_6326, TIP1_A_6327, TIP1_A_6328,
+                    TIP1_A_6329, TIP1_A_6330, TIP1_A_6331, TIP1_A_6332, TIP1_A_6333, TIP1_A_6334, TIP1_A_6335, TIP1_A_6336, TIP1_A_6337, TIP1_A_6338, TIP1_A_6339, TIP1_A_6340, TIP1_A_6341, TIP1_A_6342, TIP1_A_6343, TIP1_A_6344, TIP1_A_6345,
+                    TIP1_A_6346, TIP1_A_6347, TIP1_A_6348, TIP1_A_6349, TIP1_A_6350, TIP1_A_6351, TIP1_A_6352, TIP1_A_6353, TIP1_A_6354, TIP1_A_6355, TIP1_A_6356, TIP1_A_6357, GS_A_4359, GS_A_4361, GS_A_4377, GS_A_4379, GS_A_4384,
+                    GS_A_4385, GS_A_4386, GS_A_4387, GS_A_5035, GS_A_5322, GS_A_4393, GS_A_5207, GS_A_5091, GS_A_3700, GS_A_5038, GS_A_4941, GS_A_4154, GS_A_4585, GS_A_4707, GS_A_4587, GS_A_4710, GS_A_4711, GS_A_4974, GS_A_4621, GS_A_5126,
+                    GS_A_4624, GS_A_4668, GS_A_5009, GS_A_5010, GS_A_5011, GS_A_5012),
+
+            asList(TIP1_A_4126, TIP1_A_4127, TIP1_A_4157, GS_A_4330, GS_A_5020, TIP1_A_2575, TIP1_A_2576, TIP1_A_2578, TIP1_A_2579, TIP1_A_2586, TIP1_A_2588, TIP1_A_2589, TIP1_A_6137, TIP1_A_6138, TIP1_A_6139, TIP1_A_6140, TIP1_A_6141,
+                    TIP1_A_6142, TIP1_A_6143, TIP1_A_6144, TIP1_A_6145, TIP1_A_6146, TIP1_A_6147, TIP1_A_6148, TIP1_A_6149, TIP1_A_6150, TIP1_A_6151, TIP1_A_6152, TIP1_A_6153, TIP1_A_6154, TIP1_A_6155, TIP1_A_6156, TIP1_A_6157, TIP1_A_6158,
+                    TIP1_A_6159, TIP1_A_6160, TIP1_A_6161, TIP1_A_6162, TIP1_A_6163, TIP1_A_6164, TIP1_A_6165, TIP1_A_6166, TIP1_A_6167, TIP1_A_6168, TIP1_A_6169, TIP1_A_6170, TIP1_A_6171, TIP1_A_6172, TIP1_A_6173, TIP1_A_6174, TIP1_A_6175,
+                    TIP1_A_6176, TIP1_A_6177, TIP1_A_6178, TIP1_A_6179, TIP1_A_6180, TIP1_A_6181, TIP1_A_6182, TIP1_A_6183, TIP1_A_6184, TIP1_A_6185, TIP1_A_6186, TIP1_A_6187, TIP1_A_6188, TIP1_A_6189, TIP1_A_6190, TIP1_A_6191, TIP1_A_6192,
+                    TIP1_A_6193, TIP1_A_6194, TIP1_A_6195, TIP1_A_6196, TIP1_A_6197, TIP1_A_6198, TIP1_A_6199, TIP1_A_6200, TIP1_A_6201, TIP1_A_6202, TIP1_A_6203, TIP1_A_6204, TIP1_A_6205, TIP1_A_6206, TIP1_A_6207, TIP1_A_6208, TIP1_A_6209,
+                    TIP1_A_6210, TIP1_A_6211, TIP1_A_6212, TIP1_A_6213, TIP1_A_6214, TIP1_A_6215, TIP1_A_6216, TIP1_A_6217, TIP1_A_6218, TIP1_A_6219, TIP1_A_6220, TIP1_A_6221, TIP1_A_6222, TIP1_A_6223, TIP1_A_6224, TIP1_A_6225, TIP1_A_6226,
+                    TIP1_A_6227, TIP1_A_6228, TIP1_A_6229, TIP1_A_6230, TIP1_A_6231, TIP1_A_6232, TIP1_A_6233, TIP1_A_6234, TIP1_A_6235, TIP1_A_6236, TIP1_A_6237, TIP1_A_6238, TIP1_A_6239, TIP1_A_6240, TIP1_A_6241, TIP1_A_6242, TIP1_A_6243,
+                    TIP1_A_6244, TIP1_A_6245, TIP1_A_6246, TIP1_A_6247, TIP1_A_6248, TIP1_A_6249, TIP1_A_6250, TIP1_A_6251, TIP1_A_6252, TIP1_A_6253, TIP1_A_6254, TIP1_A_6255, TIP1_A_6256, TIP1_A_6257, TIP1_A_6258, TIP1_A_6259, TIP1_A_6260,
+                    TIP1_A_6261, TIP1_A_6262, TIP1_A_6263, TIP1_A_6264, TIP1_A_6265, TIP1_A_6266, TIP1_A_6267, TIP1_A_6268, TIP1_A_6269, TIP1_A_6270, TIP1_A_6271, TIP1_A_6272, TIP1_A_6273, TIP1_A_6274, TIP1_A_6275, TIP1_A_6276, TIP1_A_6277,
+                    TIP1_A_6278, TIP1_A_6279, TIP1_A_6280, TIP1_A_6281, TIP1_A_6282, TIP1_A_6283, TIP1_A_6284, TIP1_A_6285, TIP1_A_6286, TIP1_A_6287, TIP1_A_6288, TIP1_A_6289, TIP1_A_6290, TIP1_A_6291, TIP1_A_6292, TIP1_A_6293, TIP1_A_6294,
+                    TIP1_A_6295, TIP1_A_6296, TIP1_A_6297, TIP1_A_6298, TIP1_A_6299, TIP1_A_6300, TIP1_A_6301, TIP1_A_6302, TIP1_A_6303, TIP1_A_6304, TIP1_A_6305, TIP1_A_6306, TIP1_A_6307, TIP1_A_6308, TIP1_A_6309, TIP1_A_6310, TIP1_A_6311,
+                    TIP1_A_6312, TIP1_A_6313, TIP1_A_6314, TIP1_A_6315, TIP1_A_6316, TIP1_A_6317, TIP1_A_6318, TIP1_A_6319, TIP1_A_6320, TIP1_A_6321, TIP1_A_6322, TIP1_A_6323, TIP1_A_6324, TIP1_A_6325, TIP1_A_6326, TIP1_A_6327, TIP1_A_6328,
+                    TIP1_A_6329, TIP1_A_6330, TIP1_A_6331, TIP1_A_6332, TIP1_A_6333, TIP1_A_6334, TIP1_A_6335, TIP1_A_6336, TIP1_A_6337, TIP1_A_6338, TIP1_A_6339, TIP1_A_6340, TIP1_A_6341, TIP1_A_6342, TIP1_A_6343, TIP1_A_6344, TIP1_A_6345,
+                    TIP1_A_6346, TIP1_A_6347, TIP1_A_6348, TIP1_A_6349, TIP1_A_6350, TIP1_A_6351, TIP1_A_6352, TIP1_A_6353, TIP1_A_6354, TIP1_A_6355, TIP1_A_6356, TIP1_A_6357, GS_A_4359, GS_A_4361, GS_A_4377, GS_A_4379, GS_A_4384,
+                    GS_A_4385, GS_A_4386, GS_A_4387, GS_A_5035, GS_A_5322, GS_A_4393, GS_A_5207, GS_A_5091, GS_A_3700, GS_A_5038, GS_A_4941, GS_A_4154, GS_A_4585, GS_A_4707, GS_A_4587, GS_A_4710, GS_A_4711, GS_A_4974, GS_A_4621, GS_A_5126,
+                    GS_A_4624, GS_A_4668, GS_A_5009, GS_A_5010, GS_A_5011, GS_A_5012)),
 
     @AfoHistory(documentVersion = "gemProdT_Intermediaer_VSDM_PTV150_V100", description = "Aus OPB1-Paket - ist State of Change und noch nicht released. Identisch mit gemProdT_Intermediaer_VSDM_PTV140_V100 zzgl. AFO GS-A_3027") gemProdT_Intermediaer_VSDM_PTV150_V100(
             "gemProdT_Intermediär_VSDM_PTV1.5.0",

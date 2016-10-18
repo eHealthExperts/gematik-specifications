@@ -3,6 +3,7 @@ package de.ehex.foss.gematik.specifications;
 import static de.ehex.foss.gematik.specifications.PTStBs.gemProdT_CM_KOMLE_PTV1_2_0;
 import static de.ehex.foss.gematik.specifications.PTStBs.gemProdT_FD_KOMLE_PTV1_2_0;
 import static de.ehex.foss.gematik.specifications.PTStBs.gemProdT_FD_VSDM_PTV1_4_0;
+import static de.ehex.foss.gematik.specifications.PTStBs.gemProdT_HSM_B_PTV120;
 import static de.ehex.foss.gematik.specifications.PTStBs.gemProdT_Intermediaer_VSDM_PTV150_V100;
 import static de.ehex.foss.gematik.specifications.PTStBs.gemProdT_Kon_PTV260_V100_LDAPProxy;
 import static de.ehex.foss.gematik.specifications.PTStBs.gemProdT_X_509_TSP_nonQES_eGK_PTV1_5_0_V1_0_0;
@@ -59,6 +60,8 @@ public enum EVTScopes implements TestScope {
     VSDM_FD(gemProdT_FD_VSDM_PTV1_4_0, asList(VSDM_A_2323), asList(ARV_706_3_SPEC_SST_STAMPEL_AFO_0010, GS_A_4384, GS_A_4387)),
 
     INTERMEDIAER_VSDM(gemProdT_Intermediaer_VSDM_PTV150_V100, emptyList(), singletonList(ARV_706_3_SPEC_SST_STAMPEL_AFO_0010)),
+
+    HSMB(gemProdT_HSM_B_PTV120, emptyList(), emptyList());
 
     ;
 
