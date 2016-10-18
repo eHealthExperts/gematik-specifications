@@ -30,6 +30,8 @@ public enum AFOs implements AFO {
 
     GS_A_4149("GS-A_4149", "Performance - Reporting-Daten in Performance-Report"),
 
+    GS_A_4154("GS-A_4154", "Performance - Kartenterminal - Bearbeitungszeit gemSpec_Perf"),
+
     // TODO: AFO-Typ klären derzeit implizit MUSS-AFO
     GS_A_4155("GS-A_4155", "Performance - zentrale Dienste - Verfügbarkeit"),
 
@@ -76,6 +78,7 @@ public enum AFOs implements AFO {
 
     // TODO: AFO-Typ klären derzeit implizit MUSS-AFO
     GS_A_5143("GS-A_5143", "Performance - KOM-LE Fachdienst - Nachricht senden"),
+
 
     ;
 

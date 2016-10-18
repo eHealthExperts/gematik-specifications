@@ -78,6 +78,11 @@ public enum AFOs implements AFO {
     // TODO: AFO-Typ klären derzeit implizit MUSS-AFO
     GS_A_5252("GS-A_5252", "Generische Fehlermeldungen außerhalb von WebServices"),
 
+    GS_A_4941("GS-A_4941", "Betriebsdokumentation der dezentralen Produkte der TIPlattform"),
+
+    GS_A_3700("GS-A_3700", "Versionierung von Produkten auf Basis von dezentralen Produkttypen der TI-Plattform durch die Produktidentifikation"),
+
+
     ;
 
     private AFOs(final String afoID, final String title) {

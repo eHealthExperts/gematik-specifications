@@ -164,6 +164,7 @@ public enum AFOs implements AFO {
     // TODO: AFO-Typ klären derzeit implizit MUSS-AFO
     KOM_LE_A_2278("KOM-LE-A_2278", "Aufbau Autoreply für Abwesenheitsnotiz"),
 
+
     ;
 
     private AFOs(final String afoID, final String title) {

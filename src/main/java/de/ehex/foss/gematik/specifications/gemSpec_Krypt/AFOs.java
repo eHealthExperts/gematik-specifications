@@ -33,7 +33,13 @@ public enum AFOs implements AFO {
     GS_A_4368("GS-A_4368", "Schlüsselerzeugung"),
 
     // TODO: AFO-Typ klären derzeit implizit MUSS-AFO
+    GS_A_4377("GS-A_4377", "Card-to-Card-Authentisierung G1"),
+
+    // TODO: AFO-Typ klären derzeit implizit MUSS-AFO
     GS_A_4378("GS-A_4378", "Card-to-Server (C2S) Authentisierung und Trusted Channel G1"),
+
+    // TODO: AFO-Typ klären derzeit implizit MUSS-AFO
+    GS_A_4379("GS-A_4379", "Card-to-Card-Authentisierung G2"),
 
     // TODO: AFO-Typ klären derzeit implizit MUSS-AFO
     GS_A_4380("GS-A_4380", "Card-to-Server (C2S) Authentisierung und Trusted Channel G2"),
@@ -63,6 +69,10 @@ public enum AFOs implements AFO {
     GS_A_5131("GS-A_5131", "Hash-Algorithmus bei OCSP / CertID"),
 
     GS_A_5322("GS-A_5322", " Weitere Vorgaben für TLS-Verbindungen"),
+
+    GS_A_5207("GS-A_5207", "Signaturverfahren beim initialen Pairing zwischen Konnektor und eHealth-Kartenterminal"),
+
+    GS_A_5091("GS-A_5091", "Verwendung von RSASSA-PSS bei XMLDSig-Signaturen"),
 
     ;
 
