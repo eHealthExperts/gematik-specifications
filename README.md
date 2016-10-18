@@ -17,8 +17,9 @@ Die Versionsnummern der einzelnen Releases referenzieren einen jeweiligen Stand 
 |:------------------------------:|:-----------------------------------------------------------------------------------------------:|:----------------------------------------------------------------------------------------------------------------:|
 | 1.0.* (Master-Branch)          | [Release 1.5 ORS1](http://www.gematik.de/cms/de/spezifikation/release_1_5_ors1/release_1_5.jsp) | [2016-07-19](http://www.gematik.de/cms/media/dokumente/ors1_release_1_5/ORS1_Produkttypsteckbriefe_20160719.zip) |
 | 1.1.* (Master-Branch)          | [Release 1.5 ORS1](http://www.gematik.de/cms/de/spezifikation/release_1_5_ors1/release_1_5.jsp) | [2016-09-22](http://www.gematik.de/cms/media/dokumente/ors1_release_1_5/ORS1_Produkttypsteckbriefe_20160922.zip) |
-| 1.2.* (Master-Branch)          | [Release 1.5 ORS1](http://www.gematik.de/cms/de/spezifikation/release_1_5_ors1/release_1_5.jsp) | **TBR** Vorarbeiten für demnächst erscheinendes gematik-Release (*T*o *B*e *R*eleased)                            |
+| 1.2.* (Master-Branch)          | [Release 1.5 ORS1](http://www.gematik.de/cms/de/spezifikation/release_1_5_ors1/release_1_5.jsp) | **TBR** Vorarbeiten für demnächst erscheinendes gematik-Release aus Release 1.5 ORS1 (*T*o *B*e *R*eleased)      |
 | 2.0.* (Master-Branch)          | [Release 1.6 OPB1](http://www.gematik.de/cms/de/spezifikation/release_1_6_opb1/release_1_9.jsp) | [2016-08-24](http://www.gematik.de/cms/media/dokumente/opb1_release_1_6/OPB1_Produkttypsteckbriefe_20160824.zip) |
+| 2.1.* (Master-Branch)          | [Release 1.6 OPB1](http://www.gematik.de/cms/de/spezifikation/release_1_6_opb1/release_1_9.jsp) | **TBR** Vorarbeiten für demnächst erscheinendes gematik-Release aus Release 1.6 OPB1 (*T*o *B*e *R*eleased)      |
 
 ## Hinweise für Nutzer der gematik-specifications
 
