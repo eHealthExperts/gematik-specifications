@@ -13,10 +13,12 @@ Die Versionsnummern der einzelnen Releases referenzieren einen jeweiligen Stand 
 - Jede Minor-Nummer bezieht sich auf einen bestimmten Dokumentenstand der Produkttypsteckbriefe. Exemplarisch steht **1.0** für eine Umsetzung der ORS-1.5-Dokumente vom 19. Juli 2016.
 - Die Patch-Nummer repräsentiert den Programmierumfang des Projekts und kann den jeweiligen Release-Notes entnommen werden. 
 
-| Version gematik-specifications |                              Umsetzung von gematik-Release                             |                                           Version Produkttypsteckbriefe                                          |
-|:------------------------------:|:--------------------------------------------------------------------------------------:|:----------------------------------------------------------------------------------------------------------------:|
-| 1.0.* (Master-Branch)          | [ORS 1.5](http://www.gematik.de/cms/de/spezifikation/release_1_5_ors1/release_1_5.jsp) | [2016-07-19](http://www.gematik.de/cms/media/dokumente/ors1_release_1_5/ORS1_Produkttypsteckbriefe_20160719.zip) |
-| 1.1.* (Master-Branch)          | [ORS 1.5](http://www.gematik.de/cms/de/spezifikation/release_1_5_ors1/release_1_5.jsp) | [2016-09-22](http://www.gematik.de/cms/media/dokumente/ors1_release_1_5/ORS1_Produkttypsteckbriefe_20160922.zip) |
+| Version gematik-specifications |                                  Umsetzung von gematik-Release                                  |                                           Version Produkttypsteckbriefe                                          |
+|:------------------------------:|:-----------------------------------------------------------------------------------------------:|:----------------------------------------------------------------------------------------------------------------:|
+| 1.0.* (Master-Branch)          | [Release 1.5 ORS1](http://www.gematik.de/cms/de/spezifikation/release_1_5_ors1/release_1_5.jsp) | [2016-07-19](http://www.gematik.de/cms/media/dokumente/ors1_release_1_5/ORS1_Produkttypsteckbriefe_20160719.zip) |
+| 1.1.* (Master-Branch)          | [Release 1.5 ORS1](http://www.gematik.de/cms/de/spezifikation/release_1_5_ors1/release_1_5.jsp) | [2016-09-22](http://www.gematik.de/cms/media/dokumente/ors1_release_1_5/ORS1_Produkttypsteckbriefe_20160922.zip) |
+| 1.2.* (Master-Branch)          | [Release 1.5 ORS1](http://www.gematik.de/cms/de/spezifikation/release_1_5_ors1/release_1_5.jsp) | **TBR** Vorarbeiten für demnächst erscheinendes gematik-Release (*T*o *B*e *R*eleased)                            |
+| 2.0.* (Master-Branch)          | [Release 1.6 OPB1](http://www.gematik.de/cms/de/spezifikation/release_1_6_opb1/release_1_9.jsp) | [2016-08-24](http://www.gematik.de/cms/media/dokumente/opb1_release_1_6/OPB1_Produkttypsteckbriefe_20160824.zip) |
 
 ## Hinweise für Nutzer der gematik-specifications
 
