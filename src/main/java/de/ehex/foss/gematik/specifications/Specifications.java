@@ -32,7 +32,7 @@ public enum Specifications implements Specification {
 
     gemSpec_FD_KOMLE("gemSpec_FD_KOMLE", de.ehex.foss.gematik.specifications.gemSpec_FD_KOMLE.AFOs.class),
 
-    gemSpec_HSMB("gemSpec_HSMB", de.ehex.foss.gematik.specifications.gemSpec_HSM_B.AFOs.class),
+    gemSpec_HSM_B("gemSpec_HSM-B", de.ehex.foss.gematik.specifications.gemSpec_HSM_B.AFOs.class),
 
     gemSpec_Intermediaer_VSDM("gemSpec_Intermediär_VSDM", de.ehex.foss.gematik.specifications.gemSpec_Intermediär_VSDM.AFOs.class),
 
