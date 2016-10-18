@@ -24,11 +24,15 @@ public enum Specifications implements Specification {
 
     gemSpec_CM_KOMLE("gemSpec_CM_KOMLE", de.ehex.foss.gematik.specifications.gemSpec_CM_KOMLE.AFOs.class),
 
+    gemSpec_CVC_TSP("gemSpec_CVC_TSP", de.ehex.foss.gematik.specifications.gemSpec_CVC_TSP.AFOs.class),
+
     gemSpec_DSM("gemSpec_DSM", de.ehex.foss.gematik.specifications.gemSpec_DSM.AFOs.class),
 
     gemSpec_eGK_Fach_VSDM("gemSpec_eGK_Fach_VSDM", de.ehex.foss.gematik.specifications.gemSpec_eGK_Fach_VSDM.AFOs.class),
 
     gemSpec_FD_KOMLE("gemSpec_FD_KOMLE", de.ehex.foss.gematik.specifications.gemSpec_FD_KOMLE.AFOs.class),
+
+    gemSpec_HSMB("gemSpec_HSMB", de.ehex.foss.gematik.specifications.gemSpec_HSM_B.AFOs.class),
 
     gemSpec_Intermediaer_VSDM("gemSpec_Intermediär_VSDM", de.ehex.foss.gematik.specifications.gemSpec_Intermediär_VSDM.AFOs.class),
 
@@ -61,10 +65,6 @@ public enum Specifications implements Specification {
     gemSpec_VZD("gemSpec_VZD", de.ehex.foss.gematik.specifications.gemSpec_VZD.AFOs.class),
 
     gemSpec_X_509_TSP("gemSpec_X.509_TSP", de.ehex.foss.gematik.specifications.gemSpec_X_509_TSP.AFOs.class),
-
-    gemSpec_HSMB("gemSpec_HSMB", de.ehex.foss.gematik.specifications.gemSpec_HSMB.AFOs.class),
-
-    gemSpec_CVC_TSP("gemSpec_CVC_TSP", de.ehex.foss.gematik.specifications.gemSpec_CVC_TSP.AFOs.class),
 
     ;
 
