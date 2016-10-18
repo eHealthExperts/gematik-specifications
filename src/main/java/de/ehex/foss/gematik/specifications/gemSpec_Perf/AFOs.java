@@ -79,7 +79,6 @@ public enum AFOs implements AFO {
     // TODO: AFO-Typ klären derzeit implizit MUSS-AFO
     GS_A_5143("GS-A_5143", "Performance - KOM-LE Fachdienst - Nachricht senden"),
 
-
     ;
 
     private AFOs(final String afoID, final String title) {

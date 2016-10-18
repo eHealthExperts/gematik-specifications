@@ -66,13 +66,13 @@ public enum AFOs implements AFO {
     // TODO: AFO-Typ klären derzeit implizit MUSS-AFO
     GS_A_5079("GS-A_5079", "Migration von Algorithmen und Schlüssellängen bei PKIBetreibern"),
 
-    GS_A_5131("GS-A_5131", "Hash-Algorithmus bei OCSP / CertID"),
+    GS_A_5091("GS-A_5091", "Verwendung von RSASSA-PSS bei XMLDSig-Signaturen"),
 
-    GS_A_5322("GS-A_5322", " Weitere Vorgaben für TLS-Verbindungen"),
+    GS_A_5131("GS-A_5131", "Hash-Algorithmus bei OCSP / CertID"),
 
     GS_A_5207("GS-A_5207", "Signaturverfahren beim initialen Pairing zwischen Konnektor und eHealth-Kartenterminal"),
 
-    GS_A_5091("GS-A_5091", "Verwendung von RSASSA-PSS bei XMLDSig-Signaturen"),
+    GS_A_5322("GS-A_5322", " Weitere Vorgaben für TLS-Verbindungen"),
 
     ;
 
