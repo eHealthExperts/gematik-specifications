@@ -500,6 +500,9 @@ public enum AFOs implements AFO {
     // TODO: AFO-Typ klären derzeit implizit MUSS-AFO
     GS_A_5084("GS-A_5084", "Zugang zu HSM-Systemen im Vier-Augen-Prinzip"),
 
+    // TODO: AFO-Typ klären derzeit implizit MUSS-AFO
+    GS_A_5020("GS-A_5020", "Einbringung des Komponentenzertifikats durch den Kartenherausgeber"),
+
     ;
 
     private AFOs(final String afoID, final String title) {

@@ -34,6 +34,10 @@ public enum AFOs implements AFO {
     // TODO: AFO-Typ klären derzeit implizit MUSS-AFO
     GS_A_4577("GS-A_4577", "Pseudonym auf eGK-Folgekarten"),
 
+    GS_A_4585("GS-A_4585", "Typ der Organisation/Einrichtung des Gesundheitswesens für SMC-B"),
+
+    GS_A_4587("GS-A_4587", "Gesamtlänge der Telematik-ID"),
+
     // TODO: AFO-Typ klären derzeit implizit MUSS-AFO
     GS_A_4588("GS-A_4588", "CA-Namen für Test-PKI der TI"),
 
@@ -150,6 +154,12 @@ public enum AFOs implements AFO {
     // TODO: AFO-Typ klären derzeit implizit MUSS-AFO
     GS_A_4706("GS-A_4706", "Vorgaben zu SubjectDN von CA- und OCSP-Zertifikaten"),
 
+    GS_A_4707("GS-A_4707", "Kennzeichen für Technische Rolle für Komponenten und Dienste"),
+
+    GS_A_4710("GS-A_4710", "Präfix der Telematik-ID"),
+
+    GS_A_4711("GS-A_4711", "Separator der Telematik-ID"),
+
     // TODO: AFO-Typ klären derzeit implizit MUSS-AFO
     GS_A_4714("GS-A_4714", "Kodierung der Attribute in X.509-Zertifikaten"),
 
@@ -239,6 +249,24 @@ public enum AFOs implements AFO {
     GS_A_5090("GS-A_5090", "Statusprüfdienst - Keine Angabe von Sperrgründen"),
 
     GS_A_5215("GS-A_5215", "Festlegung der zeitlichen Toleranzen in einer OCSP-Response"),
+
+    GS_A_4974("GS-A_4974", "CV-Ausstattung von Smartcards der TI"),
+
+    GS_A_4621("GS-A_4621", "Zugriffsprofil von HBA und SM-B (SMC-B, HSM-B)"),
+
+    GS_A_5126("GS-A_5126", "Zugriffsprofil einer gSMC-KT"),
+
+    GS_A_4624("GS-A_4624", "Zugriffsprofil einer SM-B"),
+
+    GS_A_4668("GS-A_4668", "Prüfung der mathematischen Korrektheit bei CV-Zertifikaten der Generation G1"),
+
+    GS_A_5009("GS-A_5009", "Prüfung der mathematischen Korrektheit von CV-Zertifikate der Generation 2"),
+
+    GS_A_5010("GS-A_5010", "Prüfung der Signatur eines CV-Zertifikats der Generation 2 mit Hilfe des CV-Zertifikats des Herausgebers"),
+
+    GS_A_5011("GS-A_5011", "Prüfung der Gültigkeit von CV-Zertifikaten der Generation G2"),
+
+    GS_A_5012("GS-A_5012", "Prüfung von CV-Zertifikaten der Generation 2 "),
 
     @AfoHistory(documentVersion = "gemSpec_PKI_V1.8.0", description = "Aus OPB1-Paket - Stand 10.05.2016")
     GS_A_5336("GS-A_5336", "Zertifikatsprüfung nach Ablauf TSL-Graceperiod"),

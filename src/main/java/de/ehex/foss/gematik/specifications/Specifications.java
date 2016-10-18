@@ -62,6 +62,10 @@ public enum Specifications implements Specification {
 
     gemSpec_X_509_TSP("gemSpec_X.509_TSP", de.ehex.foss.gematik.specifications.gemSpec_X_509_TSP.AFOs.class),
 
+    gemSpec_HSMB("gemSpec_HSMB", de.ehex.foss.gematik.specifications.gemSpec_HSMB.AFOs.class),
+
+    gemSpec_CVC_TSP ("gemSpec_CVC_TSP", de.ehex.foss.gematik.specifications.gemSpec_CVC_TSP.AFOs.class),
+
     ;
 
     private <AFO_ENUM extends Enum<AFO_ENUM> & AFO> Specifications(final String reference, final Class<AFO_ENUM> base) {
