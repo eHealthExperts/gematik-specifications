@@ -9,13 +9,17 @@ Dieses 2016 durch die [eHealth Experts GmbH](http://www.ehealthexperts.de) initi
 ## Versionierung / Release-Umsetzung
 
 Die Versionsnummern der einzelnen Releases referenzieren einen jeweiligen Stand eines gematik-Releases.
-- Die Major-Nummer **1** zeigt den Bezug zur gematik Release 1.5 ORS1 mit Basis-Rollout – Erprobung und Produktivbetrieb.
+- Die Major-Nummer **1** zeigt den Bezug zum gematik Release 1.5 ORS1 mit Basis-Rollout – Erprobung und Produktivbetrieb.
 - Jede Minor-Nummer bezieht sich auf einen bestimmten Dokumentenstand der Produkttypsteckbriefe. Exemplarisch steht **1.0** für eine Umsetzung der ORS-1.5-Dokumente vom 19. Juli 2016.
 - Die Patch-Nummer repräsentiert den Programmierumfang des Projekts und kann den jeweiligen Release-Notes entnommen werden. 
 
-| Version gematik-specifications |                              Umsetzung von gematik-Release                             |                                           Version Produkttypsteckbriefe                                          |
-|:------------------------------:|:--------------------------------------------------------------------------------------:|:----------------------------------------------------------------------------------------------------------------:|
-| 1.0.* (Master-Branch)          | [ORS 1.5](http://www.gematik.de/cms/de/spezifikation/release_1_5_ors1/release_1_5.jsp) | [2016-07-19](http://www.gematik.de/cms/media/dokumente/ors1_release_1_5/ORS1_Produkttypsteckbriefe_20160719.zip) |
+| Version gematik-specifications |                                  Umsetzung von gematik-Release                                  |                                           Version Produkttypsteckbriefe                                          |
+|:------------------------------:|:-----------------------------------------------------------------------------------------------:|:----------------------------------------------------------------------------------------------------------------:|
+| 1.0.* (Master-Branch)          | [Release 1.5 ORS1](http://www.gematik.de/cms/de/spezifikation/release_1_5_ors1/release_1_5.jsp) | [2016-07-19](http://www.gematik.de/cms/media/dokumente/ors1_release_1_5/ORS1_Produkttypsteckbriefe_20160719.zip) |
+| 1.1.* (Master-Branch)          | [Release 1.5 ORS1](http://www.gematik.de/cms/de/spezifikation/release_1_5_ors1/release_1_5.jsp) | [2016-09-22](http://www.gematik.de/cms/media/dokumente/ors1_release_1_5/ORS1_Produkttypsteckbriefe_20160922.zip) |
+| 1.2.* (Master-Branch)          | [Release 1.5 ORS1](http://www.gematik.de/cms/de/spezifikation/release_1_5_ors1/release_1_5.jsp) | **TBR** Vorarbeiten für demnächst erscheinendes gematik-Release aus Release 1.5 ORS1 (*T*o *B*e *R*eleased)      |
+| 2.0.* (Master-Branch)          | [Release 1.6 OPB1](http://www.gematik.de/cms/de/spezifikation/release_1_6_opb1/release_1_9.jsp) | [2016-08-24](http://www.gematik.de/cms/media/dokumente/opb1_release_1_6/OPB1_Produkttypsteckbriefe_20160824.zip) |
+| 2.1.* (Master-Branch)          | [Release 1.6 OPB1](http://www.gematik.de/cms/de/spezifikation/release_1_6_opb1/release_1_9.jsp) | **TBR** Vorarbeiten für demnächst erscheinendes gematik-Release aus Release 1.6 OPB1 (*T*o *B*e *R*eleased)      |
 
 ## Hinweise für Nutzer der gematik-specifications
 
@@ -25,9 +29,9 @@ Desweiteren sind die gematik-AFOs mit unterschiedlichen Anforderungsleveln verse
 
 ## Hinweise für Entwickler der gematik-specifications
 
-Sie sind herzlich eingeladen, selbst zu diesem Projekt beizutragen. Legen Sie sich hierzu einem Fork des Projekts an (shared repository model) arbeiten Sie Ihre Ergänzungen ein und tragen Sie diese als Pull-Request an dieses Projekt heran.
+Sie sind herzlich eingeladen, selbst zu diesem Projekt beizutragen. Legen Sie sich hierzu einem Fork des Projekts an (shared repository model), arbeiten Sie Ihre Ergänzungen ein und tragen Sie diese als Pull-Request an dieses Projekt heran.
 - Bitte beachten Sie die Code-Konventionen. 
 - Zudem sind alle `enum`-Konstanten alphabetisch sortiert (plus [Trailing-Komma](http://docs.oracle.com/javase/specs/jls/se8/html/jls-8.html#jls-8.9)), um die Code-Änderungen schneller überblicken zu können.
 - Arbeiten Sie stets gegen die Interfaces.
-- Jeder Code-Beitrag muss, wenn er eine neue Funktionalität beiträgt, durch passende Unit-Tests (oder sogar [j8unit](https://github.com/j8unit-team/j8unit)-Tests) überprüfbar sein (mehr unter:
-https://help.github.com/articles/about-pull-requests/)
+- Jeder Code-Beitrag muss, wenn er eine neue Funktionalität beiträgt, durch passende Unit-Tests (oder sogar [j8unit](https://github.com/j8unit-team/j8unit)-Tests) überprüfbar sein.
+- Mehr Informationen zu einem github-Pull-Request über Fork-Grenzen hinweg finden sie unter: https://help.github.com/articles/about-pull-requests/
