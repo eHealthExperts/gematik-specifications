@@ -1,8 +1,7 @@
 package de.ehex.foss.rfcs.rfc2119;
 
-import static java.util.Arrays.stream;
-import static java.util.stream.Collectors.toList;
-
+import static org.j8unit.util.TestParametersUtil.testParametersOfEnumClass;
+import java.util.List;
 import org.j8unit.runners.J8Parameterized;
 import org.j8unit.runners.parameterized.J8BlockJUnit4ClassRunnerWithParametersFactory;
 import org.junit.runner.RunWith;
@@ -15,8 +14,8 @@ import org.junit.runners.Parameterized.UseParametersRunnerFactory;
 public final class RequirementLevelTest implements RequirementLevelTests<RequirementLevel> {
 
     @Parameters(name = "{0}")
-    public final static Iterable<Object[]> data() {
-        return stream(RequirementLevel.values()).map(l -> new Object[] { l }).collect(toList());
+    public final static List<? extends RequirementLevel> data() {
+        return testParametersOfEnumClass(RequirementLevel.class);
     }
 
     @Parameter(0)
