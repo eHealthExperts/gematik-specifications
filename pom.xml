@@ -271,7 +271,13 @@
     <dependency>
       <groupId>org.j8unit</groupId>
       <artifactId>core</artifactId>
-      <version>4.12</version>
+      <version>4.12.1</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.j8unit</groupId>
+      <artifactId>repository</artifactId>
+      <version>1.0.0</version>
       <scope>test</scope>
     </dependency>
   </dependencies>
