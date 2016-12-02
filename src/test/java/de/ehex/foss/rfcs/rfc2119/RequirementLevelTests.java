@@ -10,16 +10,10 @@ import static org.junit.Assume.assumeFalse;
 import static org.junit.Assume.assumeTrue;
 
 import org.j8unit.J8UnitTest;
+import org.j8unit.repository.java.lang.EnumTests;
 import org.junit.Test;
 
-public abstract interface RequirementLevelTests<SUT extends RequirementLevel> extends /* EnumTests<SUT> */ J8UnitTest<SUT> {
-
-    @Test
-    public default void testDeclarationAsEnumConstant() throws Exception {
-        final SUT sut = createNewSUT();
-        assert nonNull(sut);
-        assertTrue(sut.getDeclaringClass().isEnum());
-    }
+public abstract interface RequirementLevelTests<SUT extends RequirementLevel> extends EnumTests<SUT, RequirementLevel>, J8UnitTest<SUT> {
 
     @Test
     public default void testValidDefinition() throws Exception {
