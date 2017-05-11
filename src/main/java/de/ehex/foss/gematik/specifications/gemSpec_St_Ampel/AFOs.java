@@ -27,6 +27,9 @@ implements AFO {
     TIP1_A_5998("TIP1-A_5998", "Nutzer der Störungsampel I_Monitoring_Update, Zertifikatsprüfung"),
 
     // TODO: AFO-Typ klären derzeit implizit MUSS-AFO
+    TIP1_A_6002("TIP1-A_6002", "Nutzer der Störungsampel I_Monitoring_Update, Selbstauskunft als Bestandteil jeder SOAP-Nachricht"),
+
+    // TODO: AFO-Typ klären derzeit implizit MUSS-AFO
     TIP1_A_6003("TIP1-A_6003", "Nutzer der Störungsampel I_Monitoring_Update, eindeutige Zuordnung des Messwertes"),
 
     ;
