@@ -105,6 +105,9 @@ implements AFO {
     GS_A_2347("GS-A_2347", "ISM der Beteiligten: Grundlagen neuer Planungsphasen"),
 
     // TODO: AFO-Typ klären derzeit implizit MUSS-AFO
+    GS_A_2350("GS-A_2350", "Produktunterstützung der Hersteller"),
+
+    // TODO: AFO-Typ klären derzeit implizit MUSS-AFO
     GS_A_2354("GS-A_2354", "Produktunterstützung mit geeigneten Sicherheits-Technologien"),
 
     // TODO: AFO-Typ klären derzeit implizit MUSS-AFO
@@ -175,9 +178,6 @@ implements AFO {
 
     // TODO: AFO-Typ klären derzeit implizit MUSS-AFO
     GS_A_5324("GS-A_5324", "Teilnahme des Anbieters an Sitzungen des kDSMS/kISMS"),
-
-    // TODO: AFO-Typ klären derzeit implizit MUSS-AFO
-    GS_A_2350("GS-A_2350", "Produktunterstützung der Hersteller"),
 
     ;
 
