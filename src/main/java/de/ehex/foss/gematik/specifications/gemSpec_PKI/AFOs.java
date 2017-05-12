@@ -105,6 +105,9 @@ public enum AFOs implements AFO {
 
     GS_A_4673("GS-A_4673", "OCSP-Requests gemäß [RFC2560]"),
 
+    // TODO: AFO-Typ klären derzeit implizit MUSS-AFO
+    GS_A_4674("GS-A_4674", "OCSP-Requests gemäß [RFC2560] und [Common-PKI]"),
+
     GS_A_4675("GS-A_4675", "OCSP-Responses gemäß [RFC2560]"),
 
     GS_A_4677("GS-A_4677", "Spezifikationskonforme OCSP-Responses"),
@@ -242,6 +245,20 @@ public enum AFOs implements AFO {
 
     @AfoHistory(documentVersion = "gemSpec_PKI_V1.8.0", description = "Aus OPB1-Paket - Stand 10.05.2016")
     GS_A_5336("GS-A_5336", "Zertifikatsprüfung nach Ablauf TSL-Graceperiod"),
+
+    // TODO: AFO-Typ klären derzeit implizit MUSS-AFO
+    GS_A_5511("GS-A_5511", "Unterstützung der Schlüsselgeneration RSA durch TSP-X.509 nonQES"),
+
+    GS_A_5513("GS-A_5513", "Wahl des Signaturalgorithmus für Zertifikate"),
+
+    // TODO: AFO-Typ klären derzeit implizit MUSS-AFO
+    GS_A_5514("GS-A_5514", "Verwendung separater OCSP-Signer-Zertifikate"),
+
+    // TODO: AFO-Typ klären derzeit implizit MUSS-AFO
+    GS_A_5517("GS-A_5517", "Schlüsselgenerationen der OCSP-Signer-Zertifikate"),
+
+    // TODO: AFO-Typ klären derzeit implizit MUSS-AFO
+    GS_A_5528("GS-A_5528", "Unterstützung der Schlüsselgeneration ECDSA durch TSP-X.509 nonQES"),
 
     ;
 

@@ -5,9 +5,10 @@ import static de.ehex.foss.gematik.specifications.PTStBs.gemProdT_FD_KOMLE_PTV1_
 import static de.ehex.foss.gematik.specifications.PTStBs.gemProdT_FD_VSDM_PTV1_5_0_2;
 import static de.ehex.foss.gematik.specifications.PTStBs.gemProdT_Intermediaer_VSDM_PTV150_V100;
 import static de.ehex.foss.gematik.specifications.PTStBs.gemProdT_Kon_PTV260_V100_LDAPProxy;
-import static de.ehex.foss.gematik.specifications.PTStBs.gemProdT_X_509_TSP_nonQES_eGK_PTV1_6_0_V1_2_1;
+import static de.ehex.foss.gematik.specifications.PTStBs.gemProdT_X_509_TSP_nonQES_eGK_PTV1_7_0_0;
 import static de.ehex.foss.gematik.specifications.gemSpec_Krypt.AFOs.GS_A_4384;
 import static de.ehex.foss.gematik.specifications.gemSpec_Krypt.AFOs.GS_A_4387;
+import static de.ehex.foss.gematik.specifications.gemSpec_Krypt.AFOs.GS_A_5518;
 import static de.ehex.foss.gematik.specifications.gemSpec_PKI.AFOs.GS_A_4642;
 import static de.ehex.foss.gematik.specifications.gemSpec_PKI.AFOs.GS_A_4643;
 import static de.ehex.foss.gematik.specifications.gemSpec_PKI.AFOs.GS_A_4646;
@@ -16,6 +17,7 @@ import static de.ehex.foss.gematik.specifications.gemSpec_PKI.AFOs.GS_A_4648;
 import static de.ehex.foss.gematik.specifications.gemSpec_PKI.AFOs.GS_A_4649;
 import static de.ehex.foss.gematik.specifications.gemSpec_PKI.AFOs.GS_A_4650;
 import static de.ehex.foss.gematik.specifications.gemSpec_PKI.AFOs.GS_A_4655;
+import static de.ehex.foss.gematik.specifications.gemSpec_PKI.AFOs.GS_A_5513;
 import static de.ehex.foss.gematik.specifications.gemSpec_SST_FD_VSDM.AFOs.VSDM_A_2323;
 import static de.ehex.foss.gematik.specifications.gemSpec_TSL.AFOs.TIP1_A_5120;
 import static java.util.Arrays.asList;
@@ -45,8 +47,15 @@ implements TestScope {
     /**
      * TODO: Put a note why <em>GS_A_4642, GS_A_4643, GS_A_4646, GS_A_4647, GS_A_4648, GS_A_4649, GS_A_4650, GS_A_4655,
      * TIP1_A_5120</em> is/are included into test-scope.
+     *
+     * EXKLUDIERTE AFOS:
+     *
+     * GS_A_5513 (Wahl des Signaturalgorithmus für Zertifikate): Zeitpunkt der Zertifikatserstellung ist nicht ZTS-EVT
+     *
+     * GS_A_5518 (Prüfung Kurvenpunkte bei einer Zertifikatserstellung): Zeitpunkt der Zertifikatserstellung ist nicht
+     * ZTS-EVT
      */
-    OCSP_EGK(gemProdT_X_509_TSP_nonQES_eGK_PTV1_6_0_V1_2_1, emptyList(), asList(GS_A_4642, GS_A_4643, GS_A_4646, GS_A_4647, GS_A_4648, GS_A_4649, GS_A_4650, GS_A_4655, TIP1_A_5120)),
+    OCSP_EGK(gemProdT_X_509_TSP_nonQES_eGK_PTV1_7_0_0, asList(GS_A_5513, GS_A_5518), asList(GS_A_4642, GS_A_4643, GS_A_4646, GS_A_4647, GS_A_4648, GS_A_4649, GS_A_4650, GS_A_4655, TIP1_A_5120)),
 
     /**
      * TODO: Put a note why <em>VSDM_A_2323</em> is/are be excluded from testing.

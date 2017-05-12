@@ -65,6 +65,9 @@ implements AFO {
     GS_A_5322("GS-A_5322", " Weitere Vorgaben für TLS-Verbindungen"),
 
     // TODO: AFO-Typ klären derzeit implizit MUSS-AFO
+    GS_A_5518("GS-A_5518", "Prüfung Kurvenpunkte bei einer Zertifikatserstellung"),
+
+    // TODO: AFO-Typ klären derzeit implizit MUSS-AFO
     GS_A_5526("GS-A_5526", "TLS-Renegotiation-Indication-Extension"),
 
     // TODO: AFO-Typ klären derzeit implizit MUSS-AFO

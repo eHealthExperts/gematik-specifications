@@ -24,16 +24,61 @@ implements AFO {
     TIP1_A_6083("TIP1-A_6083", "Anzahl der Fachdienste als Referenzobjekte"),
 
     // TODO: AFO-Typ klären derzeit implizit MUSS-AFO
+    TIP1_A_6516("TIP1-A_6516", "Eigenverantwortlicher Test: Test & Transitionmanager"),
+
+    // TODO: AFO-Typ klären derzeit implizit MUSS-AFO
+    TIP1_A_6517("TIP1-A_6517", "Eigenverantwortlicher Test: TBV"),
+
+    // TODO: AFO-Typ klären derzeit implizit MUSS-AFO
+    TIP1_A_6518("TIP1-A_6518", "Eigenverantwortlicher Test: TDI"),
+
+    // TODO: AFO-Typ klären derzeit implizit MUSS-AFO
     TIP1_A_6519("TIP1-A_6519", "Eigenverantwortlicher Test: Hersteller und Anbieter"),
 
     // TODO: AFO-Typ klären derzeit implizit MUSS-AFO
     TIP1_A_6523("TIP1-A_6523", "Zulassungstest: Hersteller und Anbieter"),
 
     // TODO: AFO-Typ klären derzeit implizit MUSS-AFO
+    TIP1_A_6524("TIP1-A_6524", "Testdokumentation gemäß Vorlagen"),
+
+    // TODO: AFO-Typ klären derzeit implizit MUSS-AFO
+    TIP1_A_6525("TIP1-A_6525", "Produkttypen: Testziele"),
+
+    // TODO: AFO-Typ klären derzeit implizit MUSS-AFO
     TIP1_A_6526("TIP1-A_6526", "Produkttypen: Bereitstellung"),
 
     // TODO: AFO-Typ klären derzeit implizit MUSS-AFO
     TIP1_A_6527("TIP1-A_6527", "Testkarten"),
+
+    // TODO: AFO-Typ klären derzeit implizit MUSS-AFO
+    TIP1_A_6529("TIP1-A_6529", "Produkttypen: Mindestumfang der Interoperabilitätsprüfung"),
+
+    // TODO: AFO-Typ klären derzeit implizit MUSS-AFO
+    TIP1_A_6531("TIP1-A_6531", "Zulassung eines neuen Produkts: Aufgaben des TBV"),
+
+    // TODO: AFO-Typ klären derzeit implizit MUSS-AFO
+    TIP1_A_6532("TIP1-A_6532", "Zulassung eines neuen Produkts: Aufgaben der TDI"),
+
+    // TODO: AFO-Typ klären derzeit implizit MUSS-AFO
+    TIP1_A_6533("TIP1-A_6533", "Zulassung eines neuen Produkts: Aufgaben der Hersteller und Anbieter"),
+
+    // TODO: AFO-Typ klären derzeit implizit MUSS-AFO
+    TIP1_A_6535("TIP1-A_6535", "Zulassung eines geänderten Produkts: Aufgaben des TBV"),
+
+    // TODO: AFO-Typ klären derzeit implizit MUSS-AFO
+    TIP1_A_6536("TIP1-A_6536", "Zulassung eines geänderten Produkts: Aufgaben der TDI"),
+
+    // TODO: AFO-Typ klären derzeit implizit MUSS-AFO
+    TIP1_A_6537("TIP1-A_6537", "Zulassung eines geänderten Produkts: Aufgaben der Hersteller"),
+
+    // TODO: AFO-Typ klären derzeit implizit MUSS-AFO
+    TIP1_A_6538("TIP1-A_6538", "Durchführung von Produkttests"),
+
+    // TODO: AFO-Typ klären derzeit implizit MUSS-AFO
+    TIP1_A_6539("TIP1-A_6539", "Durchführung von Produktübergreifenden Tests"),
+
+    // TODO: AFO-Typ klären derzeit implizit MUSS-AFO
+    TIP1_A_6772("TIP1-A_6772", "Partnerprodukte bei Interoperabilitätstests"),
 
     // TODO: AFO-Typ klären derzeit implizit MUSS-AFO
     VSDM_A_2812("VSDM-A_2812", "Bereitstellung Testkartensätze"),
@@ -64,18 +109,6 @@ implements AFO {
 
     // TODO: AFO-Typ klären derzeit implizit MUSS-AFO
     VSDM_A_3030("VSDM-A_3030", "Bereitstellung von spezifikationsabweichende Testkarten"),
-
-    // TODO: AFO-Typ klären derzeit implizit MUSS-AFO
-    TIP1_A_6532("TIP1-A_6532", "Zulassung eines neuen Produkts: Aufgaben der TDI"),
-
-    // TODO: AFO-Typ klären derzeit implizit MUSS-AFO
-    TIP1_A_6533("TIP1-A_6533", "Zulassung eines neuen Produkts: Aufgaben der Hersteller und Anbieter"),
-
-    // TODO: AFO-Typ klären derzeit implizit MUSS-AFO
-    TIP1_A_6536("TIP1-A_6536", "Zulassung eines geänderten Produkts: Aufgaben der TDI"),
-
-    // TODO: AFO-Typ klären derzeit implizit MUSS-AFO
-    TIP1_A_6537("TIP1-A_6537", "Zulassung eines geänderten Produkts: Aufgaben der Hersteller"),
 
     ;
 
