@@ -1,4 +1,4 @@
-package de.ehex.foss.gematik.specifications.gemSpec_Krypt;
+package de.ehex.foss.gematik.specifications.gemKPT_Test;
 
 import static de.ehex.foss.gematik.specifications.AFOType.MUST;
 import static java.util.Objects.nonNull;
@@ -6,7 +6,7 @@ import de.ehex.foss.gematik.specifications.AFO;
 import de.ehex.foss.gematik.specifications.AFOType;
 
 /**
- * Enumeration of all &ndash;&nbsp;currently considered&nbsp;&ndash; {@link AFO}s of {@code [gemSpec_Krypt]}.
+ * Enumeration of all &ndash;&nbsp;currently considered&nbsp;&ndash; {@link AFO}s of {@code [gemKPT_Test_ORS1]}.
  *
  * @author Stefan Gasterst&auml;dt
  * @since September 21st, 2016
@@ -15,63 +15,67 @@ public enum AFOs
 implements AFO {
 
     // TODO: AFO-Typ klären derzeit implizit MUSS-AFO
-    GS_A_4357("GS-A_4357", "X.509-Identitäten für die Erstellung und Prüfung digitaler nichtqualifizierter elektronischer Signaturen"),
+    TIP1_A_2769("TIP1-A_2769", "Kompatibilität und Interoperabilität der Schnittstellen"),
 
     // TODO: AFO-Typ klären derzeit implizit MUSS-AFO
-    GS_A_4359("GS-A_4359", "X.509-Identitäten für die Durchführung einer TLSAuthentifizierung"),
+    TIP1_A_2781("TIP1-A_2781", "Dauerhafte Verfügbarkeit in der Testumgebung"),
 
     // TODO: AFO-Typ klären derzeit implizit MUSS-AFO
-    GS_A_4361("GS-A_4361", "X.509-Identitäten für die Erstellung und Prüfung digitaler Signaturen"),
+    TIP1_A_6083("TIP1-A_6083", "Anzahl der Fachdienste als Referenzobjekte"),
 
     // TODO: AFO-Typ klären derzeit implizit MUSS-AFO
-    GS_A_4362("GS-A_4362", "X.509-Identitäten für Verschlüsselungszertifikate"),
+    TIP1_A_6519("TIP1-A_6519", "Eigenverantwortlicher Test: Hersteller und Anbieter"),
 
     // TODO: AFO-Typ klären derzeit implizit MUSS-AFO
-    GS_A_4367("GS-A_4367", "Zufallszahlengenerator"),
+    TIP1_A_6523("TIP1-A_6523", "Zulassungstest: Hersteller und Anbieter"),
 
     // TODO: AFO-Typ klären derzeit implizit MUSS-AFO
-    GS_A_4368("GS-A_4368", "Schlüsselerzeugung"),
+    TIP1_A_6526("TIP1-A_6526", "Produkttypen: Bereitstellung"),
 
     // TODO: AFO-Typ klären derzeit implizit MUSS-AFO
-    GS_A_4378("GS-A_4378", "Card-to-Server (C2S) Authentisierung und Trusted Channel G1"),
+    TIP1_A_6527("TIP1-A_6527", "Testkarten"),
 
     // TODO: AFO-Typ klären derzeit implizit MUSS-AFO
-    GS_A_4380("GS-A_4380", "Card-to-Server (C2S) Authentisierung und Trusted Channel G2"),
-
-    GS_A_4384("GS-A_4384", "TLS-Verbindungen"),
+    VSDM_A_2812("VSDM-A_2812", "Bereitstellung Testkartensätze"),
 
     // TODO: AFO-Typ klären derzeit implizit MUSS-AFO
-    GS_A_4385("GS-A_4385", "TLS-Verbindungen, Version 1.2"),
-
-    GS_A_4386("GS-A_4386", "TLS-Verbindungen, Version 1.1"),
+    VSDM_A_2814("VSDM-A_2814", "Eindeutigkeit der Testkartenschlüssel"),
 
     // TODO: AFO-Typ klären derzeit implizit MUSS-AFO
-    GS_A_4387("GS-A_4387", "TLS-Verbindungen, Version 1.0"),
+    VSDM_A_2815("VSDM-A_2815", "Berücksichtigung von Vorgaben zur Schlüsselerzeugung"),
 
     // TODO: AFO-Typ klären derzeit implizit MUSS-AFO
-    GS_A_4388("GS-A_4388", "DNSSEC-Kontext"),
+    VSDM_A_2826("VSDM-A_2826", "Bereitstellen datumsbasierter VSD-Updates"),
 
     // TODO: AFO-Typ klären derzeit implizit MUSS-AFO
-    GS_A_4393("GS-A_4393", "Algorithmus bei der Erstellung von Hashwerten von Zertifikaten oder öffentlichen Schlüsseln"),
+    VSDM_A_2825("VSDM-A_2825", "Bereitstellen von VSD-Updates"),
 
     // TODO: AFO-Typ klären derzeit implizit MUSS-AFO
-    GS_A_5035("GS-A_5035", "Nichtverwendung des SSL-Protokolls"),
+    VSDM_A_2830("VSDM-A_2830", "Integration multipler Anbieter"),
 
     // TODO: AFO-Typ klären derzeit implizit MUSS-AFO
-    GS_A_5079("GS-A_5079", "Migration von Algorithmen und Schlüssellängen bei PKIBetreibern"),
-
-    GS_A_5131("GS-A_5131", "Hash-Algorithmus bei OCSP / CertID"),
-
-    GS_A_5322("GS-A_5322", " Weitere Vorgaben für TLS-Verbindungen"),
+    VSDM_A_2831("VSDM-A_2831", "Verwendung von Testkarten"),
 
     // TODO: AFO-Typ klären derzeit implizit MUSS-AFO
-    GS_A_5526("GS-A_5526", "TLS-Renegotiation-Indication-Extension"),
+    VSDM_A_2832("VSDM-A_2832", "Umsetzung des Flip/Flop-Verfahrens"),
 
     // TODO: AFO-Typ klären derzeit implizit MUSS-AFO
-    GS_A_5541("GS-A_5541", "TLS-Verbindungen als TLS-Klient zur Störungsampel"),
+    VSDM_A_3029("VSDM-A_3029", "Bereitstellung von Testkarten"),
 
     // TODO: AFO-Typ klären derzeit implizit MUSS-AFO
-    GS_A_5542("GS-A_5542", "TLS-Verbindungen (fatal Alert bei Abbrüchen)"),
+    VSDM_A_3030("VSDM-A_3030", "Bereitstellung von spezifikationsabweichende Testkarten"),
+
+    // TODO: AFO-Typ klären derzeit implizit MUSS-AFO
+    TIP1_A_6532("TIP1-A_6532", "Zulassung eines neuen Produkts: Aufgaben der TDI"),
+
+    // TODO: AFO-Typ klären derzeit implizit MUSS-AFO
+    TIP1_A_6533("TIP1-A_6533", "Zulassung eines neuen Produkts: Aufgaben der Hersteller und Anbieter"),
+
+    // TODO: AFO-Typ klären derzeit implizit MUSS-AFO
+    TIP1_A_6536("TIP1-A_6536", "Zulassung eines geänderten Produkts: Aufgaben der TDI"),
+
+    // TODO: AFO-Typ klären derzeit implizit MUSS-AFO
+    TIP1_A_6537("TIP1-A_6537", "Zulassung eines geänderten Produkts: Aufgaben der Hersteller"),
 
     ;
 

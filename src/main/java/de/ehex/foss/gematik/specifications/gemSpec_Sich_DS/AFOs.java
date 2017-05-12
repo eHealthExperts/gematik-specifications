@@ -2,7 +2,6 @@ package de.ehex.foss.gematik.specifications.gemSpec_Sich_DS;
 
 import static de.ehex.foss.gematik.specifications.AFOType.MUST;
 import static java.util.Objects.nonNull;
-
 import de.ehex.foss.gematik.specifications.AFO;
 import de.ehex.foss.gematik.specifications.AFOType;
 
@@ -12,7 +11,8 @@ import de.ehex.foss.gematik.specifications.AFOType;
  * @author Stefan Gasterst&auml;dt
  * @since September 21st, 2016
  */
-public enum AFOs implements AFO {
+public enum AFOs
+implements AFO {
 
     // TODO: AFO-Typ klären derzeit implizit MUSS-AFO
     GS_A_2012("GS-A_2012", "Verantwortung der Anbieter und Betreiber für Einhaltung der Anforderungen Datenschutz und Informationssicherheit"),
@@ -172,6 +172,9 @@ public enum AFOs implements AFO {
 
     // TODO: AFO-Typ klären derzeit implizit MUSS-AFO
     GS_A_5017("GS-A_5017", "ISM der Beteiligten: Schließen von Schwachstellen"),
+
+    // TODO: AFO-Typ klären derzeit implizit MUSS-AFO
+    GS_A_5324("GS-A_5324", "Teilnahme des Anbieters an Sitzungen des kDSMS/kISMS"),
 
     // TODO: AFO-Typ klären derzeit implizit MUSS-AFO
     GS_A_2350("GS-A_2350", "Produktunterstützung der Hersteller"),

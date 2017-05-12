@@ -18,6 +18,12 @@ implements AFO {
     TIP1_A_5993("TIP1-A_5993", "Störungsampel und Client, I_Monitoring_Update, WebService"),
 
     // TODO: AFO-Typ klären derzeit implizit MUSS-AFO
+    TIP1_A_5994("TIP1-A_5994", "Störungsampel und Client, I_Monitoring_Update, eindeutige Zuordnung"),
+
+    // TODO: AFO-Typ klären derzeit implizit MUSS-AFO
+    TIP1_A_5995("TIP1-A_5995", "Störungsampel und Client, I_Monitoring_Update, Servicepunkte gemSpec_St_Ampel und IP-Adressen"),
+
+    // TODO: AFO-Typ klären derzeit implizit MUSS-AFO
     TIP1_A_5996("TIP1-A_5996", "Störungsampel und Client, I_Monitoring_Update, maximale Zeitabweichung zwischen Berichtszeitraum und Nachrichtenübermittelung"),
 
     // TODO: AFO-Typ klären derzeit implizit MUSS-AFO
@@ -25,6 +31,9 @@ implements AFO {
 
     // TODO: AFO-Typ klären derzeit implizit MUSS-AFO
     TIP1_A_5998("TIP1-A_5998", "Nutzer der Störungsampel I_Monitoring_Update, Zertifikatsprüfung"),
+
+    // TODO: AFO-Typ klären derzeit implizit MUSS-AFO
+    TIP1_A_5999("TIP1-A_5999", "Nutzer der Störungsampel I_Monitoring_Update, maximale HTTP-Nachrichtenlänge"),
 
     // TODO: AFO-Typ klären derzeit implizit MUSS-AFO
     TIP1_A_6002("TIP1-A_6002", "Nutzer der Störungsampel I_Monitoring_Update, Selbstauskunft als Bestandteil jeder SOAP-Nachricht"),
