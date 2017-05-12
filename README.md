@@ -23,7 +23,7 @@ Die Versionsnummern der einzelnen Releases referenzieren einen jeweiligen Stand 
 | 2.0.*                           | [Release 1.6 OPB1 (1.6.1)](http://www.gematik.de/cms/de/spezifikation/release_1_6_opb1/release_1_9.jsp) | [2016-08-24](http://www.gematik.de/cms/media/dokumente/opb1_release_1_6/OPB1_Produkttypsteckbriefe_20160824.zip)                                                     |
 | 2.1.*                           | [Release 1.6 OPB1](http://www.gematik.de/cms/de/spezifikation/release_1_6_opb1/release_1_9.jsp) | **TBR**: Vorarbeiten für zeitweise erschienenes gematik-Release [2016-11-25](http://www.gematik.de/cms/media/dokumente/opb1_release_1_6/OPB1_Produkttypsteckbriefe_20161125.zip) |
 | 2.2.*                           | [Release 1.6 OPB1 (1.6.2)](http://www.gematik.de/cms/de/spezifikation/release_1_6_opb1/release_1_9.jsp) | [2016-12-19](http://www.gematik.de/cms/media/dokumente/opb1_release_1_6/OPB1_Produkttypsteckbriefe_20161219.zip)                                                     |
-| 2.3.*                           | [Release 1.6 OPB1 (1.6.3)](http://www.gematik.de/cms/de/spezifikation/release_1_6_opb1/release_1_9.jsp) | [2016-03-20](http://www.gematik.de/cms/media/dokumente/opb1_release_1_6/OPB1_Produkttypsteckbriefe_20170316.zip)                                                     |
+| 2.3.*                           | [Release 1.6 OPB1 (1.6.3)](http://www.gematik.de/cms/de/spezifikation/release_1_6_opb1/release_1_9.jsp) | [2017-03-20](http://www.gematik.de/cms/media/dokumente/opb1_release_1_6/OPB1_Produkttypsteckbriefe_20170316.zip)                                                     |
 
 ## Hinweise für Nutzer der gematik-specifications
 
