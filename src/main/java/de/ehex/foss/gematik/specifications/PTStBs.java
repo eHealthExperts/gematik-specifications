@@ -811,6 +811,7 @@ import static de.ehex.foss.gematik.specifications.gemSpec_eGK_Fach_VSDM.AFOs.VSD
 import static de.ehex.foss.gematik.specifications.gemSpec_eGK_Fach_VSDM.AFOs.VSDM_A_2975;
 import static de.ehex.foss.gematik.specifications.gemSpec_eGK_Fach_VSDM.AFOs.VSDM_A_2976;
 import static de.ehex.foss.gematik.specifications.gemSpec_eGK_Fach_VSDM.AFOs.VSDM_A_2994;
+import static java.lang.System.err;
 import static java.util.Arrays.asList;
 import static java.util.Collections.unmodifiableSet;
 import static java.util.Objects.nonNull;
@@ -999,7 +1000,7 @@ public enum PTStBs implements PTStB {
         this.reference = reference;
         this.testAFOs = unmodifiableSet(new HashSet<>(testAFOs));
         // assert disjoint(testAFOs, nonTestAFOs);
-        nonTestAFOs.stream().filter(testAFOs::contains).forEach(afo -> System.err.format("Hey dude; Please ask yourself (or the gematik) why %1$s contains AFO %2$s that is both testable and non-testable!", this.name(), afo));
+        nonTestAFOs.stream().filter(testAFOs::contains).forEach(afo -> err.format("Hey dude; Please ask yourself (or the gematik) why %1$s contains AFO %2$s that is both testable and non-testable!%n", this.name(), afo));
         this.afos = unmodifiableSet(concat(testAFOs.stream(), nonTestAFOs.stream()).collect(toSet()));
     }
 
