@@ -23,8 +23,7 @@ import de.ehex.foss.gematik.specifications.meta.SPEC;
 
 /**
  * Definition of key identifiers of certificate holder references (CHR) of CV certificates (see 6.4.1.3 Certificate
- * Holder Reference (CHR), Übergreifende Spezifikation Spezifikation PKI [gemSpec_PKI], version 1.11.0, released Feb.
- * 06th 2017)
+ * Holder Reference (CHR), Übergreifende Spezifikation PKI [gemSpec_PKI], version 1.11.0, released Feb. 06th 2017)
  *
  * @author Sascha Zak
  * @since May 04th, 2017

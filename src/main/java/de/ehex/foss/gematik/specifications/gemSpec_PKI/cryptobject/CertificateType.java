@@ -6,8 +6,8 @@ import de.ehex.foss.gematik.specifications.gemSpec_PKI.cryptobject.Cryptographic
 import de.ehex.foss.gematik.specifications.meta.SPEC;
 
 /**
- * Definition of the domain of certificate {@link Type} (see 2.5 Type (Objekttyp), Übergreifende Spezifikation
- * Spezifikation PKI [gemSpec_PKI], version 1.11.0, released Feb. 06th 2017)
+ * Definition of the domain of certificate {@link Type} (see 2.5 Type (Objekttyp), Übergreifende Spezifikation PKI
+ * [gemSpec_PKI], version 1.11.0, released Feb. 06th 2017)
  *
  * @author Sascha Zak
  * @since April 20th, 2017

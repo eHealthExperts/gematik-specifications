@@ -36,33 +36,33 @@ import de.ehex.foss.gematik.specifications.meta.SPEC;
 
 /**
  * Definition of certificate holder authorization (CHA) profiles of CV certificates, mostly mapping to
- * {@link ProfessionOIDs} (see Tab. 47: Tab_PKI_254 Zugriffsprofile für eine Rollenauthentisierung, Übergreifende
- * Spezifikation Spezifikation PKI [gemSpec_PKI], version 1.11.0, released Feb. 06th 2017)
+ * {@link ProfessionOIDs} (see Tab. 47: Tab_PKI_254 Zugriffsprofile für eine Rollenauthentisierung, Übergreifende
+ * Spezifikation PKI [gemSpec_PKI], version 1.11.0, released Feb. 06th 2017)
  *
  * @author Sascha Zak
  * @since April 20th, 2017
  */
-@SPEC(value = gemSpec_PKI, note = "Tab_PKI_254 Zugriffsprofile für eine Rollenauthentisierung")
-public enum AccessProfile {
+@SPEC(value = gemSpec_PKI, note = "Tab_PKI_254 Zugriffsprofile für eine Rollenauthentisierung")
+public enum ProfessionAccessProfile implements AccessProfile {
 
     VERSICHERTER(0, ProfessionOIDs.VERSICHERTER), //
-    EKIOSK(1, (ProfessionOIDs[]) null), //
+    EKIOSK(1), //
     ARZT(2, ProfessionOIDs.ARZT, ZAHNARZT, PRAXIS_ARZT, ZAHNARZTPRAXIS, KRANKENHAUS), //
     APOTHEKER(3, ProfessionOIDs.APOTHEKER, APOTHEKENASSISTENT, PHARMAZIEINGENIEUR, APOTHEKENASSISTENT, OEFFENTLICHE_APOTHEKE, KRANKENHAUSAPOTHEKE, BUNDESWEHRAPOTHEKE, PHARM_ASSISTENT, PHARM_TECHN_ASSISTENT, PHARM_KAUFM_ANGESTELLTER,
             PHARMAZIEPRAKTIKANT, APOTHEKENHELFER, APOTHEKENFACHARBEITER, FAMULANT, PTA_PRAKTIKANT, PKA_AUSZUBILDENDER), //
     PSYCHOTHERAPEUT(4, ProfessionOIDs.PSYCHOTHERAPEUT, PS_PSYCHOTHERAPEUT, KUJ_PSYCHOTHERAPEUT, PRAXIS_PSYCHOTHERAPEUT), //
-    HEILMITTELERBRINGER(5, (ProfessionOIDs[]) null), //
-    RESERVIERT(6, (ProfessionOIDs[]) null), //
+    HEILMITTELERBRINGER(5), //
+    RESERVIERT(6), //
     RETTUNGSASSISTENT(7, ProfessionOIDs.RETTUNGSASSISTENT, MOBILE_EINRICHTUNG_RETTUNGSDIENST), //
     KOSTENTRAEGER(8, ProfessionOIDs.KOSTENTRAEGER), //
-    GESUNDHEITSEINRICHTUNGEN(9, (ProfessionOIDs[]) null), //
-    UZWDRDV(10, (ProfessionOIDs[]) null), //
+    GESUNDHEITSEINRICHTUNGEN(9), //
+    UZWDRDV(10), //
     ;
 
-    private static final Map<ProfessionOIDs, AccessProfile> oidMap = new HashMap<>();
+    private static final Map<ProfessionOIDs, ProfessionAccessProfile> oidMap = new HashMap<>();
 
     static {
-        stream(AccessProfile.values()).forEach(p -> {
+        stream(ProfessionAccessProfile.values()).forEach(p -> {
             stream(p.getProfessionOids()).forEach(oid -> oidMap.put(oid, p));
         });
     }
@@ -70,9 +70,9 @@ public enum AccessProfile {
     private final byte profile;
     private final ProfessionOIDs[] professionOids;
 
-    private AccessProfile(final int profile, final ProfessionOIDs... professionOids) {
+    private ProfessionAccessProfile(final int profile, final ProfessionOIDs... professionOids) {
         this.profile = (byte) profile;
-        this.professionOids = professionOids;
+        this.professionOids = professionOids == null ? new ProfessionOIDs[] {} : copyOf(professionOids, professionOids.length);
     }
 
     /**
@@ -80,6 +80,7 @@ public enum AccessProfile {
      *
      * @return profile number
      */
+    @Override
     public byte getProfile() {
         return this.profile;
     }
@@ -94,26 +95,26 @@ public enum AccessProfile {
     }
 
     /**
-     * Returns the {@link AccessProfile} that maps to the given {@link ProfessionOIDs}.
+     * Returns the {@link ProfessionAccessProfile} that maps to the given {@link ProfessionOIDs}.
      *
      * @param professionOid
      *            {@link ProfessionOIDs} to search for
-     * @return {@link Optional} containing the {@link AccessProfile} that maps to the given {@link ProfessionOIDs} or an empty
-     *         {@link Optional}, if no such {@link AccessProfile} exists
+     * @return {@link Optional} containing the {@link ProfessionAccessProfile} that maps to the given
+     *         {@link ProfessionOIDs} or an empty {@link Optional}, if no such {@link ProfessionAccessProfile} exists
      */
-    public static Optional<AccessProfile> ofProfessionOid(final ProfessionOIDs professionOid) {
+    public static Optional<ProfessionAccessProfile> ofProfessionOid(final ProfessionOIDs professionOid) {
         return ofNullable(oidMap.get(professionOid));
     }
 
     /**
-     * Returns the {@link AccessProfile} that maps to the given profession OID value.
+     * Returns the {@link ProfessionAccessProfile} that maps to the given profession OID value.
      *
      * @param professionOid
      *            profession OID value to search for
-     * @return {@link Optional} containing the {@link AccessProfile} that maps to the given profession OID value or an empty
-     *         {@link Optional}, if no such {@link AccessProfile} exists
+     * @return {@link Optional} containing the {@link ProfessionAccessProfile} that maps to the given profession OID
+     *         value or an empty {@link Optional}, if no such {@link ProfessionAccessProfile} exists
      */
-    public static Optional<AccessProfile> ofProfessionOid(final String professionOid) {
+    public static Optional<ProfessionAccessProfile> ofProfessionOid(final String professionOid) {
         final Optional<ProfessionOIDs> profession = ProfessionOIDs.ofOid(professionOid);
         return profession.isPresent() ? ofNullable(oidMap.get(profession.get())) : Optional.empty();
     }
