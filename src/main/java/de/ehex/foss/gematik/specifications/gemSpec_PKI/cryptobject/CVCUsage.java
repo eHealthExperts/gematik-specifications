@@ -7,7 +7,7 @@ import de.ehex.foss.gematik.specifications.meta.SPEC;
 
 /**
  * Definition of the domain of CV certificate {@link Usage} (see 2.7 Usage (Objektverwendung), Übergreifende
- * Spezifikation Spezifikation PKI [gemSpec_PKI], version 1.11.0, released Feb. 06th 2017)
+ * Spezifikation PKI [gemSpec_PKI], version 1.11.0, released Feb. 06th 2017)
  *
  * @author Sascha Zak
  * @since April 20th, 2017

@@ -9,7 +9,7 @@ import de.ehex.foss.gematik.specifications.meta.SPEC;
 
 /**
  * Definition of structure and notation of cryptographic objects, (see 2 Notation kryptographischer Objekte,
- * Übergreifende Spezifikation Spezifikation PKI [gemSpec_PKI], version 1.11.0, released Feb. 06th 2017)
+ * Übergreifende Spezifikation PKI [gemSpec_PKI], version 1.11.0, released Feb. 06th 2017)
  *
  * @author Sascha Zak
  * @since April 20th, 2017
@@ -74,7 +74,7 @@ public abstract interface CryptographicObject {
 
     /**
      * Creates a new {@link CryptographicObject} with the given structure components.
-     * 
+     *
      * @param type
      *            object {@link Type}
      * @param holder

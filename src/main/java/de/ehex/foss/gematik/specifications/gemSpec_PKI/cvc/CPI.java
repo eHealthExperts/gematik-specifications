@@ -5,8 +5,8 @@ import static de.ehex.foss.gematik.specifications.Specifications.gemSpec_PKI;
 import de.ehex.foss.gematik.specifications.meta.SPEC;
 
 /**
- * Definition of certificate profile identifier (CPI) of CV certificates (see Tab.49: Tab_PKI_256 - Mögliche Werte für
- * CPI, Übergreifende Spezifikation Spezifikation PKI [gemSpec_PKI], version 1.11.0, released Feb. 06th 2017)
+ * Definition of certificate profile identifier (CPI) of CV certificates (see Tab.49: Tab_PKI_256 - Mögliche Werte für
+ * CPI, Übergreifende Spezifikation PKI [gemSpec_PKI], version 1.11.0, released Feb. 06th 2017)
  *
  * @author Sascha Zak
  * @since April 20th, 2017
@@ -26,7 +26,7 @@ public enum CPI {
 
     /**
      * Returns the CPI byte value.
-     * 
+     *
      * @return CPI byte value
      */
     public byte getValue() {

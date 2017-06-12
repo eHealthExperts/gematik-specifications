@@ -15,8 +15,7 @@ import de.ehex.foss.gematik.specifications.meta.SPEC;
 
 /**
  * Definition of algorithm OIDs of CV certificates (see Tab. 52: Tab_PKI_260 Object Identifier der Registration
- * Authority TeleTrusT, Übergreifende Spezifikation Spezifikation PKI [gemSpec_PKI], version 1.11.0, released Feb. 06th
- * 2017)
+ * Authority TeleTrusT, Übergreifende Spezifikation PKI [gemSpec_PKI], version 1.11.0, released Feb. 06th 2017)
  *
  * @author Sascha Zak
  * @since April 20th, 2017
@@ -74,8 +73,8 @@ public enum AlgrorithmOID implements OID {
      *
      * @param oid
      *            OID value to search for
-     * @return {@link Optional} containing the (first found) {@link AlgrorithmOID} with the given OID value or an
-     *         empty {@link Optional}, if no such {@link AlgrorithmOID} exists
+     * @return {@link Optional} containing the (first found) {@link AlgrorithmOID} with the given OID value or an empty
+     *         {@link Optional}, if no such {@link AlgrorithmOID} exists
      */
     public static Optional<AlgrorithmOID> ofOid(final String oid) {
         return ofNullable(oidMap.get(oid));
@@ -86,8 +85,8 @@ public enum AlgrorithmOID implements OID {
      *
      * @param ref
      *            document reference to search for
-     * @return {@link Optional} containing the (first found) {@link AlgrorithmOID} with the given document refenrence
-     *         or an empty {@link Optional}, if no such {@link AlgrorithmOID} exists
+     * @return {@link Optional} containing the (first found) {@link AlgrorithmOID} with the given document refenrence or
+     *         an empty {@link Optional}, if no such {@link AlgrorithmOID} exists
      */
     public static Optional<AlgrorithmOID> ofRef(final String ref) {
         return ofNullable(refMap.get(ref));
