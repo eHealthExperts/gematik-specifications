@@ -154,5 +154,4 @@ public enum TIFlags {
     public int getBitIndex() {
         return this.bitIndex;
     }
-
 }
