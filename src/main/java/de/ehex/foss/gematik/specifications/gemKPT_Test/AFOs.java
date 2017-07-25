@@ -2,6 +2,7 @@ package de.ehex.foss.gematik.specifications.gemKPT_Test;
 
 import static de.ehex.foss.gematik.specifications.AFOType.MUST;
 import static java.util.Objects.nonNull;
+
 import de.ehex.foss.gematik.specifications.AFO;
 import de.ehex.foss.gematik.specifications.AFOType;
 

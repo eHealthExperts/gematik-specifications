@@ -1,6 +1,7 @@
 package de.ehex.foss.gematik.specifications.gemSpec_SST_VSDM;
 
 import static de.ehex.foss.gematik.specifications.Specifications.gemSpec_SST_VSDM;
+
 import de.ehex.foss.gematik.specifications.gemSpec_OM.ErrorType;
 import de.ehex.foss.gematik.specifications.gemSpec_OM.Severity;
 import de.ehex.foss.gematik.specifications.meta.SPEC;

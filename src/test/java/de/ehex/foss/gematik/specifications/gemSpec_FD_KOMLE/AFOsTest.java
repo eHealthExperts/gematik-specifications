@@ -10,8 +10,6 @@ import org.junit.runners.Parameterized.Parameter;
 import org.junit.runners.Parameterized.Parameters;
 import org.junit.runners.Parameterized.UseParametersRunnerFactory;
 
-import de.ehex.foss.gematik.specifications.gemSpec_FD_KOMLE.AFOs;
-
 @RunWith(J8Parameterized.class)
 @UseParametersRunnerFactory(J8BlockJUnit4ClassRunnerWithParametersFactory.class)
 public class AFOsTest implements AFOsTests<AFOs> {

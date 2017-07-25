@@ -4,6 +4,7 @@ import static de.ehex.foss.gematik.specifications.Specifications.gemSpec_SST_VSD
 import static de.ehex.foss.gematik.specifications.gemSpec_OM.ErrorType.SECURITY;
 import static de.ehex.foss.gematik.specifications.gemSpec_OM.ErrorType.TECHNICAL;
 import static de.ehex.foss.gematik.specifications.gemSpec_OM.Severity.FATAL;
+
 import de.ehex.foss.gematik.specifications.gemSpec_OM.ErrorType;
 import de.ehex.foss.gematik.specifications.gemSpec_OM.Severity;
 import de.ehex.foss.gematik.specifications.meta.SPEC;

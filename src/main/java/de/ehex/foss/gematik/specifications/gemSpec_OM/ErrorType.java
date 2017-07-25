@@ -1,6 +1,7 @@
 package de.ehex.foss.gematik.specifications.gemSpec_OM;
 
 import static de.ehex.foss.gematik.specifications.Specifications.gemSpec_OM;
+
 import de.ehex.foss.gematik.specifications.meta.SPEC;
 
 /**

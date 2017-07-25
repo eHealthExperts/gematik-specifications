@@ -103,6 +103,7 @@ import static de.ehex.foss.gematik.specifications.gemSpec_X_509_TSP.AFOs.TIP1_A_
 import static java.util.Arrays.asList;
 import static java.util.Collections.emptyList;
 import static java.util.Collections.unmodifiableSet;
+
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
