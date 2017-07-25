@@ -10,7 +10,7 @@ public abstract interface AccessProfile {
 
     /**
      * Returns the access profile number.
-     * 
+     *
      * @return access profile number
      */
     public abstract byte getProfile();
