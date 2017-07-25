@@ -36,7 +36,8 @@ public abstract interface PTStB extends TestableSpecification {
      * Returns a {@linkplain Set set} of all {@link AFO}s referenced by {@code this} PTStB that have to be tested by
      * manufacturers on its own responsibility.
      *
-     * <em>Any implementation must ensure the sub-set relation of this method's result in relation to {@link #getAFOs()}.</em>
+     * <em>Any implementation must ensure the sub-set relation of this method's result in relation to
+     * {@link #getAFOs()}.</em>
      */
     @Override /* to update the javadoc */
     public abstract Set<AFO> getTestableAFOs();
