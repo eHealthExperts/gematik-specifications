@@ -88,8 +88,6 @@ public enum AFOs implements AFO {
 
     GS_A_4657("GS-A_4657", "TUC_PKI_006: OCSP-Abfrage"),
 
-    GS_A_4749("GS-A_4749", "TUC_PKI_007: Prüfung Zertifikatstyp"),
-
     GS_A_4660("GS-A_4660", "TUC_PKI_009: Rollenermittlung"),
 
     GS_A_4661("GS-A_4661", "kritische Erweiterungen in Zertifikaten"),
@@ -218,6 +216,8 @@ public enum AFOs implements AFO {
     // TODO: AFO-Typ klären derzeit implizit MUSS-AFO
     GS_A_4748("GS-A_4748", "Initiale Einbringung TSL-Datei"),
 
+    GS_A_4749("GS-A_4749", "TUC_PKI_007: Prüfung Zertifikatstyp"),
+
     GS_A_4751("GS-A_4751", "Fehlercodes bei TSL- und Zertifikatsprüfung"),
 
     GS_A_4829("GS-A_4829", "TUCs, Fehlerbehandlung"),
@@ -262,6 +262,12 @@ public enum AFOs implements AFO {
 
     ;
 
+    private final String afoID;
+
+    private final AFOType level;
+
+    private final String title;
+
     private AFOs(final String afoID, final String title) {
         this(afoID, title, MUST);
     }
@@ -278,8 +284,6 @@ public enum AFOs implements AFO {
         this.level = level;
     }
 
-    private final String afoID;
-
     @Override
     public String getAfoId() {
         assert nonNull(this.afoID) : "Class invariant violation!";
@@ -288,8 +292,6 @@ public enum AFOs implements AFO {
         return this.afoID;
     }
 
-    private final String title;
-
     @Override
     public String getLabel() {
         assert nonNull(this.title) : "Class invariant violation!";
@@ -297,8 +299,6 @@ public enum AFOs implements AFO {
 
         return this.title;
     }
-
-    private final AFOType level;
 
     @Override
     public AFOType getType() {

@@ -91,10 +91,10 @@ implements AFO {
     VSDM_A_2815("VSDM-A_2815", "Berücksichtigung von Vorgaben zur Schlüsselerzeugung"),
 
     // TODO: AFO-Typ klären derzeit implizit MUSS-AFO
-    VSDM_A_2826("VSDM-A_2826", "Bereitstellen datumsbasierter VSD-Updates"),
+    VSDM_A_2825("VSDM-A_2825", "Bereitstellen von VSD-Updates"),
 
     // TODO: AFO-Typ klären derzeit implizit MUSS-AFO
-    VSDM_A_2825("VSDM-A_2825", "Bereitstellen von VSD-Updates"),
+    VSDM_A_2826("VSDM-A_2826", "Bereitstellen datumsbasierter VSD-Updates"),
 
     // TODO: AFO-Typ klären derzeit implizit MUSS-AFO
     VSDM_A_2830("VSDM-A_2830", "Integration multipler Anbieter"),
@@ -113,6 +113,12 @@ implements AFO {
 
     ;
 
+    private final String afoID;
+
+    private final AFOType level;
+
+    private final String title;
+
     private AFOs(final String afoID, final String title) {
         this(afoID, title, MUST);
     }
@@ -129,8 +135,6 @@ implements AFO {
         this.level = level;
     }
 
-    private final String afoID;
-
     @Override
     public String getAfoId() {
         assert nonNull(this.afoID) : "Class invariant violation!";
@@ -139,8 +143,6 @@ implements AFO {
         return this.afoID;
     }
 
-    private final String title;
-
     @Override
     public String getLabel() {
         assert nonNull(this.title) : "Class invariant violation!";
@@ -148,8 +150,6 @@ implements AFO {
 
         return this.title;
     }
-
-    private final AFOType level;
 
     @Override
     public AFOType getType() {
