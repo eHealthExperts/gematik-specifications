@@ -12,8 +12,7 @@ import de.ehex.foss.gematik.specifications.AFOType;
  * @author Stefan Gasterst&auml;dt
  * @since September 21st, 2016
  */
-public enum AFOs
-implements AFO {
+public enum AFOs implements AFO {
 
     // TODO: AFO-Typ klären derzeit implizit MUSS-AFO
     GS_A_2012("GS-A_2012", "Verantwortung der Anbieter und Betreiber für Einhaltung der Anforderungen Datenschutz und Informationssicherheit"),

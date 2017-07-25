@@ -17,8 +17,7 @@ import de.ehex.foss.gematik.specifications.meta.SPEC;
  * @since February 10th, 2017
  */
 @SPEC(value = gemSpec_SST_VSDM, note = "Tab.13: Tab_SST_VSDM_11 – Übergreifende Fehlercodes")
-public enum VSDM_FD_Faults
-implements VSDM_FD_Fault {
+public enum VSDM_FD_Faults implements VSDM_FD_Fault {
 
     /**
      * <dl>

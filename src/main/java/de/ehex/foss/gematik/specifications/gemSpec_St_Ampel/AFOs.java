@@ -12,8 +12,7 @@ import de.ehex.foss.gematik.specifications.AFOType;
  * @author Stefan Gasterst&auml;dt
  * @since May 11th, 2017
  */
-public enum AFOs
-implements AFO {
+public enum AFOs implements AFO {
 
     // TODO: AFO-Typ klären derzeit implizit MUSS-AFO
     TIP1_A_5993("TIP1-A_5993", "Störungsampel und Client, I_Monitoring_Update, WebService"),

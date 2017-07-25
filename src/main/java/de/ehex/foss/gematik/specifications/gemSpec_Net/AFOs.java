@@ -110,7 +110,7 @@ public enum AFOs implements AFO {
 
     // TODO: AFO-Typ klären derzeit implizit MUSS-AFO
     GS_A_5089("GS-A_5089", "Nameserver-Implementierungen, Schlüssel sicher speichern"),
-    
+
     // TODO: AFO-Typ klären derzeit implizit MUSS-AFO
     GS_A_5346("GS-A_5346", "DNSSEC, Festlegung der DNSSEC gesicherten Zonen und Verpflichtung zur Validierung von DNSSEC RRs"),
 

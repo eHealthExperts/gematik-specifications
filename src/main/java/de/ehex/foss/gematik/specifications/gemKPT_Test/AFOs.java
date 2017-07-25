@@ -12,8 +12,7 @@ import de.ehex.foss.gematik.specifications.AFOType;
  * @author Stefan Gasterst&auml;dt
  * @since September 21st, 2016
  */
-public enum AFOs
-implements AFO {
+public enum AFOs implements AFO {
 
     // TODO: AFO-Typ klären derzeit implizit MUSS-AFO
     TIP1_A_2769("TIP1-A_2769", "Kompatibilität und Interoperabilität der Schnittstellen"),

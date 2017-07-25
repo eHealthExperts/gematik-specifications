@@ -12,8 +12,7 @@ import de.ehex.foss.gematik.specifications.AFOType;
  * @author Stefan Gasterst&auml;dt
  * @since September 21st, 2016
  */
-public enum AFOs
-implements AFO {
+public enum AFOs implements AFO {
 
     // TODO: AFO-Typ klären derzeit implizit MUSS-AFO
     GS_A_4357("GS-A_4357", "X.509-Identitäten für die Erstellung und Prüfung digitaler nichtqualifizierter elektronischer Signaturen"),
