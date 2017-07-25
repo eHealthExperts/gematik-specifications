@@ -9,7 +9,7 @@ import de.ehex.foss.gematik.specifications.AFOType;
 /**
  * Enumeration of all &ndash;&nbsp;currently considered&nbsp;&ndash; {@link AFO}s of {@code [gemSpec_OID]}.
  *
- * @author Stefan Gasterst&auml;dt
+ * @author Stefan Gasterstädt, Jonas Pfeiffer
  * @since September 21st, 2016
  */
 public enum AFOs implements AFO {
@@ -18,10 +18,22 @@ public enum AFOs implements AFO {
     GS_A_4442("GS-A_4442", "OID-Festlegung Rolle für Berufsgruppen"),
 
     // TODO: AFO-Typ klären derzeit implizit MUSS-AFO
+    GS_A_4443("GS-A_4443", "OID-Festlegung für Institutionen"),
+
+    // TODO: AFO-Typ klären derzeit implizit MUSS-AFO
     GS_A_4444("GS-A_4444", "OID-Festlegung für Certificate Policies"),
 
     // TODO: AFO-Typ klären derzeit implizit MUSS-AFO
     GS_A_4445("GS-A_4445", "OID-Festlegung für Zertifikatstypen"),
+
+    // TODO: AFO-Typ klären derzeit implizit MUSS-AFO
+    GS_A_4446("GS-A_4446", "OID-Festlegung für technische Rollen"),
+
+    // TODO: AFO-Typ klären derzeit implizit MUSS-AFO
+    GS_A_4447("GS-A_4447", "OID-Festlegung für Feldbezeichnungen in der TSL"),
+
+    // TODO: AFO-Typ klären derzeit implizit MUSS-AFO
+    GS_A_5082("GS-A_5082", "OID-Festlegung für Flaglisten bei CV-Zertifikaten der Kartengeneration 2"),
 
     ;
 

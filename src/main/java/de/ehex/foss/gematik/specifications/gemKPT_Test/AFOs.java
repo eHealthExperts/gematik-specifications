@@ -7,21 +7,31 @@ import de.ehex.foss.gematik.specifications.AFO;
 import de.ehex.foss.gematik.specifications.AFOType;
 
 /**
- * Enumeration of all &ndash;&nbsp;currently considered&nbsp;&ndash; {@link AFO}s of {@code [gemKPT_Test_ORS1]}.
+ * Enumeration of all &ndash;&nbsp;currently considered&nbsp;&ndash; {@link AFO}s of {@code [gemKPT_Test]}.
  *
- * @author Stefan Gasterst&auml;dt
+ * @author Stefan Gasterstädt, Jonas Pfeiffer
  * @since September 21st, 2016
  */
-public enum AFOs implements AFO {
 
-    // TODO: AFO-Typ klären derzeit implizit MUSS-AFO
-    TIP1_A_2769("TIP1-A_2769", "Kompatibilität und Interoperabilität der Schnittstellen"),
+public enum AFOs implements AFO {
 
     // TODO: AFO-Typ klären derzeit implizit MUSS-AFO
     TIP1_A_2781("TIP1-A_2781", "Dauerhafte Verfügbarkeit in der Testumgebung"),
 
     // TODO: AFO-Typ klären derzeit implizit MUSS-AFO
+    TIP1_A_2805("TIP1-A_2805", "Zeitnahe Anpassung von Produktkonfigurationen"),
+
+    // TODO: AFO-Typ klären derzeit implizit MUSS-AFO
+    TIP1_A_4929("TIP1-A_4929", "Nachweis über Qualität der Zufallszahlen"),
+
+    // TODO: AFO-Typ klären derzeit implizit MUSS-AFO
     TIP1_A_6083("TIP1-A_6083", "Anzahl der Fachdienste als Referenzobjekte"),
+
+    // TODO: AFO-Typ klären derzeit implizit MUSS-AFO
+    TIP1_A_6086("TIP1-A_6086", "Unterstützung bei Anbindung eines Produktes"),
+
+    // TODO: AFO-Typ klären derzeit implizit MUSS-AFO
+    TIP1_A_6087("TIP1-A_6087", "Zugang zur Adminschnittstelle bei dezentralen Produkten"),
 
     // TODO: AFO-Typ klären derzeit implizit MUSS-AFO
     TIP1_A_6516("TIP1-A_6516", "Eigenverantwortlicher Test: Test & Transitionmanager"),
@@ -63,13 +73,13 @@ public enum AFOs implements AFO {
     TIP1_A_6533("TIP1-A_6533", "Zulassung eines neuen Produkts: Aufgaben der Hersteller und Anbieter"),
 
     // TODO: AFO-Typ klären derzeit implizit MUSS-AFO
-    TIP1_A_6535("TIP1-A_6535", "Zulassung eines geänderten Produkts: Aufgaben des TBV"),
+    TIP1_A_6535("TIP1-A_6535 ", "Zulassung eines geänderten Produkts: Aufgaben des TBV"),
 
     // TODO: AFO-Typ klären derzeit implizit MUSS-AFO
     TIP1_A_6536("TIP1-A_6536", "Zulassung eines geänderten Produkts: Aufgaben der TDI"),
 
     // TODO: AFO-Typ klären derzeit implizit MUSS-AFO
-    TIP1_A_6537("TIP1-A_6537", "Zulassung eines geänderten Produkts: Aufgaben der Hersteller"),
+    TIP1_A_6537("TIP1-A_6537", "Zulassung eines geänderten Produkts: Aufgaben der Hersteller und Anbieter"),
 
     // TODO: AFO-Typ klären derzeit implizit MUSS-AFO
     TIP1_A_6538("TIP1-A_6538", "Durchführung von Produkttests"),
@@ -156,5 +166,4 @@ public enum AFOs implements AFO {
 
         return this.level;
     }
-
 }

@@ -1,10 +1,7 @@
 package de.ehex.foss.gematik.specifications;
 
-import static de.ehex.foss.gematik.specifications.PTStBs.gemProdT_CM_KOMLE_PTV1_2_0;
-import static de.ehex.foss.gematik.specifications.PTStBs.gemProdT_FD_KOMLE_PTV1_2_0;
 import static de.ehex.foss.gematik.specifications.PTStBs.gemProdT_FD_VSDM_PTV1_5_0_2;
-import static de.ehex.foss.gematik.specifications.PTStBs.gemProdT_Intermediaer_VSDM_PTV150_V100;
-import static de.ehex.foss.gematik.specifications.PTStBs.gemProdT_Kon_PTV260_V100_LDAPProxy;
+import static de.ehex.foss.gematik.specifications.PTStBs.gemProdT_Intermediaer_VSDM_PTV1_5_2_0;
 import static de.ehex.foss.gematik.specifications.PTStBs.gemProdT_X_509_TSP_nonQES_eGK_PTV1_7_0_0;
 import static de.ehex.foss.gematik.specifications.gemRL_TSL_SP_CP.AFOs.GS_A_4173;
 import static de.ehex.foss.gematik.specifications.gemRL_TSL_SP_CP.AFOs.GS_A_4191;
@@ -60,7 +57,6 @@ import static de.ehex.foss.gematik.specifications.gemSpec_PKI.AFOs.GS_A_4649;
 import static de.ehex.foss.gematik.specifications.gemSpec_PKI.AFOs.GS_A_4650;
 import static de.ehex.foss.gematik.specifications.gemSpec_PKI.AFOs.GS_A_4655;
 import static de.ehex.foss.gematik.specifications.gemSpec_PKI.AFOs.GS_A_5513;
-import static de.ehex.foss.gematik.specifications.gemSpec_SST_FD_VSDM.AFOs.VSDM_A_2323;
 import static de.ehex.foss.gematik.specifications.gemSpec_SiBetrUmg.AFOs.GS_A_3737;
 import static de.ehex.foss.gematik.specifications.gemSpec_SiBetrUmg.AFOs.GS_A_3747;
 import static de.ehex.foss.gematik.specifications.gemSpec_SiBetrUmg.AFOs.GS_A_3753;
@@ -113,16 +109,10 @@ import java.util.Set;
  * According to the currently released specifications, this enumeration list all (currently considered) gematik EVT
  * scopes.
  *
- * @author Stefan Gasterst&auml;dt
+ * @author Stefan Gasterstädt, Jonas Pfeiffer
  * @since September 27th, 2016
  */
 public enum EVTScopes implements TestScope {
-
-    KOMLE_CM(gemProdT_CM_KOMLE_PTV1_2_0, emptyList(), emptyList()),
-
-    KOMLE_FD(gemProdT_FD_KOMLE_PTV1_2_0, emptyList(), emptyList()),
-
-    LDAP_PROXY(gemProdT_Kon_PTV260_V100_LDAPProxy, emptyList(), emptyList()),
 
     /**
      * TODO: Put a note why <em>GS_A_4642, GS_A_4643, GS_A_4646, GS_A_4647, GS_A_4648, GS_A_4649, GS_A_4650, GS_A_4655,
@@ -157,11 +147,14 @@ public enum EVTScopes implements TestScope {
     /**
      * TODO: Put a note why <em>VSDM_A_2323</em> is/are be excluded from testing.
      *
+     * VSDM_A_2323 isn't be a part of gemSpec_SST_FD_VSDM anymore. Annotation from Jonas.
+     *
+     *
      * TODO: Put a note why <em>GS_A_4384, GS_A_4387</em> is/are included into test-scope.
      */
-    VSDM_FD(gemProdT_FD_VSDM_PTV1_5_0_2, asList(VSDM_A_2323), asList(GS_A_4384, GS_A_4387)),
+    VSDM_FD(gemProdT_FD_VSDM_PTV1_5_0_2, asList(), asList(GS_A_4384, GS_A_4387)),
 
-    INTERMEDIAER_VSDM(gemProdT_Intermediaer_VSDM_PTV150_V100, emptyList(), emptyList()),
+    INTERMEDIAER_VSDM(gemProdT_Intermediaer_VSDM_PTV1_5_2_0, emptyList(), emptyList()),
 
     ;
 

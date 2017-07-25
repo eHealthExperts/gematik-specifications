@@ -9,7 +9,7 @@ import de.ehex.foss.gematik.specifications.AFOType;
 /**
  * Enumeration of all &ndash;&nbsp;currently considered&nbsp;&ndash; {@link AFO}s of {@code [gemSpec_DSM]}.
  *
- * @author Stefan Gasterst&auml;dt
+ * @author Stefan Gasterstädt, Jonas Pfeiffer
  * @since September 21st, 2016
  */
 public enum AFOs implements AFO {
@@ -87,10 +87,7 @@ public enum AFOs implements AFO {
     GS_A_4471("GS-A_4471", "kDSM: Auftragsdatenverarbeitung im Datenschutzreport der TI"),
 
     // TODO: AFO-Typ klären derzeit implizit MUSS-AFO
-    GS_A_4472("GS-A_4472", "kDSM: Allgemeiner Datenschutzbericht"),
-
-    // TODO: AFO-Typ klären derzeit implizit MUSS-AFO
-    GS_A_4473("GS-A_4473", "kDSM: Unverzügliche Benachrichtigung bei Verstößen gemäß § 42a BDSG bzw. § 83a SGB X"),
+    GS_A_4473("GS-A_4473", "kDSM: Unverzügliche Benachrichtigung bei Verstößen gemäß §42a BDSG bzw. § 83a SGB X"),
 
     // TODO: AFO-Typ klären derzeit implizit MUSS-AFO
     GS_A_4474("GS-A_4474", "kDSM: Nutzung des Incident Managements der gematik"),

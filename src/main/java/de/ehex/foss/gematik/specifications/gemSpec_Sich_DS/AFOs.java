@@ -9,7 +9,7 @@ import de.ehex.foss.gematik.specifications.AFOType;
 /**
  * Enumeration of all &ndash;&nbsp;currently considered&nbsp;&ndash; {@link AFO}s of {@code [gemSpec_Sich_DS]}.
  *
- * @author Stefan Gasterst&auml;dt
+ * @author Stefan Gasterstädt, Jonas Pfeiffer
  * @since September 21st, 2016
  */
 public enum AFOs implements AFO {
@@ -24,34 +24,19 @@ public enum AFOs implements AFO {
     GS_A_2046("GS-A_2046", "Umsetzung der Anforderungen aus [gemSpec_SiBetrUmg] durch Anbieter von zentralen Produkten"),
 
     // TODO: AFO-Typ klären derzeit implizit MUSS-AFO
-    GS_A_2047("GS-A_2047", "Gestaltung der Umgebung von zentralen Produkten durch Betreiber für Schutzbedarf \"mittel\""),
+    GS_A_2047("GS-A_2047", "Gestaltung der Umgebung von zentralen Produkten durch Betreiber für Schutzbedarf"),
 
     // TODO: AFO-Typ klären derzeit implizit MUSS-AFO
     GS_A_2065("GS-A_2065", "Beschlagnahmeschutz bei Anbietern und Betreibern"),
-
-    // TODO: AFO-Typ klären derzeit implizit MUSS-AFO
-    GS_A_2070("GS-A_2070", "Datenschutzkontrolle durch BfDI und gematik"),
-
-    // TODO: AFO-Typ klären derzeit implizit MUSS-AFO
-    GS_A_2071("GS-A_2071", "Unterstützung bei der Datenschutzkontrolle durch BfDI und gematik"),
-
-    // TODO: AFO-Typ klären derzeit implizit MUSS-AFO
-    GS_A_2072("GS-A_2072", "Bereitstellung von Datenschutz-Audits zur Datenschutzkontrolle durch BfDI und gematik"),
-
-    // TODO: AFO-Typ klären derzeit implizit MUSS-AFO
-    GS_A_2073("GS-A_2073", "Anordnung von Maßnahmen des Datenschutzes durch BfDI und gematik"),
-
-    // TODO: AFO-Typ klären derzeit implizit MUSS-AFO
-    GS_A_2074("GS-A_2074", "Umsetzung der durch BfDI und gematik angeordneten Maßnahmen"),
-
-    // TODO: AFO-Typ klären derzeit implizit MUSS-AFO
-    GS_A_2075("GS-A_2075", "Untersagen von Verfahren durch BfDI und gematik"),
 
     // TODO: AFO-Typ klären derzeit implizit MUSS-AFO
     GS_A_2076("GS-A_2076", "Datenschutzmanagement nach BSI für Betreiber"),
 
     // TODO: AFO-Typ klären derzeit implizit MUSS-AFO
     GS_A_2087("GS-A_2087", "Information für Betroffene über Produkte durch Anbieter und Betreiber"),
+
+    // TODO: AFO-Typ klären derzeit implizit MUSS-AFO
+    GS_A_2148("GS-A_2148", "Zulassungsnachweis der sicherheitstechnischen Eignung bei dezentralen Produkttypen"),
 
     // TODO: AFO-Typ klären derzeit implizit MUSS-AFO
     GS_A_2156("GS-A_2156", "Auditierungen der Zulassungsnehmer"),
@@ -111,10 +96,10 @@ public enum AFOs implements AFO {
     GS_A_2354("GS-A_2354", "Produktunterstützung mit geeigneten Sicherheits-Technologien"),
 
     // TODO: AFO-Typ klären derzeit implizit MUSS-AFO
-    GS_A_2355("GS-A_2355", "ISM der Beteiligten: Nutzung des Problem-ManagementProzesses"),
+    GS_A_2355("GS-A_2355", "ISM der Beteiligten: Nutzung des Problem-Management-Prozesses"),
 
     // TODO: AFO-Typ klären derzeit implizit MUSS-AFO
-    GS_A_2356("GS-A_2356", "ISM der Beteiligten: Nutzung des Incident-ManagementProzesses"),
+    GS_A_2356("GS-A_2356", "ISM der Beteiligten: Nutzung des Incident-Management-Prozesses"),
 
     // TODO: AFO-Typ klären derzeit implizit MUSS-AFO
     GS_A_2357("GS-A_2357", "ISM der Beteiligten: Nutzung der Prozesse und Reports des Betriebs"),
@@ -138,7 +123,7 @@ public enum AFOs implements AFO {
     GS_A_2366("GS-A_2366", "ISM der Beteiligten: Notfallbewältigung"),
 
     // TODO: AFO-Typ klären derzeit implizit MUSS-AFO
-    GS_A_2524("GS-A_2524", "Produktunterstützung: Nutzung des Problem-ManagementProzesses"),
+    GS_A_2524("GS-A_2524", "Produktunterstützung: Nutzung des Problem-Management-Prozesses"),
 
     // TODO: AFO-Typ klären derzeit implizit MUSS-AFO
     GS_A_2525("GS-A_2525", "Hersteller: Schließen von Schwachstellen"),
@@ -178,6 +163,9 @@ public enum AFOs implements AFO {
 
     // TODO: AFO-Typ klären derzeit implizit MUSS-AFO
     GS_A_5324("GS-A_5324", "Teilnahme des Anbieters an Sitzungen des kDSMS/kISMS"),
+
+    // TODO: AFO-Typ klären derzeit implizit MUSS-AFO
+    GS_A_5387("GS-A_5387", "Beachten von Vorgaben bei der Kartenpersonalisierung"),
 
     ;
 

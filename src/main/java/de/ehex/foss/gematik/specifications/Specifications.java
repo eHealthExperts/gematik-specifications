@@ -14,29 +14,57 @@ import java.util.Set;
  */
 public enum Specifications implements Specification {
 
-    gemKPT_Test_ORS1("gemKPT_Test_ORS1", de.ehex.foss.gematik.specifications.gemKPT_Test_ORS1.AFOs.class),
+    gemKPT_Test("gemKPT_Test", de.ehex.foss.gematik.specifications.gemKPT_Test.AFOs.class),
 
-    gemRL_Betr_TI("gemRL_Betr_TI", de.ehex.foss.gematik.specifications.gemRL_Betr_TI.AFOs.class),
+    gemKPT_Test_ORS1("gemKPT_Test_ORS1", de.ehex.foss.gematik.specifications.gemKPT_Test_ORS1.AFOs.class),
 
     gemRL_TSL_SP_CP("gemRL_TSL_SP_CP", de.ehex.foss.gematik.specifications.gemRL_TSL_SP_CP.AFOs.class),
 
-    gemSMIME_KOMLE("gemSMIME_KOM-LE", de.ehex.foss.gematik.specifications.gemSMIME_KOMLE.AFOs.class),
+    gemSpec_CAN_TI("gemSpec_CAN_TI", de.ehex.foss.gematik.specifications.gemSpec_CAN_TI.AFOs.class),
 
-    gemSpec_CM_KOMLE("gemSpec_CM_KOMLE", de.ehex.foss.gematik.specifications.gemSpec_CM_KOMLE.AFOs.class),
+    gemSpec_CVC_Root("gemSpec_CVC_Root", de.ehex.foss.gematik.specifications.gemSpec_CVC_Root.AFOs.class),
+
+    gemSpec_CVC_TSP("gemSpec_CVC_TSP", de.ehex.foss.gematik.specifications.gemSpec_CVC_TSP.AFOs.class),
 
     gemSpec_DSM("gemSpec_DSM", de.ehex.foss.gematik.specifications.gemSpec_DSM.AFOs.class),
 
     gemSpec_eGK_Fach_VSDM("gemSpec_eGK_Fach_VSDM", de.ehex.foss.gematik.specifications.gemSpec_eGK_Fach_VSDM.AFOs.class),
 
-    gemSpec_FD_KOMLE("gemSpec_FD_KOMLE", de.ehex.foss.gematik.specifications.gemSpec_FD_KOMLE.AFOs.class),
+    gemSpec_eGK_ObjSys("gemSpec_eGK_ObjSys", de.ehex.foss.gematik.specifications.gemSpec_eGK_ObjSys.AFOs.class),
+
+    gemSpec_eGK_ObjSys_G2_1("gemSpec_eGK_ObjSys_G2_1", de.ehex.foss.gematik.specifications.gemSpec_eGK_ObjSys_G2_1.AFOs.class),
+
+    gemSpec_eGK_OPT("gemSpec_eGK_OPT", de.ehex.foss.gematik.specifications.gemSpec_eGK_OPT.AFOs.class),
+
+    gemSpec_FM_VSDM("gemSpec_FM_VSDM", de.ehex.foss.gematik.specifications.gemSpec_FM_VSDM.AFOs.class),
+
+    gemSpec_gSMC_K_ObjSys("gemSpec_gSMC_K_ObjSys", de.ehex.foss.gematik.specifications.gemSpec_gSMC_K_ObjSys.AFOs.class),
+
+    gemSpec_gSMC_KT_ObjSys("gemSpec_gSMC_KT_ObjSys", de.ehex.foss.gematik.specifications.gemSpec_gSMC_KT_ObjSys.AFOs.class),
+
+    gemSpec_gSMC_KT_ObjSys_G2_1("gemSpec_gSMC_KT_ObjSys_G2_1", de.ehex.foss.gematik.specifications.gemSpec_gSMC_KT_ObjSys_G2_1.AFOs.class),
+
+    gemSpec_HBA_ObjSys("gemSpec_HBA_ObjSys", de.ehex.foss.gematik.specifications.gemSpec_HBA_ObjSys.AFOs.class),
+
+    gemSpec_HBA_ObjSys_G2_1("gemSpec_HBA_ObjSys_G2_1", de.ehex.foss.gematik.specifications.gemSpec_HBA_ObjSys_G2_1.AFOs.class),
 
     gemSpec_Intermediaer_VSDM("gemSpec_Intermediär_VSDM", de.ehex.foss.gematik.specifications.gemSpec_Intermediär_VSDM.AFOs.class),
 
     gemSpec_ISM("gemSpec_ISM", de.ehex.foss.gematik.specifications.gemSpec_ISM.AFOs.class),
 
+    gemSpec_Karten_Fach_TIP("gemSpec_Karten_Fach_TIP", de.ehex.foss.gematik.specifications.gemSpec_Karten_Fach_TIP.AFOs.class),
+
     gemSpec_Kon("gemSpec_Kon", de.ehex.foss.gematik.specifications.gemSpec_Kon.AFOs.class),
 
+    gemSpec_Kon_SigProxy("gemSpec_Kon_SigProxy", de.ehex.foss.gematik.specifications.gemSpec_Kon_SigProxy.AFOs.class),
+
     gemSpec_Krypt("gemSpec_Krypt", de.ehex.foss.gematik.specifications.gemSpec_Krypt.AFOs.class),
+
+    gemSpec_KSR("gemSpec_KSR", de.ehex.foss.gematik.specifications.gemSpec_KSR.AFOs.class),
+
+    gemSpec_KT("gemSpec_KT", de.ehex.foss.gematik.specifications.gemSpec_KT.AFOs.class),
+
+    gemSpec_MobKT("gemSpec_MobKT", de.ehex.foss.gematik.specifications.gemSpec_MobKT.AFOs.class),
 
     gemSpec_Net("gemSpec_Net", de.ehex.foss.gematik.specifications.gemSpec_Net.AFOs.class),
 
@@ -44,7 +72,11 @@ public enum Specifications implements Specification {
 
     gemSpec_OM("gemSpec_OM", de.ehex.foss.gematik.specifications.gemSpec_OM.AFOs.class),
 
+    gemSpec_OCSP_Proxy("gemSpec_OCSP_Proxy", de.ehex.foss.gematik.specifications.gemSpec_OSCP_Proxy.AFOs.class),
+
     gemSpec_Perf("gemSpec_Perf", de.ehex.foss.gematik.specifications.gemSpec_Perf.AFOs.class),
+
+    gemSpec_PINPUK_TI("gemSpec_PINPUK_TI", de.ehex.foss.gematik.specifications.gemSpec_PINPUK_TI.AFOs.class),
 
     gemSpec_PKI("gemSpec_PKI", de.ehex.foss.gematik.specifications.gemSpec_PKI.AFOs.class),
 
@@ -52,15 +84,27 @@ public enum Specifications implements Specification {
 
     gemSpec_Sich_DS("gemSpec_Sich_DS", de.ehex.foss.gematik.specifications.gemSpec_Sich_DS.AFOs.class),
 
+    gemSpec_SMC_B_ObjSys("gemSpec_SMC_B_ObjSys", de.ehex.foss.gematik.specifications.gemSpec_SMC_B_ObjSys.AFOs.class),
+
+    gemSpec_SMC_B_ObjSys_G2_1("gemSpec_SMC_B_ObjSys_G2_1", de.ehex.foss.gematik.specifications.gemSpec_SMC_B_ObjSys_G2_1.AFOs.class),
+
+    gemSpec_SMC_OPT("gemSpec_SMC_OPT", de.ehex.foss.gematik.specifications.gemSpec_SMC_OPT.AFOs.class),
+
     gemSpec_SST_FD_VSDM("gemSpec_SST_FD_VSDM", de.ehex.foss.gematik.specifications.gemSpec_SST_FD_VSDM.AFOs.class),
 
     gemSpec_SST_VSDM("gemSpec_SST_VSDM", de.ehex.foss.gematik.specifications.gemSpec_SST_VSDM.AFOs.class),
 
+    gemSpec_St_Ampel("gemSpec_St_Ampel", de.ehex.foss.gematik.specifications.gemSpec_St_Ampel.AFOs.class),
+
     gemSpec_TSL("gemSpec_TSL", de.ehex.foss.gematik.specifications.gemSpec_TSL.AFOs.class),
+
+    gemSpec_VPN_ZugD("gemSpec_VPN_ZugD", de.ehex.foss.gematik.specifications.gemSpec_VPN_ZugD.AFOs.class),
 
     gemSpec_VZD("gemSpec_VZD", de.ehex.foss.gematik.specifications.gemSpec_VZD.AFOs.class),
 
     gemSpec_X_509_TSP("gemSpec_X.509_TSP", de.ehex.foss.gematik.specifications.gemSpec_X_509_TSP.AFOs.class),
+
+    SPdPerval("SPdPerval", de.ehex.foss.gematik.specifications.SPdPersval.AFOs.class),
 
     ;
 
