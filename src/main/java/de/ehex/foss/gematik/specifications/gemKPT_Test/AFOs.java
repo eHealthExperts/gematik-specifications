@@ -73,7 +73,7 @@ public enum AFOs implements AFO {
     TIP1_A_6533("TIP1-A_6533", "Zulassung eines neuen Produkts: Aufgaben der Hersteller und Anbieter"),
 
     // TODO: AFO-Typ klären derzeit implizit MUSS-AFO
-    TIP1_A_6535("TIP1-A_6535 ", "Zulassung eines geänderten Produkts: Aufgaben des TBV"),
+    TIP1_A_6535("TIP1-A_6535", "Zulassung eines geänderten Produkts: Aufgaben des TBV"),
 
     // TODO: AFO-Typ klären derzeit implizit MUSS-AFO
     TIP1_A_6536("TIP1-A_6536", "Zulassung eines geänderten Produkts: Aufgaben der TDI"),
