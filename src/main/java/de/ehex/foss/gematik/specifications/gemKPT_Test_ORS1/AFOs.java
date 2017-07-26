@@ -12,18 +12,20 @@ import de.ehex.foss.gematik.specifications.AFOType;
  * @author Stefan Gasterstädt, Jonas Pfeiffer
  * @since September 21st, 2016
  *
- *
+ * @deprecated WTF! Gematik publishes AFOs multiple times within the same release! This AFO source should be removed in
+ *             favor of {@link de.ehex.foss.gematik.specifications.gemKPT_Test.AFOs};
  */
+@Deprecated
 public enum AFOs implements AFO {
 
     // TODO: AFO-Typ klären derzeit implizit MUSS-AFO
-    TIP1_A_2769("TIP1-A_2769", "Kompatibilität und Interoperabilität der Schnittstellen"),
+    TIP1_A_2769("TIP1-A_2769_DOUBLET", "Kompatibilität und Interoperabilität der Schnittstellen"),
 
     // TODO: AFO-Typ klären derzeit implizit MUSS-AFO
-    TIP1_A_2781("TIP1-A_2781", "Dauerhafte Verfügbarkeit in der Testumgebung"),
+    TIP1_A_2781("TIP1-A_2781_DOUBLET", "Dauerhafte Verfügbarkeit in der Testumgebung"),
 
     // TODO: AFO-Typ klären derzeit implizit MUSS-AFO
-    TIP1_A_5052("TIP1-A_5052", "Dauerhafte Verfügbarkeit in der RU"),
+    TIP1_A_5052("TIP1-A_5052_DOUBLET", "Dauerhafte Verfügbarkeit in der RU"),
 
     ;
 
