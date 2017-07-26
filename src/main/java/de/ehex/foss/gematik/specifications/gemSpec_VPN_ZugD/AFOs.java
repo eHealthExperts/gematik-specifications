@@ -393,9 +393,6 @@ public enum AFOs implements AFO {
     TIP1_A_5118("TIP1-A_5118", "VPN-Zugangsdienst, Schnittstelle I_Registration_Service"),
 
     // TODO: AFO-Typ klären derzeit implizit MUSS-AFO
-    TIP1_A_5120("TIP1-A_5120", "Clients des TSL-Dienstes: HTTP-Komprimierung unterstützen"),
-
-    // TODO: AFO-Typ klären derzeit implizit MUSS-AFO
     TIP1_A_5155("TIP1-A_5155", "VPN-Zugangsdienst SIS, Verhinderung Verbindungsaufbau aus dem Internet"),
 
     // TODO: AFO-Typ klären derzeit implizit MUSS-AFO
