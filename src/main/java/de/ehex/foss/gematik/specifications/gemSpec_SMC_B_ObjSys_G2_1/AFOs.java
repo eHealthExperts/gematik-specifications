@@ -258,9 +258,6 @@ public enum AFOs implements AFO {
     // TODO: AFO-Typ klären derzeit implizit MUSS-AFO
     Card_G2_A_3664("Card-G2-A_3664", "K_Personalisierung und K_Initialisierung: Unterstützung RSA CV-Zertifikate"),
 
-    // TODO: AFO-Typ klären derzeit implizit MUSS-AFO
-    GS_A_4668("GS-A_4668", "Prüfung der mathematischen Korrektheit bei CV-Zertifikaten der Generation G1"),
-
     ;
 
     private final String afoID;
