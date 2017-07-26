@@ -81,9 +81,6 @@ public enum AFOs implements AFO {
     VSDM_A_2219("VSDM-A_2219", "Fachmodul VSDM: Anfragenachricht zu einer Fehlermeldung speichern"),
 
     // TODO: AFO-Typ klären derzeit implizit MUSS-AFO
-    VSDM_A_2226("VSDM-A_2226", "Fachanwendung VSDM: Verbindung offen halten"),
-
-    // TODO: AFO-Typ klären derzeit implizit MUSS-AFO
     VSDM_A_2235("VSDM-A_2235", "Fachmodul VSDM: Trennzeichen in der URL"),
 
     // TODO: AFO-Typ klären derzeit implizit MUSS-AFO
