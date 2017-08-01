@@ -9,7 +9,7 @@ import de.ehex.foss.gematik.specifications.AFOType;
 /**
  * Enumeration of all &ndash;&nbsp;currently considered&nbsp;&ndash; {@link AFO}s of {@code [gemSpec_SiBetrUmg]}.
  *
- * @author Stefan Gasterst&auml;dt
+ * @author Stefan Gasterstädt, Jonas Pfeiffer
  * @since September 21st, 2016
  */
 public enum AFOs implements AFO {
@@ -21,28 +21,28 @@ public enum AFOs implements AFO {
     GS_A_3747("GS-A_3747", "Technische_Komponenten: Dokumentation der technischen Komponenten und der geforderten Sicherheitsfunktionalität."),
 
     // TODO: AFO-Typ klären derzeit implizit MUSS-AFO
-    GS_A_3753("GS-A_3753", "Notfallkonzept: Der Dienstanbieter MUSS ein Notfallkonzept erstellen (1)"),
+    GS_A_3753("GS-A_3753", "Notfallkonzept: Der Dienstanbieter muss ein Notfallkonzept erstellen"),
 
     // TODO: AFO-Typ klären derzeit implizit MUSS-AFO
-    GS_A_3756("GS-A_3756", "Umsetzung_Maßnahmen_spezifisches_Siko: Umsetzung und Prüfbarkeit von Maßnahmen."),
+    GS_A_3756("GS-A_3756", "Umsetzung_Maßnahmen_spezifisches_Siko: Umsetzung und Prüfbarkeit von Maßnahmen"),
 
     // TODO: AFO-Typ klären derzeit implizit MUSS-AFO
     GS_A_3760("GS-A_3760", "Gutachten zur Einhaltung der Sicherheitsanforderungen für Dienstbetreiber"),
 
     // TODO: AFO-Typ klären derzeit implizit MUSS-AFO
-    GS_A_3772("GS-A_3772", "Notfallkonzept: Der Dienstanbieter MUSS ein Notfallkonzept erstellen (2)"),
+    GS_A_3772("GS-A_3772", "Notfallkonzept: Der Dienstanbieter soll dem BSI-Standard 100-4 folgen"),
 
     // TODO: AFO-Typ klären derzeit implizit MUSS-AFO
-    GS_A_3784("GS-A_3784", "Nachweis durch ISO2700 1 Zertifikat"),
+    GS_A_3784("GS-A_3784", "Nachweis durch ISO27001 Zertifikat"),
 
     // TODO: AFO-Typ klären derzeit implizit MUSS-AFO
-    GS_A_4980("GS-A_4980", "Umsetzung der Norm ISO/IEC 2700 1"),
+    GS_A_4980("GS-A_4980", "Umsetzung der Norm ISO/IEC 27001"),
 
     // TODO: AFO-Typ klären derzeit implizit MUSS-AFO
-    GS_A_4981("GS-A_4981", "Erreichen der Ziele der Norm ISO/IEC 2700 1 Annex A"),
+    GS_A_4981("GS-A_4981", "Erreichen der Ziele der Norm ISO/IEC 27001 Annex A"),
 
     // TODO: AFO-Typ klären derzeit implizit MUSS-AFO
-    GS_A_4982("GS-A_4982", "Umsetzung der Maßnahmen der Norm ISO/IEC 2700 2"),
+    GS_A_4982("GS-A_4982", "Umsetzung der Maßnahmen der Norm ISO/IEC 27002"),
 
     // TODO: AFO-Typ klären derzeit implizit MUSS-AFO
     GS_A_4983("GS-A_4983", "Umsetzung der Maßnahmen aus dem BSI-Grundschutz"),
@@ -51,6 +51,12 @@ public enum AFOs implements AFO {
     GS_A_4984("GS-A_4984", "Befolgen von herstellerspezifischen Vorgaben"),
 
     ;
+
+    private final String afoID;
+
+    private final AFOType level;
+
+    private final String title;
 
     private AFOs(final String afoID, final String title) {
         this(afoID, title, MUST);
@@ -68,8 +74,6 @@ public enum AFOs implements AFO {
         this.level = level;
     }
 
-    private final String afoID;
-
     @Override
     public String getAfoId() {
         assert nonNull(this.afoID) : "Class invariant violation!";
@@ -78,8 +82,6 @@ public enum AFOs implements AFO {
         return this.afoID;
     }
 
-    private final String title;
-
     @Override
     public String getLabel() {
         assert nonNull(this.title) : "Class invariant violation!";
@@ -87,8 +89,6 @@ public enum AFOs implements AFO {
 
         return this.title;
     }
-
-    private final AFOType level;
 
     @Override
     public AFOType getType() {

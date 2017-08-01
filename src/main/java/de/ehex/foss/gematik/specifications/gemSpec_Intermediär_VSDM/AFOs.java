@@ -62,22 +62,13 @@ public enum AFOs implements AFO {
 
     VSDM_A_2940("VSDM-A_2940", "Intermediär VSDM: Verbot zum Speicherung von personbezogene Daten in Protokolldateien"),
 
-    VSDM_A_2942("VSDM-A_2942", "Intermediär VSDM: Debugprotokoll schreiben"),
-
-    VSDM_A_2943("VSDM-A_2943", "Intermediär VSDM: Sicherheitsprotokoll schreiben"),
-
-    VSDM_A_3006("VSDM-A_3006", "Intermediär VSDM: Eintrag von SRV Resource Records in der DNS Domain der Service Zone TI"),
-
-    VSDM_A_3021("VSDM-A_3021", "Intermediär VSDM: Kein Pipelining"),
-
-    VSDM_A_3022("VSDM-A_3022", "Intermediär VSDM: Connection Pooling zu Fachdiensten"),
-
-    VSDM_A_3023("VSDM-A_3023", "Intermediär VSDM: Zusätzliche Verbindungen zu Fachdiensten"),
-
-    @AfoHistory(documentVersion = "gemSpec_Intermediär_VSDM, Version 1.6.0 RC 2", description = "Titel nicht vollständig, da PTStB nicht released")
-    VSDM_A_3028("VSDM-A_3028", "Intermediär VSDM: Zusätzliche Verbindungen zu Fachdiensten wieder schließen"),
-
     ;
+
+    private final String afoID;
+
+    private final AFOType level;
+
+    private final String title;
 
     private AFOs(final String afoID, final String title) {
         this(afoID, title, MUST);
@@ -95,8 +86,6 @@ public enum AFOs implements AFO {
         this.level = level;
     }
 
-    private final String afoID;
-
     @Override
     public String getAfoId() {
         assert nonNull(this.afoID) : "Class invariant violation!";
@@ -105,8 +94,6 @@ public enum AFOs implements AFO {
         return this.afoID;
     }
 
-    private final String title;
-
     @Override
     public String getLabel() {
         assert nonNull(this.title) : "Class invariant violation!";
@@ -114,8 +101,6 @@ public enum AFOs implements AFO {
 
         return this.title;
     }
-
-    private final AFOType level;
 
     @Override
     public AFOType getType() {

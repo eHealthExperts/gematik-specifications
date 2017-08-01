@@ -1,6 +1,7 @@
 package de.ehex.foss.gematik.specifications.gemSpec_OM;
 
 import static de.ehex.foss.gematik.specifications.Specifications.gemSpec_OM;
+
 import de.ehex.foss.gematik.specifications.meta.SPEC;
 
 /**
@@ -15,28 +16,28 @@ public enum ErrorType {
 
     @SPEC(value = gemSpec_OM, note = "Tab.5: Tab_ErrorType – Definition ErrorType")
     SECURITY("Security", //
-             "Sicherheitsrelevanter Fehler", //
-             "Verletzung eines definierten Sicherheits-Schwellwertes."),
+            "Sicherheitsrelevanter Fehler", //
+            "Verletzung eines definierten Sicherheits-Schwellwertes."),
 
     @SPEC(value = gemSpec_OM, note = "Tab.5: Tab_ErrorType – Definition ErrorType")
     TECHNICAL("Technical", //
-              "Technischer Fehler", //
-              "Ereignis, das vornehmlich technisch orientierte Fehlerbehandlungen erfordert."),
+            "Technischer Fehler", //
+            "Ereignis, das vornehmlich technisch orientierte Fehlerbehandlungen erfordert."),
 
     @SPEC(value = gemSpec_OM, note = "Tab.5: Tab_ErrorType – Definition ErrorType")
     BUSINESS("Business", //
-             "Fachlicher Fehler", //
-             "Ereignis, das vornehmlich fachlich orientierte Fehlerbehandlungen erfordert."),
+            "Fachlicher Fehler", //
+            "Ereignis, das vornehmlich fachlich orientierte Fehlerbehandlungen erfordert."),
 
     @SPEC(value = gemSpec_OM, note = "Tab.5: Tab_ErrorType – Definition ErrorType")
     INFRASTRUCTURE("Infrastructure", //
-                   "Infrastruktur Fehler", //
-                   "Ereignis, das eine Fehlerbehandlung in den zentralen Produkttypen der TI-Plattform und fachanwendungsspezifischen Diensten erfordert (Verwendung ausschließlich im Konnektor)."),
+            "Infrastruktur Fehler", //
+            "Ereignis, das eine Fehlerbehandlung in den zentralen Produkttypen der TI-Plattform und fachanwendungsspezifischen Diensten erfordert (Verwendung ausschließlich im Konnektor)."),
 
     @SPEC(value = gemSpec_OM, note = "Tab.5: Tab_ErrorType – Definition ErrorType")
     OTHER("Other", //
-          "anderer Fehler", //
-          "Keine eindeutige Zuordnung zu bestimmten Error-Typen möglich."),
+            "anderer Fehler", //
+            "Keine eindeutige Zuordnung zu bestimmten Error-Typen möglich."),
 
     ;
 

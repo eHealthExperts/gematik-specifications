@@ -526,6 +526,12 @@ public enum AFOs implements AFO {
 
     ;
 
+    private final String afoID;
+
+    private final AFOType level;
+
+    private final String title;
+
     private AFOs(final String afoID, final String title) {
         this(afoID, title, MUST);
     }
@@ -542,8 +548,6 @@ public enum AFOs implements AFO {
         this.level = level;
     }
 
-    private final String afoID;
-
     @Override
     public String getAfoId() {
         assert nonNull(this.afoID) : "Class invariant violation!";
@@ -552,8 +556,6 @@ public enum AFOs implements AFO {
         return this.afoID;
     }
 
-    private final String title;
-
     @Override
     public String getLabel() {
         assert nonNull(this.title) : "Class invariant violation!";
@@ -561,8 +563,6 @@ public enum AFOs implements AFO {
 
         return this.title;
     }
-
-    private final AFOType level;
 
     @Override
     public AFOType getType() {

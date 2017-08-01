@@ -17,8 +17,13 @@ public class SpecificationsClassTest {
             assertNotNull(specification);
             for (final AFO aFO : specification.getAFOs()) {
                 assertNotNull(aFO);
-                assertFalse("Duplette of an AFO ID: " + aFO.getAfoId(), collector.containsKey(aFO.getAfoId()));
-                collector.put(aFO.getAfoId(), aFO);
+                final String afoId = aFO.getAfoId();
+                if (collector.containsKey(afoId)) {
+                    final Class<?> c1 = aFO.getClass();
+                    final Class<?> c2 = collector.get(afoId).getClass();
+                    assertFalse("Duplette of an AFO ID: " + afoId + "(via " + c1 + " and " + c2 + ")", collector.containsKey(afoId));
+                }
+                collector.put(afoId, aFO);
             }
         }
         System.out.println(collector.size());

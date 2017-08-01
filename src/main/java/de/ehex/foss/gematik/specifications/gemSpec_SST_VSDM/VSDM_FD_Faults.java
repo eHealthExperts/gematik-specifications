@@ -4,6 +4,7 @@ import static de.ehex.foss.gematik.specifications.Specifications.gemSpec_SST_VSD
 import static de.ehex.foss.gematik.specifications.gemSpec_OM.ErrorType.SECURITY;
 import static de.ehex.foss.gematik.specifications.gemSpec_OM.ErrorType.TECHNICAL;
 import static de.ehex.foss.gematik.specifications.gemSpec_OM.Severity.FATAL;
+
 import de.ehex.foss.gematik.specifications.gemSpec_OM.ErrorType;
 import de.ehex.foss.gematik.specifications.gemSpec_OM.Severity;
 import de.ehex.foss.gematik.specifications.meta.SPEC;
@@ -16,8 +17,7 @@ import de.ehex.foss.gematik.specifications.meta.SPEC;
  * @since February 10th, 2017
  */
 @SPEC(value = gemSpec_SST_VSDM, note = "Tab.13: Tab_SST_VSDM_11 – Übergreifende Fehlercodes")
-public enum VSDM_FD_Faults
-implements VSDM_FD_Fault {
+public enum VSDM_FD_Faults implements VSDM_FD_Fault {
 
     /**
      * <dl>

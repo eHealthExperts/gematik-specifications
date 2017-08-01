@@ -6,8 +6,6 @@ import static org.junit.Assert.assertNotNull;
 import org.j8unit.J8UnitTest;
 import org.junit.Test;
 
-import de.ehex.foss.gematik.specifications.AFO;
-
 // TODO: extends EnumTests<SUT>
 public abstract interface AFOTests<SUT extends AFO> extends J8UnitTest<SUT> {
 

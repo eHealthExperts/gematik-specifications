@@ -9,7 +9,7 @@ import de.ehex.foss.gematik.specifications.AFOType;
 /**
  * Enumeration of all &ndash;&nbsp;currently considered&nbsp;&ndash; {@link AFO}s of {@code [gemRL_TSL_SP_CP]}.
  *
- * @author Stefan Gasterst&auml;dt
+ * @author Stefan Gasterstädt, Jonas Pfeiffer
  * @since September 21st, 2016
  */
 public enum AFOs implements AFO {
@@ -72,6 +72,9 @@ public enum AFOs implements AFO {
     GS_A_4192("GS-A_4192", "Prüfung der Berechtigung zur Antragstellung auf Schlüsselerneuerung"),
 
     // TODO: AFO-Typ klären derzeit implizit MUSS-AFO
+    GS_A_4194("GS-A_4194", "Identifikation des Antragstellers und Dokumentation bei der Beantragung eines CA-Zertifikats"),
+
+    // TODO: AFO-Typ klären derzeit implizit MUSS-AFO
     GS_A_4195("GS-A_4195", "Schriftform für Aufnahme eines Zertifikats in die TSL"),
 
     // TODO: AFO-Typ klären derzeit implizit MUSS-AFO
@@ -87,7 +90,13 @@ public enum AFOs implements AFO {
     GS_A_4203("GS-A_4203", "Dokumentationspflichten für die Beantragung von Zertifikaten"),
 
     // TODO: AFO-Typ klären derzeit implizit MUSS-AFO
+    GS_A_4204("GS-A_4204", "Bearbeitung von Zertifikatsanträgen eines TSP-X.509 nonQES durch die gematik Root-CA"),
+
+    // TODO: AFO-Typ klären derzeit implizit MUSS-AFO
     GS_A_4205("GS-A_4205", "Verpflichtung zum Wechsel des CA-Zertifikats"),
+
+    // TODO: AFO-Typ klären derzeit implizit MUSS-AFO
+    GS_A_4206("GS-A_4206", "Prüfung auf Korrektheit des Schlüsselpaares eines TSP-X.509 nonQES"),
 
     // TODO: AFO-Typ klären derzeit implizit MUSS-AFO
     GS_A_4207("GS-A_4207", "Vorgaben für die Ausgabe von Endnutzerzertifikaten"),
@@ -111,7 +120,7 @@ public enum AFOs implements AFO {
     GS_A_4213("GS-A_4213", "Zulässige Nutzungsarten"),
 
     // TODO: AFO-Typ klären derzeit implizit MUSS-AFO
-    GS_A_4214("GS-A_4214", "Veröffentlichung der öffentlichen Schlüssel durch den TSPX.509 nonQES"),
+    GS_A_4214("GS-A_4214", "Veröffentlichung der öffentlichen Schlüssel durch den TSP-X.509 nonQES"),
 
     // TODO: AFO-Typ klären derzeit implizit MUSS-AFO
     GS_A_4215("GS-A_4215", "Bedingungen für eine Zertifizierung nach Schlüsselerneuerung"),
@@ -130,6 +139,12 @@ public enum AFOs implements AFO {
 
     // TODO: AFO-Typ klären derzeit implizit MUSS-AFO
     GS_A_4221("GS-A_4221", "Anzeige der Kompromittierung des privaten Signaturschlüssels"),
+
+    // TODO: AFO-Typ klären derzeit implizit MUSS-AFO
+    GS_A_4222("GS-A_4222", "Beschreibung der Bedingungen für die Sperrung des Zertifikat eines TSP-X.509 nonQES"),
+
+    // TODO: AFO-Typ klären derzeit implizit MUSS-AFO
+    GS_A_4223("GS-A_4223", "Obligatorische Gründe für die Sperrung des Zertifikats eines TSP-X.509 nonQES durch die gematik Root-CA"),
 
     // TODO: AFO-Typ klären derzeit implizit MUSS-AFO
     GS_A_4225("GS-A_4225", "Festlegung eines Sperrberechtigten für Endanwenderzertifikate"),
@@ -153,7 +168,13 @@ public enum AFOs implements AFO {
     GS_A_4231("GS-A_4231", "Anforderungen zur Online-Prüfung von Sperrinformationen"),
 
     // TODO: AFO-Typ klären derzeit implizit MUSS-AFO
-    GS_A_4234("GS-A_4234", "Zusammenhang zwischen Zertifikatssperrung und suspendierung"),
+    GS_A_4232("GS-A_4232", "Informationspflicht der gematik Root-CA bei Sperrung der Zertifikats eines TSP-X.509 nonQES"),
+
+    // TODO: AFO-Typ klären derzeit implizit MUSS-AFO
+    GS_A_4233("GS-A_4233", "Zertifikatsuspendierung für Kartenzertifikate"),
+
+    // TODO: AFO-Typ klären derzeit implizit MUSS-AFO
+    GS_A_4234("GS-A_4234", "Zusammenhang zwischen Zertifikatssperrung und -suspendierung"),
 
     // TODO: AFO-Typ klären derzeit implizit MUSS-AFO
     GS_A_4235("GS-A_4235", "Festlegung zu Verantwortlichkeit für Suspendierung"),
@@ -174,10 +195,10 @@ public enum AFOs implements AFO {
     GS_A_4242("GS-A_4242", "Dokumentationspflicht für Prozesse der Schlüsselhinterlegung"),
 
     // TODO: AFO-Typ klären derzeit implizit MUSS-AFO
-    GS_A_4243("GS-A_4243", "Ausschluss der Schlüsselhinterlegung für qualifizierte Signaturzertifikate"),
+    GS_A_4245("GS-A_4245", "Anzeige von Änderung an der Gesellschafterstruktur des Betreibers"),
 
     // TODO: AFO-Typ klären derzeit implizit MUSS-AFO
-    GS_A_4245("GS-A_4245", "Anzeige von Änderung an der Gesellschafterstruktur des Betreibers"),
+    GS_A_4246("GS-A_4246", "Bereitstellung aktueller Liste registrierter TSP"),
 
     // TODO: AFO-Typ klären derzeit implizit MUSS-AFO
     GS_A_4247("GS-A_4247", "Obligatorische Vorgaben für das Rollenkonzept"),
@@ -205,9 +226,6 @@ public enum AFOs implements AFO {
 
     // TODO: AFO-Typ klären derzeit implizit MUSS-AFO
     GS_A_4256("GS-A_4256", "Zugang zu Systemen für die Zertifikatserzeugung"),
-
-    // TODO: AFO-Typ klären derzeit implizit MUSS-AFO
-    GS_A_4257("GS-A_4257", "Niederlassungsregelung für Betriebsstätten"),
 
     // TODO: AFO-Typ klären derzeit implizit MUSS-AFO
     GS_A_4259("GS-A_4259", "Vorgaben für die informationstechnische Trennung sicherheitskritischer Bestandteile der Systemumgebung"),
@@ -273,6 +291,9 @@ public enum AFOs implements AFO {
     GS_A_4279("GS-A_4279", "Fortbestand von Archiven und die Abrufmöglichkeit einer vollständigen Widerrufsliste"),
 
     // TODO: AFO-Typ klären derzeit implizit MUSS-AFO
+    GS_A_4280("GS-A_4280", "Fristen bei Einstellung des Zertifizierungsbetriebs für die gematik Root-CA"),
+
+    // TODO: AFO-Typ klären derzeit implizit MUSS-AFO
     GS_A_4281("GS-A_4281", "Fristen bei der Einstellung des Zertifizierungsbetriebs für einen TSP-X.509 nonQES"),
 
     // TODO: AFO-Typ klären derzeit implizit MUSS-AFO
@@ -297,10 +318,10 @@ public enum AFOs implements AFO {
     GS_A_4289("GS-A_4289", "Unterstützung des sicheren Löschen von Schlüsseln durch HSM"),
 
     // TODO: AFO-Typ klären derzeit implizit MUSS-AFO
-    GS_A_4290("GS-A_4290", "Generieren und Löschen von Schlüsselpaaren gemäß VierAugen-Prinzip"),
+    GS_A_4290("GS-A_4290", "Generieren und Löschen von Schlüsselpaaren gemäß Vier-Augen-Prinzip"),
 
     // TODO: AFO-Typ klären derzeit implizit MUSS-AFO
-    GS_A_4291("GS-A_4291", "Berechnungen mit dem privaten Schlüssel gemäß Vier-AugenPrinzip"),
+    GS_A_4291("GS-A_4291", "Berechnungen mit dem privaten Schlüssel gemäß Vier-Augen-Prinzip"),
 
     // TODO: AFO-Typ klären derzeit implizit MUSS-AFO
     GS_A_4292("GS-A_4292", "Protokollierung der HSM-Nutzung"),
@@ -330,7 +351,7 @@ public enum AFOs implements AFO {
     GS_A_4303("GS-A_4303", "Festlegung der Schlüsselverwendung (keyUsage)"),
 
     // TODO: AFO-Typ klären derzeit implizit MUSS-AFO
-    GS_A_4304("GS-A_4304", "- Speicherung und Anwendung von privaten Schlüsseln"),
+    GS_A_4304("GS-A_4304", "Speicherung und Anwendung von privaten Schlüsseln"),
 
     // TODO: AFO-Typ klären derzeit implizit MUSS-AFO
     GS_A_4305("GS-A_4305", "Ordnungsgemäße Sicherung des privaten Schlüssels"),
@@ -401,17 +422,62 @@ public enum AFOs implements AFO {
     // TODO: AFO-Typ klären derzeit implizit MUSS-AFO
     GS_A_4328("GS-A_4328", "Informationspflicht bei Änderung des CPS"),
 
-    // TODO: AFO-Typ klären (derzeit implizit MUSS-AFO)
+    // TODO: AFO-Typ klären derzeit implizit MUSS-AFO
     GS_A_4330("GS-A_4330", "Einbringung des Komponentenzertifikats"),
 
     // TODO: AFO-Typ klären derzeit implizit MUSS-AFO
+    GS_A_4331("GS-A_4331", "Sicherstellungspflicht des Antragstellers eines Komponentenzertifikats"),
+
+    // TODO: AFO-Typ klären derzeit implizit MUSS-AFO
     GS_A_4332("GS-A_4332", "Dokumentation der Pflichten des Antragstellers eines Komponentenzertifikats"),
+
+    // TODO: AFO-Typ klären derzeit implizit MUSS-AFO
+    GS_A_4333("GS-A_4333", "Informationspflicht gegenüber Antragsteller bei Sperrung eines Komponentenzertifikats"),
+
+    // TODO: AFO-Typ klären derzeit implizit MUSS-AFO
+    GS_A_4335("GS-A_4335", "Keine Sperrungeines Zertifikats für den Produkttyp gSMC-KT"),
+
+    // TODO: AFO-Typ klären derzeit implizit MUSS-AFO
+    GS_A_4336("GS-A_4336", "Sperranträge der gematik für Komponentenzertifikate"),
+
+    // TODO: AFO-Typ klären derzeit implizit MUSS-AFO
+    GS_A_4337("GS-A_4337", "Sonderregelung für die Sperrung von Komponentenzertifikaten"),
+
+    // TODO: AFO-Typ klären derzeit implizit MUSS-AFO
+    GS_A_4338("GS-A_4338", "Suspendierung von Komponentenzertifikaten"),
+
+    // TODO: AFO-Typ klären derzeit implizit MUSS-AFO
+    GS_A_4339("GS-A_4339", "Autorisierung für die Sperrung von Komponentenzertifikaten"),
+
+    // TODO: AFO-Typ klären derzeit implizit MUSS-AFO
+    GS_A_4340("GS-A_4340", "Befristung von Sperranträgen für Komponentenzertifikate"),
+
+    // TODO: AFO-Typ klären derzeit implizit MUSS-AFO
+    GS_A_4341("GS-A_4341", "Entfall der Verpflichtung für die Bereitstellung einer Statusprüfung bestimmter Komponentenzertifikate"),
+
+    // TODO: AFO-Typ klären derzeit implizit MUSS-AFO
+    GS_A_4342("GS-A_4342", "Verbot einer Schlüsselhinterlegung für Komponentenzertifikate"),
+
+    // TODO: AFO-Typ klären derzeit implizit MUSS-AFO
+    GS_A_4343("GS-A_4343", "Unterstützung der Übergabe bei Schließung eines TSP-X.509 nonQES für Komponentenzertifikate"),
+
+    // TODO: AFO-Typ klären derzeit implizit MUSS-AFO
+    GS_A_4344("GS-A_4344", "Sperrung von Komponentenzertifikate bei Schließung eines TSP-X.509 nonQES"),
+
+    // TODO: AFO-Typ klären derzeit implizit MUSS-AFO
+    GS_A_4345("GS-A_4345", "Automatisierte Zertifikatsanträge für Komponentenzertifikate"),
 
     // TODO: AFO-Typ klären derzeit implizit MUSS-AFO
     GS_A_4348("GS-A_4348", "Verbot der Erneuerung von Zertifikaten"),
 
     // TODO: AFO-Typ klären derzeit implizit MUSS-AFO
     GS_A_4349("GS-A_4349", "Obligatorische Gründe für die Sperrung eines selbst signierten Zertifikats eines TSP-X.509 nonQES"),
+
+    // TODO: AFO-Typ klären derzeit implizit MUSS-AFO
+    GS_A_4350("GS-A_4350", "Maximale Gültigkeitsdauer des Zertifikats der gematik Root-CA"),
+
+    // TODO: AFO-Typ klären derzeit implizit MUSS-AFO
+    GS_A_4351("GS-A_4351", "Maximale Gültigkeitsdauer des Zertifikats eines TSP-X.509 nonQES bei Erzeugung durch die gematik Root-CA"),
 
     // TODO: AFO-Typ klären derzeit implizit MUSS-AFO
     GS_A_4352("GS-A_4352", "Maximale Gültigkeitsdauer eines Endbenutzerzertifikats"),
@@ -468,9 +534,6 @@ public enum AFOs implements AFO {
     GS_A_4923("GS-A_4923", "CP-Test, Veröffentlichung von Testausstellerzertifikaten"),
 
     // TODO: AFO-Typ klären derzeit implizit MUSS-AFO
-    GS_A_4924("GS-A_4924", "CP-Test, Fiktive Zertifikatsnehmer"),
-
-    // TODO: AFO-Typ klären derzeit implizit MUSS-AFO
     GS_A_4925("GS-A_4925", "CP-Test, Keine Verwendung von Echtdaten"),
 
     // TODO: AFO-Typ klären derzeit implizit MUSS-AFO
@@ -495,12 +558,33 @@ public enum AFOs implements AFO {
     GS_A_4933("GS-A_4933", "CP-Test, Zertifikatsprofile für Testzertifikate"),
 
     // TODO: AFO-Typ klären derzeit implizit MUSS-AFO
+    GS_A_5020("GS-A_5020", "Einbringung des Komponentenzertifikats durch denKartenherausgeber"),
+
+    // TODO: AFO-Typ klären derzeit implizit MUSS-AFO
+    GS_A_5075("GS-A_5075", "Schlüsselbackup bei der gematik"),
+
+    // TODO: AFO-Typ klären derzeit implizit MUSS-AFO
     GS_A_5083("GS-A_5083", "Zertifikatsantragstellung im Vier-Augen-Prinzip"),
 
     // TODO: AFO-Typ klären derzeit implizit MUSS-AFO
     GS_A_5084("GS-A_5084", "Zugang zu HSM-Systemen im Vier-Augen-Prinzip"),
 
+    // TODO: AFO-Typ klären derzeit implizit MUSS-AFO
+    GS_A_5123("GS-A_5123", "Verfahrensbeschreibung Datensicherung der gematik Root-CA"),
+
+    // TODO: AFO-Typ klären derzeit implizit MUSS-AFO
+    GS_A_5468("GS-A_5468", "Planmäßige Schlüsselerneuerung der gematik Root-CA"),
+
+    // TODO: AFO-Typ klären derzeit implizit MUSS-AFO
+    GS_A_5469("GS-A_5469", "Verwendung des neuesten Schlüssels der gematik Root-CA"),
+
     ;
+
+    private final String afoID;
+
+    private final AFOType level;
+
+    private final String title;
 
     private AFOs(final String afoID, final String title) {
         this(afoID, title, MUST);
@@ -518,8 +602,6 @@ public enum AFOs implements AFO {
         this.level = level;
     }
 
-    private final String afoID;
-
     @Override
     public String getAfoId() {
         assert nonNull(this.afoID) : "Class invariant violation!";
@@ -528,8 +610,6 @@ public enum AFOs implements AFO {
         return this.afoID;
     }
 
-    private final String title;
-
     @Override
     public String getLabel() {
         assert nonNull(this.title) : "Class invariant violation!";
@@ -537,8 +617,6 @@ public enum AFOs implements AFO {
 
         return this.title;
     }
-
-    private final AFOType level;
 
     @Override
     public AFOType getType() {

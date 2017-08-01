@@ -1,7 +1,9 @@
 package de.ehex.foss.rfcs.rfc2119;
 
 import static org.j8unit.util.TestParametersUtil.testParametersOfEnumClass;
+
 import java.util.List;
+
 import org.j8unit.runners.J8Parameterized;
 import org.j8unit.runners.parameterized.J8BlockJUnit4ClassRunnerWithParametersFactory;
 import org.junit.runner.RunWith;

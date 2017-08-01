@@ -9,7 +9,7 @@ import de.ehex.foss.gematik.specifications.AFOType;
 /**
  * Enumeration of all &ndash;&nbsp;currently considered&nbsp;&ndash; {@link AFO}s of {@code [gemSpec_ISM]}.
  *
- * @author Stefan Gasterst&auml;dt
+ * @author Stefan Gasterstädt, Jonas Pfeiffer
  * @since September 21st, 2016
  */
 public enum AFOs implements AFO {
@@ -36,9 +36,6 @@ public enum AFOs implements AFO {
     GS_A_4509("GS-A_4509", "Dateiformat und -struktur des Security Reports"),
 
     // TODO: AFO-Typ klären derzeit implizit MUSS-AFO
-    GS_A_4510("GS-A_4510", "Dateinamenskonvention des Security Reports"),
-
-    // TODO: AFO-Typ klären derzeit implizit MUSS-AFO
     GS_A_4511("GS-A_4511", "Aufschlüsselung pro TI-Produkt"),
 
     // TODO: AFO-Typ klären derzeit implizit MUSS-AFO
@@ -63,7 +60,7 @@ public enum AFOs implements AFO {
     GS_A_4518("GS-A_4518", "Kennzahl 06: Prozesstreue in der Änderungsverwaltung (Change Management)"),
 
     // TODO: AFO-Typ klären derzeit implizit MUSS-AFO
-    GS_A_4519("GS-A_4519", "Kennzahl 07: Prozessablauf in der Änderungsverwaltung (Change Management)"),
+    GS_A_4519("GS-A_4519", "Kennzahl 7 Anteil sicherheitsrelevanter Änderungen (Security Changes)"),
 
     // TODO: AFO-Typ klären derzeit implizit MUSS-AFO
     GS_A_4520("GS-A_4520", "Kennzahl 08: Anzahl privilegierter Benutzer"),
@@ -93,13 +90,13 @@ public enum AFOs implements AFO {
     GS_A_4528("GS-A_4528", "Meldung von lokalen Sicherheitsvorfällen"),
 
     // TODO: AFO-Typ klären derzeit implizit MUSS-AFO
-    GS_A_4529("GS-A_4529", "Meldung von schwerwiegenden Sicherheitsvorfällen und notfällen"),
+    GS_A_4529("GS-A_4529", "Meldung von schwerwiegenden Sicherheitsvorfällen und -notfällen"),
 
     // TODO: AFO-Typ klären derzeit implizit MUSS-AFO
     GS_A_4530("GS-A_4530", "Maßnahmen zur Behebung von schwerwiegenden Sicherheitsvorfällen und -notfällen"),
 
     // TODO: AFO-Typ klären derzeit implizit MUSS-AFO
-    GS_A_4531("GS-A_4531", "Umgehende Umsetzung von Maßnahmen bei schwerwiegenden Sicherheitsvorfällen und -notfällen"),
+    GS_A_4531("GS-A_4531", "Unverzügliche Umsetzung von Maßnahmen bei schwerwiegenden Sicherheitsvorfällen und -notfällen"),
 
     // TODO: AFO-Typ klären derzeit implizit MUSS-AFO
     GS_A_4532("GS-A_4532", "Kontrolle der Umsetzung von Maßnahmen in Folge eines schwerwiegenden Sicherheitsvorfalls oder -notfalls"),
@@ -127,6 +124,12 @@ public enum AFOs implements AFO {
 
     ;
 
+    private final String afoID;
+
+    private final AFOType level;
+
+    private final String title;
+
     private AFOs(final String afoID, final String title) {
         this(afoID, title, MUST);
     }
@@ -143,8 +146,6 @@ public enum AFOs implements AFO {
         this.level = level;
     }
 
-    private final String afoID;
-
     @Override
     public String getAfoId() {
         assert nonNull(this.afoID) : "Class invariant violation!";
@@ -153,8 +154,6 @@ public enum AFOs implements AFO {
         return this.afoID;
     }
 
-    private final String title;
-
     @Override
     public String getLabel() {
         assert nonNull(this.title) : "Class invariant violation!";
@@ -162,8 +161,6 @@ public enum AFOs implements AFO {
 
         return this.title;
     }
-
-    private final AFOType level;
 
     @Override
     public AFOType getType() {

@@ -9,10 +9,31 @@ import de.ehex.foss.gematik.specifications.AFOType;
 /**
  * Enumeration of all &ndash;&nbsp;currently considered&nbsp;&ndash; {@link AFO}s of {@code [gemSpec_eGK_Fach_VSDM]}.
  *
- * @author Stefan Gasterst&auml;dt
+ * @author Stefan Gasterstädt, Jonas Pfeiffer
  * @since September 21st, 2016
  */
 public enum AFOs implements AFO {
+
+    // TODO: AFO-Typ klären derzeit implizit MUSS-AFO
+    VSDM_A_2965("VSDM-A_2965", "Container EF.PD auf eGK"),
+
+    // TODO: AFO-Typ klären derzeit implizit MUSS-AFO
+    VSDM_A_2966("VSDM-A_2966", "Container EF.VD auf eGK"),
+
+    // TODO: AFO-Typ klären derzeit implizit MUSS-AFO
+    VSDM_A_2967("VSDM-A_2967", "Container EF.GVD auf eGK"),
+
+    // TODO: AFO-Typ klären derzeit implizit MUSS-AFO
+    VSDM_A_2968("VSDM-A_2968", "Container EF.Prüfungsnachweis auf eGK"),
+
+    // TODO: AFO-Typ klären derzeit implizit MUSS-AFO
+    VSDM_A_2970("VSDM-A_2970", "Container EF.StatusVD auf der eGK"),
+
+    // TODO: AFO-Typ klären derzeit implizit MUSS-AFO
+    VSDM_A_2971("VSDM-A_2971", "Nicht zugriffsgeschützte Container VSDM auf der eGK"),
+
+    // TODO: AFO-Typ klären derzeit implizit MUSS-AFO
+    VSDM_A_2972("VSDM-A_2972", "Zugriffsgeschützter Container EF.GVD auf der eGK"),
 
     VSDM_A_2973("VSDM-A_2973", "Speicherstruktur des Containers EF.PD auf eGK"),
 
@@ -25,6 +46,12 @@ public enum AFOs implements AFO {
     VSDM_A_2994("VSDM-A_2994", "Sichere Übertragung zwischen VSDD und eGK"),
 
     ;
+
+    private final String afoID;
+
+    private final AFOType level;
+
+    private final String title;
 
     private AFOs(final String afoID, final String title) {
         this(afoID, title, MUST);
@@ -42,8 +69,6 @@ public enum AFOs implements AFO {
         this.level = level;
     }
 
-    private final String afoID;
-
     @Override
     public String getAfoId() {
         assert nonNull(this.afoID) : "Class invariant violation!";
@@ -52,8 +77,6 @@ public enum AFOs implements AFO {
         return this.afoID;
     }
 
-    private final String title;
-
     @Override
     public String getLabel() {
         assert nonNull(this.title) : "Class invariant violation!";
@@ -61,8 +84,6 @@ public enum AFOs implements AFO {
 
         return this.title;
     }
-
-    private final AFOType level;
 
     @Override
     public AFOType getType() {
