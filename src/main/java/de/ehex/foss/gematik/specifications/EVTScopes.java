@@ -2,6 +2,8 @@ package de.ehex.foss.gematik.specifications;
 
 import static de.ehex.foss.gematik.specifications.PTStBs.gemProdT_FD_VSDM_PTV1_5_0_2;
 import static de.ehex.foss.gematik.specifications.PTStBs.gemProdT_Intermediaer_VSDM_PTV1_5_2_0;
+import static de.ehex.foss.gematik.specifications.PTStBs.gemProdT_Kon_PTV1_10_0_0;
+import static de.ehex.foss.gematik.specifications.PTStBs.gemProdT_Kon_PTV2_11_0_0;
 import static de.ehex.foss.gematik.specifications.PTStBs.gemProdT_X_509_TSP_nonQES_eGK_PTV1_7_0_0;
 import static de.ehex.foss.gematik.specifications.gemRL_TSL_SP_CP.AFOs.GS_A_4173;
 import static de.ehex.foss.gematik.specifications.gemRL_TSL_SP_CP.AFOs.GS_A_4191;
@@ -113,6 +115,10 @@ import java.util.Set;
  * @since September 27th, 2016
  */
 public enum EVTScopes implements TestScope {
+
+    KONNEKTOR_QES(gemProdT_Kon_PTV2_11_0_0, emptyList(), emptyList()),
+
+    KONNEKTOR_VSDM(gemProdT_Kon_PTV1_10_0_0, emptyList(), emptyList()),
 
     /**
      * TODO: Put a note why <em>GS_A_4642, GS_A_4643, GS_A_4646, GS_A_4647, GS_A_4648, GS_A_4649, GS_A_4650, GS_A_4655,
